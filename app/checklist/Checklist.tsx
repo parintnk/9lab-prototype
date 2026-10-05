@@ -16,7 +16,7 @@ export default function Checklist() {
       <header className="ck-head">
         <div className="eyebrow">9LAB · BRIEF CHECKLIST</div>
         <h1>What the brief asked, and where it stands</h1>
-        <p>Every request in <i>9Lab Website.pdf</i>, matched to the wireframe screen that covers it. Then what we added, what we need from you, the feature list, and the services we recommend.</p>
+        <p>Every request in <i>9Lab Website.pdf</i>, checked page by page against the wireframe screen that covers it. Then what we added, what we need from you, the feature list, and the services we recommend.</p>
         <nav className="ck-toc">
           <a href="#checklist">Checklist</a><a href="#added">Added by us</a><a href="#questions">Questions</a><a href="#features">Features</a><a href="#services">Recommended services</a>
         </nav>
@@ -24,7 +24,7 @@ export default function Checklist() {
 
       <section id="checklist">
         <div className="ck-tiles">
-          {ORDER.map((st) => (
+          {ORDER.filter((st) => count(st) > 0).map((st) => (
             <button key={st} className="ck-tile" data-st={st} aria-pressed={only === st} onClick={() => setOnly(only === st ? null : st)}>
               <b>{count(st)}</b><span className="st" data-st={st}>{STATUS[st].label}</span><small>{STATUS[st].hint}</small>
             </button>

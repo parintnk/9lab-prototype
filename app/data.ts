@@ -4,7 +4,7 @@
 export type Status = 'done' | 'changed' | 'added' | 'input' | 'gap';
 
 export const STATUS: Record<Status, { label: string; hint: string }> = {
-  done: { label: 'Done', hint: 'In the wireframe + prototype as the brief asks' },
+  done: { label: 'Done', hint: 'In the wireframe as the brief asks' },
   changed: { label: 'Adjusted', hint: 'Done, but we changed how it works — please confirm' },
   added: { label: 'Added by us', hint: 'Not in the brief, we recommend it' },
   input: { label: 'Needs your input', hint: 'Designed, but needs a decision from 9Lab' },
@@ -19,9 +19,10 @@ export const BRIEF: Section[] = [
     name: 'Homepage',
     items: [
       { req: 'Pop-up info when opening the website, content can be changed any time', p: '1', status: 'done', wf: 's1-1', note: 'Shown on first visit, not again for 7 days. Admin edits title, text and button.' },
-      { req: 'Big and small banners, auto-swipe, unlimited number', p: '2', status: 'done', wf: 's1-2', note: 'Big banner every 5 s, swipeable. Each banner links to a campaign or category.' },
+      { req: 'Big and small banners, auto-swipe, unlimited number', p: '2', status: 'done', wf: 's1-2', note: 'Admin adds any number of banners. Big banner auto-swipes every 5 s; each banner links to a campaign or category.' },
       { req: 'Small banner content can be updated any time', p: '2', status: 'done', wf: 's1-2' },
       { req: 'Brand videos on the homepage', p: '2', status: 'done', wf: 's1-2', note: 'Plays inline, muted by default.' },
+      { req: '“More info” section (corporate purchase, wedding gift, store) — red box in your reference', p: '2', status: 'gap', wf: 's1-2', note: 'Not drawn on the homepage yet. We will add it as a 3-tile section.' },
       { req: 'Multiple sections, updated from the backend, flexible size and layout', p: '2', status: 'done', wf: 's1-2', note: 'Admin can add and reorder sections. Truly free-form layouts need a page builder in the backend — see “Store platform” below.' },
       { req: 'Maximum 4 products in one screen', p: '2', status: 'done', wf: 's1-2', note: '2 columns × 2 rows on mobile.' },
       { req: 'Header icons: main menu, members, cart, search; social media', p: '3', status: 'done', wf: 's1-2' },
@@ -32,9 +33,9 @@ export const BRIEF: Section[] = [
     items: [
       { req: 'Menu is about ¾ of the screen wide, homepage still visible', p: '4', status: 'done', wf: 's2-1', note: '292 px of 390 px.' },
       { req: 'Hierarchical categories, unlimited sub-categories (skin type, product type…)', p: '5', status: 'done', wf: 's2-2' },
-      { req: 'About us and Customer info with their own sub-pages', p: '6', status: 'done', wf: 's2-1', note: 'Menu structure is designed; the content pages themselves are not designed yet.' },
+      { req: 'About us and Customer info with their own sub-pages', p: '6', status: 'done', wf: 's2-1', note: 'Menu structure is designed (brand story, store info, privacy; shopping guide, customer message, member rights, contact). The content pages themselves are not designed yet.' },
       { req: 'Language setting', p: '6', status: 'done', wf: 's2-1', note: '繁體中文 / English.' },
-      { req: 'Currency setting', p: '6', status: 'changed', wf: 's2-1', note: 'Shown as text “TWD (NT$)”. A drop-down with one option is confusing; it becomes a selector when a second currency is added.' },
+      { req: 'Currency setting', p: '6', status: 'done', wf: 's2-1', note: 'A row showing “TWD (NT$)”, like your reference. Becomes a selector if a second currency is added.' },
     ],
   },
   {
@@ -44,8 +45,8 @@ export const BRIEF: Section[] = [
       { req: 'Admin can add more options to the Members menu', p: '7', status: 'done', wf: 's3-1', note: 'Add, reorder or hide items.' },
       { req: 'How long can items stay in the cart?', p: '7', status: 'input', wf: 's1-5' },
       { req: 'Track order: order date, order number, payment method, amount, products, status line', p: '8', status: 'done', wf: 's3-6', note: '5 steps updated automatically by ECPay Logistics: Ordered → Preparing → Shipping → Arrived at store → Picked up.' },
-      { req: 'Cancel order (shown in your reference)', p: '8', status: 'added', wf: 's3-6', note: 'Only before the order ships.' },
-      { req: 'Member center: mobile, name, birthday, gender, email, agree to terms', p: '9', status: 'done', wf: 's3-3', note: 'Mobile cannot be edited (used to verify identity).' },
+      { req: 'Cancel order (shown in your reference)', p: '8', status: 'done', wf: 's3-6', note: 'Only before the order ships.' },
+      { req: 'Member center: mobile, name, birthday, gender, email, agree to terms', p: '9', status: 'done', wf: 's3-3', note: 'Mobile cannot be edited (used to verify identity). Your reference splits last name / first name and adds Membership Terms — we will match that.' },
       { req: 'Member center: address (country, city, district, street)', p: '9', status: 'gap', wf: 's3-3', note: 'The profile has a default pickup store but no address fields yet. We will add them.' },
       { req: 'My favorite, Browsing history, Back in stock tabs; heart on product page', p: '10', status: 'done', wf: 's3-4' },
       { req: 'My coupon: Unclaimed / Claimed / History, enter a coupon code', p: '11', status: 'done', wf: 's3-5' },
@@ -61,7 +62,7 @@ export const BRIEF: Section[] = [
     items: [
       { req: 'Instagram and LINE, no Facebook', p: '13', status: 'done', wf: 's4-1' },
       { req: 'Back to top', p: '13', status: 'changed', wf: 's4-1', note: 'Its own button that appears after scrolling, so it is one tap instead of two.' },
-      { req: 'Chat bubble', p: '13', status: 'changed', wf: 's4-1', note: 'Removed because it opened the same LINE OA chat as the LINE button. Tell us if you meant an on-site message form.' },
+      { req: 'Chat bubble', p: '13', status: 'changed', wf: 's4-1', note: 'Removed because it opened the same LINE OA chat as the LINE button. Your menu (p.6) has a “customer message” page — if the bubble should open that form, we will add it back.' },
       { req: 'Same on PC and mobile', p: '13', status: 'input', wf: 's4-5', note: 'Mobile is designed. The PC layout is reserved but not designed yet.' },
     ],
   },
@@ -98,7 +99,7 @@ export const BRIEF: Section[] = [
       { req: 'Purchase notice; agreements must be ticked before ordering; news opt-in', p: '22', status: 'done', wf: 's1-9' },
       { req: 'Payments: LINE Pay, credit card, Apple Pay, ATM (virtual account)', p: '23', status: 'input', wf: 's1-9', note: 'Card, Apple Pay and ATM are in ECPay. LINE Pay is not — separate contract or drop it.' },
       { req: 'Cash on delivery not required', p: '23', status: 'input', wf: 's1-6', note: 'Done as prepaid only. ECPay also offers 7-ELEVEN pay at pickup, which is popular — confirm.' },
-      { req: 'Order complete: shipping info, 5-day pickup reminder, order info', p: '22', status: 'done', wf: 's1-10' },
+      { req: 'Order complete: shipping info, 5-day pickup reminder, order info', p: '22', status: 'done', wf: 's1-10', note: 'Your reference warns that unpicked orders may be blacklisted — see question 5.' },
       { req: 'Coupon for adding the LINE account as a friend', p: '22', status: 'done', wf: 's1-10' },
       { req: 'Check order and Keep shopping buttons', p: '22', status: 'done', wf: 's1-10' },
       { req: 'Backend setting for returns and refund to store credit (future)', p: '23', status: 'input', wf: 's3-6', note: 'Return at any 7-ELEVEN is designed. Who pays the NT$55 return fee and the refund rules are open.' },
@@ -108,7 +109,6 @@ export const BRIEF: Section[] = [
 
 export const ADDED: { what: string; why: string; wf?: string }[] = [
   { what: 'Customer journey page', why: 'Shows the whole shopping flow on one page, with a play-through.' },
-  { what: 'Cancel order before shipping', why: 'Saves a support message for the most common request.', wf: 's3-6' },
   { what: 'Return at 7-ELEVEN with a return code', why: 'Uses ECPay’s B2C return service, so shoppers do not need to pack and post.', wf: 's3-6' },
   { what: 'Live order status from ECPay (5 steps)', why: 'No manual updates; shoppers see “Arrived at store” and “Picked up”.', wf: 's3-6' },
   { what: 'Official 7-ELEVEN e-map through ECPay', why: 'Store data is always current; no store list to maintain.', wf: 's1-7' },
@@ -124,14 +124,14 @@ export const QUESTIONS = [
   { q: 'Also offer FamilyMart and Hi-Life pickup? Same flow as 7-ELEVEN through ECPay. (OK Mart only works as C2C, where the parcel is dropped at a store.)', wf: 's1-6' },
   { q: 'ECPay does not offer LINE Pay. Sign a separate LINE Pay contract, or drop it? ECPay can add JKOPAY, TWQR or pay-later (BNPL, orders from NT$3,000) instead.', wf: 's1-9' },
   { q: 'Auto-creating a member from a guest’s mobile needs the shopper’s consent (PDPA). OK to add a consent line at checkout?', wf: 's1-8' },
-  { q: 'Parcel not picked up, or ATM not paid in time: when do we cancel, and how is the refund made?', wf: 's3-6' },
+  { q: 'Parcel not picked up, or ATM not paid in time: when do we cancel, and how is the refund made? Should shoppers who do not pick up be blocked from pay-at-pickup, as in your reference?', wf: 's3-6' },
   { q: 'Returns cost NT$55 per parcel at 7-ELEVEN. Who pays it, and is the refund to the card or store credit?', wf: 's3-6' },
   { q: 'Sign in with SMS code only, no password? Simpler for shoppers; each SMS has a cost.', wf: 's3-2' },
   { q: 'Let guests use Notify me (email / LINE) and save favorites without signing in?', wf: 's2-6' },
   { q: 'Default site language: 繁體中文? (This review copy is in English.)', wf: 's2-1' },
   { q: 'PC version: scope and timing?', wf: 's4-5' },
   { q: 'How long should items stay in the cart?', wf: 's1-5' },
-  { q: 'Did the chat bubble mean an on-site message form? We removed it because it duplicated the LINE button.', wf: 's4-1' },
+  { q: 'Did the chat bubble mean the on-site “customer message” form from your menu (p.6)? We removed it because it duplicated the LINE button.', wf: 's4-1' },
 ];
 
 export const FEATURES: { group: string; items: string[] }[] = [
