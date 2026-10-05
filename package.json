@@ -2,7 +2,7 @@
   "name": "9lab-review",
   "private": true,
   "scripts": {
-    "build:html": "python3 scripts/build.py",
+    "build:html": "node scripts/zh-hans.mjs && python3 scripts/build.py",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"

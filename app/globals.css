@@ -156,3 +156,12 @@ a { color: inherit; text-decoration: none; }
   .ck-sec .meta { flex-direction: row; gap: 12px; align-items: center; }
   .ck-svc { grid-template-columns: 1fr; }
 }
+
+/* language switch + fonts for Thai / Chinese */
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Noto Sans Thai", "Leelawadee UI", "PingFang TC", "Microsoft JhengHei", "PingFang SC", "Microsoft YaHei", sans-serif; }
+.bar .langs { display: flex; gap: 2px; margin-left: auto; font-size: 12px; }
+.bar .langs a { padding: 5px 8px; border-radius: 6px; color: #bbb; }
+.bar .langs a:hover { color: #fff; }
+.bar .langs a[aria-current] { background: #333; color: #fff; }
+.bar .langs + .full { margin-left: 12px; }
+@media (max-width: 480px) { .bar .langs a { padding: 5px 6px; } }

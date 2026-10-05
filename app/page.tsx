@@ -1,32 +1,20 @@
+'use client';
 import Link from 'next/link';
+import { useEffect } from 'react';
+import { LANGS } from './i18n';
 
-export default function Home() {
+// "/" → the visitor's language (zh-TW/HK → 繁中, zh-CN/SG → 简中, th → ไทย, else English)
+export default function Root() {
+  useEffect(() => {
+    const n = (navigator.languages || [navigator.language]).join(',').toLowerCase();
+    const l = /zh-(cn|sg|hans)/.test(n) ? 'zh-hans' : /zh/.test(n) ? 'zh-hant' : /(^|,)th/.test(n) ? 'th' : 'en';
+    location.replace(`/${l}/${location.hash}`);
+  }, []);
   return (
     <main className="home">
-      <div className="eyebrow">9LAB · TAIWAN · MOBILE STORE</div>
-      <h1>9Lab Mobile Store</h1>
-      <p>Review the website design. Start with the customer journey, then see every page in the wireframe and click through the prototype.</p>
+      <h1>9Lab</h1>
       <div className="cards">
-        <Link href="/journey/" className="card">
-          <h2>Customer journey</h2>
-          <p>The whole shopping flow on one page, from first visit to coming back. Press Play to watch the path.</p>
-          <span>See the journey →</span>
-        </Link>
-        <Link href="/checklist/" className="card">
-          <h2>Brief checklist</h2>
-          <p>Every request in your brief and where it stands, what we added, questions for you, and the services we recommend.</p>
-          <span>Open the checklist →</span>
-        </Link>
-        <Link href="/wireframe/" className="card">
-          <h2>Wireframe</h2>
-          <p>All pages in flow order, with notes. Zoom with the − / + buttons, Ctrl/⌘ + scroll, or press 0 to fit.</p>
-          <span>View wireframe →</span>
-        </Link>
-        <Link href="/prototype/" className="card">
-          <h2>Prototype</h2>
-          <p>Tap through the store inside a phone frame, or jump to any page from the list.</p>
-          <span>Open prototype →</span>
-        </Link>
+        {LANGS.map((l) => <Link key={l.code} href={`/${l.code}/`} className="card"><h2>{l.label}</h2></Link>)}
       </div>
     </main>
   );

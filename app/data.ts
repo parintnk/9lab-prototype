@@ -115,7 +115,7 @@ export const ADDED: { what: string; why: string; wf?: string }[] = [
   { what: '“We created your account” banner for guests', why: 'Shows guests their points are saved and invites them to verify by SMS.', wf: 's1-10' },
   { what: 'Apple Pay only on Safari / iOS, ATM auto-cancel when unpaid', why: 'Avoids showing a payment that cannot work, and stops unpaid orders blocking stock.', wf: 's1-9' },
   { what: 'Back to top as its own button', why: 'One tap instead of two.', wf: 's4-1' },
-  { what: 'Wireframe zoom and pan, English copy', why: 'Easier to review the whole board on any screen.' },
+  { what: 'Wireframe zoom and pan, in 4 languages', why: 'Easier to review the whole board on any screen, in English, Thai or Chinese.' },
 ];
 
 // open questions for 9Lab; wf = screen it affects
@@ -128,7 +128,7 @@ export const QUESTIONS = [
   { q: 'Returns cost NT$55 per parcel at 7-ELEVEN. Who pays it, and is the refund to the card or store credit?', wf: 's3-6' },
   { q: 'Sign in with SMS code only, no password? Simpler for shoppers; each SMS has a cost.', wf: 's3-2' },
   { q: 'Let guests use Notify me (email / LINE) and save favorites without signing in?', wf: 's2-6' },
-  { q: 'Default site language: 繁體中文? (This review copy is in English.)', wf: 's2-1' },
+  { q: 'Default language of the live shop: 繁體中文, with English as the second language?', wf: 's2-1' },
   { q: 'PC version: scope and timing?', wf: 's4-5' },
   { q: 'How long should items stay in the cart?', wf: 's1-5' },
   { q: 'Did the chat bubble mean the on-site “customer message” form from your menu (p.6)? We removed it because it duplicated the LINE button.', wf: 's4-1' },
@@ -232,4 +232,66 @@ export const SERVICES: Service[] = [
     decide: 'Budget, timeline and who will run the backend day to day.',
     sources: [{ label: 'ECPay skill · Shopping cart plugins', url: SKILL + '10-cart-plugins.md' }],
   },
+];
+
+// Customer journey: stages and steps in shopping order (Journey page)
+export type Step = { id: string; title: string; text: string; wf?: string; pending?: string; or?: string[] };
+export type Stage = { name: string; goal: string; steps: Step[] };
+
+export const STAGES: Stage[] = [
+  {
+    name: 'Discover', goal: 'Land on the site and get interested',
+    steps: [
+      { id: 'popup', title: 'Welcome popup', text: 'Join 9Lab Rewards popup on first visit (not shown again for 7 days). Admin edits the content.', wf: 's1-1' },
+      { id: 'home', title: 'Homepage', text: 'Big + small banners auto-swipe, brand video, flexible sections, max 4 products per screen.', wf: 's1-2' },
+      { id: 'fab', title: 'Floating buttons', text: 'IG + LINE on every page, plus a Back to top button after scrolling. Mobile and PC.', wf: 's4-1' },
+    ],
+  },
+  {
+    name: 'Browse', goal: 'Find the right product',
+    steps: [
+      { id: 'menu', title: 'Menu or search', text: 'Menu with unlimited categories (skin type / product type), language + currency. Or search with popular keywords.', wf: 's2-1', or: ['Menu', 'Search'] },
+      { id: 'list', title: 'Product list', text: 'Filter, sort, load more. Sold-out items show Notify me.', wf: 's2-5' },
+    ],
+  },
+  {
+    name: 'Product', goal: 'Decide to buy',
+    steps: [
+      { id: 'pdp', title: 'Product page', text: 'Photos + video, options, quantity, details accordion, reviews, “You may also like” (max 4).', wf: 's1-3' },
+      { id: 'mini', title: 'Added to cart', text: 'Mini cart pops up → Checkout now or View cart.', wf: 's1-4' },
+    ],
+  },
+  {
+    name: 'Cart', goal: 'Review the order',
+    steps: [
+      { id: 'cart', title: 'Cart', text: 'Edit quantity, discount code, add-on deals, order summary. Keep shopping or Go to payment.', wf: 's1-5', pending: 'How long items stay in the cart' },
+    ],
+  },
+  {
+    name: 'Checkout', goal: 'Choose delivery, then sign in or continue as guest',
+    steps: [
+      { id: 'ship', title: 'Shipping method', text: '7-ELEVEN pickup (store picked on the official 7-ELEVEN map) or home delivery by T-Cat / Post, all via ECPay Logistics.', wf: 's1-6', or: ['7-ELEVEN', 'Home delivery'] },
+      { id: 'login', title: 'Login check', text: 'Shown after shipping is chosen. Sign in, create account, or continue as guest.', wf: 's1-8', or: ['Member', 'Guest'], pending: 'Auto-create member from guest mobile + SMS OTP' },
+    ],
+  },
+  {
+    name: 'Pay & complete', goal: 'Pay safely and get confirmation',
+    steps: [
+      { id: 'pay', title: 'Info & payment', text: 'Email, e-invoice, purchase notice, news opt-in, terms. Payment through ECPay.', wf: 's1-9', or: ['Card', 'LINE Pay', 'Apple Pay', 'ATM'] },
+      { id: 'done', title: 'Order complete', text: 'Pick up within 5 days, add LINE for a coupon, anti-fraud notice, check order.', wf: 's1-10' },
+    ],
+  },
+  {
+    name: 'After purchase', goal: 'Come back and buy again',
+    steps: [
+      { id: 'track', title: 'Track my order', text: 'Live status from ECPay: Ordered → Preparing → Shipping → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.', wf: 's3-6', pending: 'Return fee + refund rules' },
+      { id: 'member', title: 'Member area', text: 'Member center, My favorite / Browsing history / Back in stock, My coupon.', wf: 's3-3' },
+    ],
+  },
+];
+
+export const LOOPS = [
+  { from: 'Back in stock', to: 'Product page', wf: 's3-4' },
+  { from: 'My coupon', to: 'Cart', wf: 's3-5' },
+  { from: 'Keep shopping', to: 'Homepage', wf: 's1-10' },
 ];

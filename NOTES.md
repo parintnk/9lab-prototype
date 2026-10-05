@@ -10,10 +10,19 @@
 ## วิธีใช้งาน
 ```bash
 npm install
-npm run build:html   # src/*.html → public/*.html (แพ็กกลับเข้า bundle + ใส่ระบบซูมให้ WF)
+npm run build:html   # src/*.html → public/{wireframe,prototype}.<lang>.html (4 ภาษา + ระบบซูมให้ WF)
 npm run dev          # ดูบนเครื่อง http://localhost:3000
 npm run build        # static export → โฟลเดอร์ out/ (อัปขึ้น Vercel หรือ host ไหนก็ได้)
 ```
+
+## หลายภาษา (EN · ไทย · 繁中 · 简中)
+- ลิงก์แยกตามภาษา: `/en/` `/th/` `/zh-hant/` `/zh-hans/` ส่วน `/` จะพาไปภาษาตามเบราว์เซอร์ และมีปุ่มสลับภาษาที่แถบบน
+- **ต้นฉบับเป็นภาษาอังกฤษเสมอ** (`src/*.html`, `app/data.ts`, ข้อความใน `t('…')`)
+- คำแปลอยู่ที่ `i18n/th.json` และ `i18n/zh-Hant.json` (ข้อความอังกฤษ → คำแปล) ใช้ร่วมกันทั้ง WF, Proto และหน้าเว็บ
+- `i18n/zh-Hans.json` **สร้างอัตโนมัติ**จาก zh-Hant ด้วย OpenCC (`scripts/zh-hans.mjs`) ห้ามแก้ไฟล์นี้ด้วยมือ
+- `i18n/keep.json` = ข้อความที่คงเป็นอังกฤษทุกภาษา (ชื่อสินค้า, โค้ดคูปอง, ชื่อตัวอย่าง, คำค้นตัวอย่าง)
+- **แก้หรือเพิ่มข้อความอังกฤษ แล้วรัน `npm run build:html`:** ถ้ามีข้อความที่ยังไม่ได้แปล build จะหยุดและเขียนรายการไว้ที่ `i18n/missing.json` ให้เพิ่มคำแปลลงใน th.json และ zh-Hant.json (หรือใส่ใน keep.json) แล้วรันใหม่
+- ศัพท์ภาษาจีนใช้ตามที่ลูกค้าใช้ในรูปตัวอย่างใน PDF (會員專區, 我的收藏, 訂單查詢, 超商取貨, 取貨付款 ฯลฯ)
 
 ## โครงสร้างไฟล์
 | ไฟล์ | หน้าที่ |
@@ -21,11 +30,12 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 | `9Lab Wireframe (offline).html`, `9Lab Prototype (offline).html` | ไฟล์ต้นฉบับจาก designer **ห้ามแก้** ใช้เป็นตัว bundle (JS/CSS/ฟอนต์) |
 | `src/wireframe.html`, `src/prototype.html` | **ต้นฉบับที่แก้ได้** (HTML ของหน้า แปลเป็นอังกฤษแล้ว และเพิ่มส่วนที่ขาดแล้ว) |
 | `scripts/build.py` | แพ็ก `src/*.html` กลับเข้า bundle, ใส่ระบบซูม/แพนแบบ Figma ให้ WF, และเช็กว่าไม่มีภาษาไทยเหลือ |
-| `public/*.html` | ไฟล์ที่ build ได้ (ไม่ต้องแก้ด้วยมือ) |
-| `app/` | เว็บ Next.js: หน้าแรก, `journey/`, `wireframe/`, `prototype/`, `Viewer.tsx` (แถบบน + iframe) |
-| `app/journey/Journey.tsx` | เนื้อหาของ Journey: `STAGES` (ขั้นตอน), `LOOPS` |
-| `app/data.ts` | ข้อมูลที่ใช้ร่วมกัน: `BRIEF` (checklist เทียบกับ PDF), `ADDED`, `QUESTIONS` (ใช้ทั้ง Journey และ Checklist), `FEATURES`, `SERVICES` (บริการที่แนะนำพร้อมแหล่งที่มา) |
-| `app/checklist/` | หน้า Brief checklist |
+| `public/*.<lang>.html` | ไฟล์ที่ build ได้ (ไม่ต้องแก้ด้วยมือ) |
+| `app/[lang]/` | หน้าเว็บ Next.js แยกตามภาษา: หน้าแรก, `journey/`, `checklist/`, `wireframe/`, `prototype/` |
+| `app/Viewer.tsx` | แถบบน (แท็บ + ปุ่มสลับภาษา) + iframe ของ WF/Proto |
+| `app/i18n.ts` | รายชื่อภาษา + ฟังก์ชัน `t()` |
+| `i18n/` | ไฟล์คำแปล (ดูหัวข้อหลายภาษา) |
+| `app/data.ts` | เนื้อหาทั้งหมด (ภาษาอังกฤษ): `STAGES` + `LOOPS` (Journey), `BRIEF` (checklist เทียบกับ PDF), `ADDED`, `QUESTIONS` (ใช้ทั้ง Journey และ Checklist), `FEATURES`, `SERVICES` (บริการที่แนะนำพร้อมแหล่งที่มา) |
 
 > ⚠️ ถ้า designer ส่ง WF หรือ Proto เวอร์ชันใหม่มา **อย่าเอาไปทับเฉยๆ** ต้องเอาส่วนที่เปลี่ยนมารวมกับ `src/*.html` ไม่งั้นงานที่เพิ่มไว้ข้างล่างจะหาย
 > ถ้าแก้เนื้อหาใน WF ให้แก้ `Journey.tsx` ตามด้วย เพราะข้อความซ้ำกัน

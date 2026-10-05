@@ -1,10 +1,13 @@
-"""Build public/wireframe.html + public/prototype.html.
+"""Build public/{wireframe,prototype}.<lang>.html for en, th, zh-Hant, zh-Hans.
 
-Edit the page HTML in src/*.html; this script packs it back into the original offline bundles
-(which carry the JS/CSS/fonts) and adds the Figma-style zoom to the wireframe.
-Run:  npm run build:html
+Edit the page HTML (English) in src/*.html; this script packs it back into the original offline
+bundles (which carry the JS/CSS/fonts), adds the Figma-style zoom to the wireframe, and translates
+every visible string with i18n/<lang>.json (English → translation). Strings that should stay English
+(product names, codes, sample people) are listed in i18n/keep.json.
+If a string has no translation the build stops and writes i18n/missing.json.
+Run:  npm run build:html   (zh-Hans.json is generated from zh-Hant.json first)
 """
-import json, re
+import base64, gzip, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -28,7 +31,7 @@ padding:6px;border-radius:10px;font:500 13px -apple-system,BlinkMacSystemFont,sa
 <button data-z="fit">Fit</button><button data-z="reset">100%</button>
 </div>
 <div id="wfzh">Drag to move · Scroll to pan · Ctrl/⌘ + scroll or pinch to zoom · 0 = fit</div>
-<script>
+<script data-noi18n>
 (function(){
   // Figma-style camera: body is the canvas, moved with transform (GPU, no relayout)
   var html=document.documentElement, body=document.body, label=document.getElementById('wfzv');
@@ -118,21 +121,106 @@ padding:6px;border-radius:10px;font:500 13px -apple-system,BlinkMacSystemFont,sa
 """
 
 
-def build(name, bundle, zoom=False):
+LANGS = ['en', 'th', 'zh-Hant', 'zh-Hans']
+I18N = ROOT / 'i18n'
+KEEP = set(json.loads((I18N / 'keep.json').read_text(encoding='utf-8')))
+MAN = re.compile(r'(<script type="__bundler/manifest">)(.*?)(</script>)', re.S)
+BLOCK = re.compile(r'(<(script|style)\b[^>]*>)(.*?)(</\2>)', re.S)
+LIT = re.compile(r"""'(?:[^'\\\n]|\\.)*'|"(?:[^"\\\n]|\\.)*"|`(?:[^`\\$]|\\.)*`""")
+ATTR = re.compile(r'\b(placeholder|aria-label|title)="([^"]*)"')
+CSS_JS = re.compile(r'\d(px|deg|ms|s)\b|solid|transparent|rgba?\(|inset|^#|^[a-z][a-zA-Z0-9_-]*$|^[\W\d_]*$')
+
+
+def is_text(x):  # visible text worth translating
+    # "{{ it.name }}" alone is data, "NT$1,280" is a price: neither needs translating
+    return bool(re.search(r'[A-Za-z]{2}', re.sub(r'\{\{.*?\}\}|NT\$', '', x)))
+
+
+def js_text(x):  # JS string literal that reads like UI text (identifiers / css / colours are skipped)
+    return is_text(x) and not CSS_JS.search(x.strip())
+
+
+def translate(html, d, miss):
+    def tx(x):
+        k = x.strip()
+        if not is_text(k) or k in KEEP:
+            return x
+        if k not in d:
+            miss.add(k); return x
+        return x.replace(k, d[k], 1)
+
+    def js(code):
+        def lit(m):
+            q, inner = m.group(0)[0], m.group(0)[1:-1]
+            if not js_text(inner) or inner in KEEP:
+                return m.group(0)
+            if inner not in d:
+                miss.add(inner); return m.group(0)
+            return q + d[inner].replace('\\', '\\\\').replace(q, '\\' + q) + q
+        return LIT.sub(lit, code)
+
+    parts, last = [], 0
+    for m in BLOCK.finditer(html):  # markup text outside blocks; string literals inside app scripts; css untouched
+        parts.append(re.sub(r'>([^<>]+)<', lambda t: '>' + tx(t.group(1)) + '<', html[last:m.start()]))
+        inner = m.group(3) if m.group(2) == 'style' or 'data-noi18n' in m.group(1) else js(m.group(3))
+        parts.append(m.group(1) + inner + m.group(4)); last = m.end()
+    parts.append(re.sub(r'>([^<>]+)<', lambda t: '>' + tx(t.group(1)) + '<', html[last:]))
+    out = ''.join(parts)
+    return ATTR.sub(lambda m: f'{m.group(1)}="{tx(m.group(2))}"', out)
+
+
+def build(name, bundle, lang, d, miss, zoom=False):
     html = (ROOT / bundle).read_text(encoding='utf-8')
-    m = TPL.search(html)
     tpl = (ROOT / 'src' / name).read_text(encoding='utf-8')
-    left = sorted(set(THAI.findall(tpl)))
-    assert not left, f'src/{name}: Thai text left'
+    assert not THAI.search(tpl), f'src/{name}: keep src in English, translations go in i18n/'
     if zoom:
         tpl = tpl.replace('</body>', ZOOM + '</body>', 1)
+    tpl = translate(tpl, d, miss).replace('<html lang="en">', f'<html lang="{lang}">', 1)
+    # shared components (header, product card) live as html assets in the manifest
+    mm = MAN.search(html); man = json.loads(mm.group(2))
+    for e in man.values():
+        if e.get('mime') == 'text/html':
+            raw = base64.b64decode(e['data']); raw = gzip.decompress(raw) if e.get('compressed') else raw
+            raw = translate(raw.decode('utf-8'), d, miss).encode('utf-8')
+            e['data'] = base64.b64encode(gzip.compress(raw, mtime=0) if e.get('compressed') else raw).decode()
+    html = html[:mm.start(2)] + json.dumps(man) + html[mm.end(2):]
+    m = TPL.search(html)
     enc = json.dumps(tpl, ensure_ascii=False).replace('</', '<\\/')  # keep "</script>" from closing the tag
     html = html[:m.start(2)] + enc + html[m.end(2):]
-    html = html.replace('<title>Bundled Page</title>', f'<title>9Lab {name.split(".")[0].title()}</title>', 1)
-    (ROOT / 'public').mkdir(exist_ok=True)
-    (ROOT / 'public' / name).write_text(html, encoding='utf-8')
-    print(f'public/{name}: ok')
+    title = d.get(name.split('.')[0].title(), name.split('.')[0].title())
+    html = html.replace('<title>Bundled Page</title>', f'<title>9Lab {title}</title>', 1)
+    out = ROOT / 'public' / name.replace('.html', f'.{lang}.html')
+    out.parent.mkdir(exist_ok=True)
+    out.write_text(html, encoding='utf-8')
 
 
-build('wireframe.html', '9Lab Wireframe (offline).html', zoom=True)
-build('prototype.html', '9Lab Prototype (offline).html')
+def site_strings():  # every English string the Next.js pages show (content in app/data.ts, labels via t('…'))
+    out = set()
+    for f in [ROOT / 'app' / 'data.ts', *(ROOT / 'app').rglob('*.tsx')]:
+        code = f.read_text(encoding='utf-8')
+        out |= {x.replace("\\'", "'") for x in re.findall(r"\bt\('((?:[^'\\]|\\.)*)'\)", code)}  # t('…') is always UI text
+        for m in LIT.finditer(code):
+            x = m.group(0)[1:-1]
+            if (x.startswith('http') or x in KEEP or x.startswith('9Lab · ')  # urls, kept words, browser-tab titles
+                    or re.fullmatch(r's\d-\d+|use client|_\w+|[\w.@-]*/[\w./@-]*|\.[\w./-]+|[a-z-]+(?: [a-z-]+)+', x)):
+                continue
+            if js_text(x) and not re.search(r'\$\{|=>|className|\(\)', x):
+                out.add(x.replace("\\'", "'"))
+    return out
+
+
+SITE = site_strings()
+missing = {}
+for lang in LANGS:
+    d = {} if lang == 'en' else json.loads((I18N / f'{lang}.json').read_text(encoding='utf-8'))
+    miss = set()
+    for name, bundle, zoom in [('wireframe.html', '9Lab Wireframe (offline).html', True), ('prototype.html', '9Lab Prototype (offline).html', False)]:
+        build(name, bundle, lang, d, miss if lang != 'en' else set(), zoom)
+    miss |= {x for x in SITE if x not in d} if lang != 'en' else set()
+    if miss:
+        missing[lang] = sorted(miss)
+    print(f'{lang}: {"ok" if not miss else str(len(miss)) + " missing"}')
+if missing:
+    (I18N / 'missing.json').write_text(json.dumps(missing, ensure_ascii=False, indent=1), encoding='utf-8')
+    sys.exit('untranslated strings → i18n/missing.json (add them to i18n/<lang>.json or i18n/keep.json)')
+(I18N / 'missing.json').unlink(missing_ok=True)
