@@ -69,6 +69,11 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 - ส่วน Added by us, Questions for 9Lab (12 ข้อ), Features ของระบบ (8 กลุ่ม), Recommended services
 - Recommended services: Payment = ECPay AIO · Delivery = ECPay Logistics B2C · E-invoice = ECPay B2C · Sign in = มือถือ + SMS และ LINE Login · LINE OA + Messaging API · Store platform = รอตัดสินใจ (WooCommerce / Shopify / custom) ทุกการ์ดมีลิงก์แหล่งที่มา
 
+### เพิ่มจุดที่ขาด (WF + Proto)
+- 1.2 ส่วน More info (Corporate purchase / Wedding gift / Stores) (PDF หน้า 2)
+- 3.3 แยกนามสกุล / ชื่อ · ที่อยู่ (ประเทศ → เมือง → เขต → ถนน) · Membership Terms (PDF หน้า 9)
+- 1.5 Rewards from this order: แต้ม (1 แต้มต่อ NT$100), store credit, คูปอง (PDF หน้า 16)
+
 ## สิ่งที่แก้หลังรีวิว
 - ตัดปุ่ม Chat ออก เพราะซ้ำกับ LINE OA
 - ทำ Back to top เป็นปุ่มเดี่ยว
@@ -100,9 +105,5 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 - เว็บรีวิวยัง **ไม่มีรหัสผ่าน** ใครได้ลิงก์ก็เปิดได้ (ตั้ง noindex แล้ว) ถ้าต้องการให้เป็นส่วนตัว ใช้ Vercel password protection
 
 ## ยังไม่ได้ทำ
-- **ส่วน "More info" ในหน้าแรก (Corporate purchase / Wedding gift / Store)** ที่ PDF หน้า 2 ตีกรอบแดงไว้ ยังไม่มีใน WF 1.2
-- **Member center (3.3) แยกช่องนามสกุล / ชื่อ และเพิ่ม Membership Terms** ให้ตรงกับ PDF หน้า 9
-- **ช่องที่อยู่ในหน้า Member center (3.3)** ที่ PDF หน้า 9 ขอไว้ ยังไม่มีใน WF
-- **รางวัลที่ได้จากออเดอร์ (แต้ม / store credit / คูปอง) ในสรุปตะกร้า (1.5)** ที่ PDF หน้า 16 ขอไว้ ยังไม่มีใน WF
 - ออกแบบหน้าจอเวอร์ชัน PC ทั้งชุด
 - หน้าเนื้อหา About us / Customer info / FAQ (ใน Proto แสดงเป็น toast "not in prototype")

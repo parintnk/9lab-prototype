@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/node": "latest",
     "@types/react": "latest",
+    "opencc-js": "^1.4.2",
     "typescript": "latest"
   }
 }
