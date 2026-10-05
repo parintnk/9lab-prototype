@@ -130,7 +130,6 @@
  "Ask about an order on LINE": "在 LINE 询问订单问题",
  "Ask about this order on LINE": "在 LINE 询问这笔订单",
  "Asked in the brief, still to be drawn": "需求中有提到，尚待绘制",
- "Auto-create member from guest mobile + SMS OTP": "用访客手机号码＋简讯 OTP 自动建立会员",
  "Auto-create member from guest mobile + which SMS provider": "用访客手机号码自动建立会员＋选用哪家简讯服务商",
  "Auto-creating a member from a guest’s mobile needs the shopper’s consent (PDPA). OK to add a consent line at checkout?": "用访客手机号码自动建立会员，需要取得顾客同意（个资法）。可以在结帐页加一行同意声明吗？",
  "Auto-swiping big and small banners": "自动轮播的大、小横幅",
@@ -434,7 +433,6 @@
  "Homepage · first visit (popup)": "首页 · 首次造访（弹出视窗）",
  "Horizontally scrolling tabs →": "可横向卷动的分页 →",
  "How long can items stay in the cart?": "商品可以在购物车保留多久？",
- "How long items stay in the cart": "商品在购物车保留多久",
  "How long should items stay in the cart?": "商品应该在购物车保留多久？",
  "How to read": "阅读说明",
  "How to use: after toner, warm a pea-sized amount and press onto face, morning and night.": "使用方式：化妆水后，取豌豆大小的份量温热后按压于脸部，早晚使用。",
@@ -735,7 +733,6 @@
  "Return at 7-ELEVEN → choose items + reason → get a return code, drop the parcel at any 7-ELEVEN (ECPay B2C return, NT$55 per parcel) → refund to original payment or store credit": "在 7-ELEVEN 退货 → 选择商品＋原因 → 取得退货代码，到任一 7-ELEVEN 寄件（绿界 B2C 退货，每件 NT$55）→ 退款至原付款方式或购物金",
  "Return at any 7-ELEVEN is designed. Who pays the NT$55 return fee and the refund rules are open.": "已设计在任一 7-ELEVEN 退货。NT$55 退货运费由谁负担、退款规则，尚待确认。",
  "Return code created · drop the parcel at any 7-ELEVEN (NT$55) · refund after we receive it": "已建立退货代码 · 请到任一 7-ELEVEN 寄件（NT$55）· 我们收到后退款",
- "Return fee + refund rules": "退货运费＋退款规则",
  "Returned from the map": "已从地图带回",
  "Returns at 7-ELEVEN / FamilyMart / Hi-Life (B2C return, NT$55 per parcel at 7-ELEVEN).": "可在 7-ELEVEN／全家／莱尔富退货（B2C 退货，7-ELEVEN 每件 NT$55）。",
  "Returns cost NT$55 per parcel at 7-ELEVEN. Who pays it, and is the refund to the card or store credit?": "在 7-ELEVEN 退货每件 NT$55。由谁负担？退款是退回信用卡，还是购物金？",
@@ -972,7 +969,6 @@
  "Yes, cancel": "是，取消订单",
  "You may also like": "您可能也喜欢",
  "Your answers close every item marked": "您的回复将完成所有标示为以下状态的项目：",
- "Your answers decide the steps marked": "您的回复将决定以下标示的步骤：",
  "Your cart is empty": "您的购物车是空的",
  "Zhongshan District": "中山区",
  "Zhongshan Rd. Sec. 1": "中山路一段",
@@ -1074,7 +1070,6 @@
  "Flow direction": "流程方向",
  "From first visit to coming back": "从第一次造访到再次回购",
  "How a shopper moves through the store. Tap any step to open that screen in the wireframe.": "顾客在商店中的购物流程。点选任一步骤，即可在线框图中开启该画面。",
- "Needs your answer": "需要您回复",
  "Open full screen ↗": "全萤幕开启 ↗",
  "Shopper chooses one": "顾客择一",
  "tap a box above to filter": "点选上方方块可筛选",
@@ -1105,5 +1100,6 @@
  "Live status from ECPay: Ordered → Preparing → In transit → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.": "绿界即时状态：已订购 → 备货中 → 配送中 → 已到店 → 已取货。出货前可取消，可在任一 7-ELEVEN 退货。",
  "Latest order card always expanded · Status line Ordered → Preparing → In transit → Arrived at store → Picked up (updated automatically by ECPay Logistics) · Not picked up within 5 days → parcel returns to 9Lab → refund (orders are always prepaid)": "最新一笔订单卡片固定展开 · 状态列 已订购 → 备货中 → 配送中 → 已到店 → 已取货（由绿界物流自动更新）· 5 天内未取货 → 包裹退回 9Lab → 退款（订单一律先付款）",
  "In transit": "配送中",
- "IN TRANSIT": "配送中"
+ "IN TRANSIT": "配送中",
+ "Your answers help us finish the rest of the design.": "您的回复能帮助我们完成其余的设计。"
 }

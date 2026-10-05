@@ -51,6 +51,7 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 - หน้า Customer Journey:
   - 7 ช่วง มีทางเลือก (OR) และป้าย Pending decision
   - Animation เส้นประวิ่ง และปุ่ม ▶ Play journey
+  - ไม่มีป้าย Pending decision ในหน้า Journey (ตัดออกตามที่ผู้ใช้ขอ 2026-10-05) ป้ายยังอยู่ใน WF และ Checklist
   - ส่วน Questions for 9Lab และส่วน Loops
   - ใช้บนมือถือได้
 

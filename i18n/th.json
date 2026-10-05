@@ -130,7 +130,6 @@
  "Ask about an order on LINE": "สอบถามคำสั่งซื้อทาง LINE",
  "Ask about this order on LINE": "สอบถามคำสั่งซื้อนี้ทาง LINE",
  "Asked in the brief, still to be drawn": "มีใน Brief แต่ยังไม่ได้วาด",
- "Auto-create member from guest mobile + SMS OTP": "สร้างสมาชิกอัตโนมัติจากเบอร์มือถือของ Guest + SMS OTP",
  "Auto-create member from guest mobile + which SMS provider": "สร้างสมาชิกอัตโนมัติจากเบอร์มือถือของ Guest + ใช้ผู้ให้บริการ SMS เจ้าไหน",
  "Auto-creating a member from a guest’s mobile needs the shopper’s consent (PDPA). OK to add a consent line at checkout?": "การสร้างสมาชิกอัตโนมัติจากเบอร์มือถือของ Guest ต้องได้รับความยินยอมจากผู้ซื้อ (PDPA) เพิ่มบรรทัดขอความยินยอมตอน Checkout ได้ไหม?",
  "Auto-swiping big and small banners": "Banner ใหญ่และเล็กเลื่อนอัตโนมัติ",
@@ -434,7 +433,6 @@
  "Homepage · first visit (popup)": "หน้าแรก · เข้าครั้งแรก (Popup)",
  "Horizontally scrolling tabs →": "Tab เลื่อนแนวนอน →",
  "How long can items stay in the cart?": "สินค้าอยู่ในตะกร้าได้นานแค่ไหน?",
- "How long items stay in the cart": "สินค้าอยู่ในตะกร้าได้นานแค่ไหน",
  "How long should items stay in the cart?": "ควรเก็บสินค้าในตะกร้าไว้นานแค่ไหน?",
  "How to read": "วิธีอ่าน",
  "How to use: after toner, warm a pea-sized amount and press onto face, morning and night.": "วิธีใช้: หลังโทนเนอร์ อุ่นครีมปริมาณเท่าเมล็ดถั่วแล้วกดลงบนใบหน้า เช้าและเย็น",
@@ -735,7 +733,6 @@
  "Return at 7-ELEVEN → choose items + reason → get a return code, drop the parcel at any 7-ELEVEN (ECPay B2C return, NT$55 per parcel) → refund to original payment or store credit": "คืนสินค้าที่ 7-ELEVEN → เลือกสินค้า + เหตุผล → รับรหัสคืนสินค้า นำพัสดุไปฝากที่ 7-ELEVEN สาขาใดก็ได้ (ECPay B2C return, NT$55 ต่อพัสดุ) → คืนเงินเข้าช่องทางเดิมหรือเป็น Store credit",
  "Return at any 7-ELEVEN is designed. Who pays the NT$55 return fee and the refund rules are open.": "ออกแบบการคืนสินค้าที่ 7-ELEVEN ทุกสาขาแล้ว ยังไม่ได้สรุปว่าใครจ่ายค่าคืน NT$55 และกฎการคืนเงิน",
  "Return code created · drop the parcel at any 7-ELEVEN (NT$55) · refund after we receive it": "สร้างรหัสคืนสินค้าแล้ว · นำพัสดุไปฝากที่ 7-ELEVEN สาขาใดก็ได้ (NT$55) · คืนเงินหลังเราได้รับสินค้า",
- "Return fee + refund rules": "ค่าคืนสินค้า + กฎการคืนเงิน",
  "Returned from the map": "ข้อมูลที่ได้จากแผนที่",
  "Returns at 7-ELEVEN / FamilyMart / Hi-Life (B2C return, NT$55 per parcel at 7-ELEVEN).": "คืนสินค้าที่ 7-ELEVEN / FamilyMart / Hi-Life (B2C return, NT$55 ต่อพัสดุที่ 7-ELEVEN)",
  "Returns cost NT$55 per parcel at 7-ELEVEN. Who pays it, and is the refund to the card or store credit?": "การคืนสินค้าที่ 7-ELEVEN มีค่าใช้จ่าย NT$55 ต่อพัสดุ ใครเป็นคนจ่าย และคืนเงินเข้าบัตรหรือเป็น Store credit?",
@@ -972,7 +969,6 @@
  "Yes, cancel": "ใช่ ยกเลิก",
  "You may also like": "คุณอาจชอบ",
  "Your answers close every item marked": "คำตอบของคุณจะปิดทุกรายการที่มีป้าย",
- "Your answers decide the steps marked": "คำตอบของคุณจะกำหนดขั้นตอนที่มีป้าย",
  "Your cart is empty": "ตะกร้าของคุณว่างเปล่า",
  "Zhongshan District": "Zhongshan District",
  "Zhongshan Rd. Sec. 1": "Zhongshan Rd. Sec. 1",
@@ -1074,7 +1070,6 @@
  "Flow direction": "ทิศทางของ flow",
  "From first visit to coming back": "ตั้งแต่เข้าเว็บครั้งแรกจนกลับมาซื้อซ้ำ",
  "How a shopper moves through the store. Tap any step to open that screen in the wireframe.": "ลูกค้าเดินผ่านร้านอย่างไร แตะขั้นตอนไหนก็ได้เพื่อเปิดหน้าจอนั้นใน Wireframe",
- "Needs your answer": "รอคำตอบจากคุณ",
  "Open full screen ↗": "เปิดเต็มจอ ↗",
  "Shopper chooses one": "ลูกค้าเลือกอย่างใดอย่างหนึ่ง",
  "PDF p.{n}": "PDF หน้า {n}",
@@ -1105,5 +1100,6 @@
  "Live status from ECPay: Ordered → Preparing → In transit → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.": "สถานะเรียลไทม์จาก ECPay: สั่งซื้อแล้ว → กำลังเตรียม → กำลังจัดส่ง → ถึงร้าน → รับสินค้าแล้ว ยกเลิกได้ก่อนจัดส่ง คืนสินค้าได้ที่ 7-ELEVEN ทุกสาขา",
  "Latest order card always expanded · Status line Ordered → Preparing → In transit → Arrived at store → Picked up (updated automatically by ECPay Logistics) · Not picked up within 5 days → parcel returns to 9Lab → refund (orders are always prepaid)": "การ์ดคำสั่งซื้อล่าสุดกางไว้เสมอ · แถบสถานะ สั่งซื้อแล้ว → กำลังเตรียม → กำลังจัดส่ง → ถึงร้านแล้ว → รับสินค้าแล้ว (อัปเดตอัตโนมัติจาก ECPay Logistics) · ไม่มารับภายใน 5 วัน → พัสดุกลับไปที่ 9Lab → คืนเงิน (ทุกออเดอร์ชำระเงินก่อน)",
  "In transit": "กำลังจัดส่ง",
- "IN TRANSIT": "กำลังจัดส่ง"
+ "IN TRANSIT": "กำลังจัดส่ง",
+ "Your answers help us finish the rest of the design.": "คำตอบของคุณจะช่วยให้เราออกแบบส่วนที่เหลือให้เสร็จ"
 }

@@ -36,7 +36,6 @@ export default function Journey({ lang }: { lang: Lang }) {
       <div className="legend">
         <span><i className="lg-flow" /> {t('Flow direction')}</span>
         <span><b className="or">{t('or')}</b> {t('Shopper chooses one')}</span>
-        <span><b className="pend">{t('Pending decision')}</b> {t('Needs your answer')}</span>
       </div>
 
       <div className="j-track" ref={root} data-playing={playing || undefined}>
@@ -48,7 +47,6 @@ export default function Journey({ lang }: { lang: Lang }) {
                 <h3>{t(x.title)}{x.wf && <span className="ref">{ref(x.wf)}</span>}</h3>
                 <p>{t(x.text)}</p>
                 {x.or && <div className="ors">{x.or.map((o, k) => <span key={o}>{k > 0 && <b className="or">{t('or')}</b>}{t(o)}</span>)}</div>}
-                {x.pending && <div className="pend-row"><b className="pend">{t('Pending decision')}</b>{t(x.pending)}</div>}
               </Link>
             ))}
           </section>
@@ -57,7 +55,7 @@ export default function Journey({ lang }: { lang: Lang }) {
 
       <section className="questions">
         <h2>{t('Questions for 9Lab')}</h2>
-        <p>{t('Your answers decide the steps marked')} <b className="pend">{t('Pending decision')}</b></p>
+        <p>{t('Your answers help us finish the rest of the design.')}</p>
         <ol>
           {QUESTIONS.map((x) => (
             <li key={x.q}><span>{t(x.q)}</span><Link href={wf(x.wf)} className="ref">{ref(x.wf)} →</Link></li>

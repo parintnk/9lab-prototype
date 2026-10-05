@@ -218,7 +218,7 @@ export const SERVICES: Service[] = [
 ];
 
 // Customer journey: stages and steps in shopping order (Journey page)
-export type Step = { id: string; title: string; text: string; wf?: string; pending?: string; or?: string[] };
+export type Step = { id: string; title: string; text: string; wf?: string; or?: string[] };
 export type Stage = { name: string; goal: string; steps: Step[] };
 
 export const STAGES: Stage[] = [
@@ -247,14 +247,14 @@ export const STAGES: Stage[] = [
   {
     name: 'Cart', goal: 'Review the order',
     steps: [
-      { id: 'cart', title: 'Cart', text: 'Edit quantity, discount code, add-on deals, order summary. Keep shopping or Go to payment.', wf: 's1-5', pending: 'How long items stay in the cart' },
+      { id: 'cart', title: 'Cart', text: 'Edit quantity, discount code, add-on deals, order summary. Keep shopping or Go to payment.', wf: 's1-5' },
     ],
   },
   {
     name: 'Checkout', goal: 'Choose delivery, then sign in or continue as guest',
     steps: [
       { id: 'ship', title: 'Shipping method', text: '7-ELEVEN pickup (store picked on the official 7-ELEVEN map) or home delivery by T-Cat / Post, all via ECPay Logistics.', wf: 's1-6', or: ['7-ELEVEN', 'Home delivery'] },
-      { id: 'login', title: 'Login check', text: 'Shown after shipping is chosen. Sign in, create account, or continue as guest.', wf: 's1-8', or: ['Member', 'Guest'], pending: 'Auto-create member from guest mobile + SMS OTP' },
+      { id: 'login', title: 'Login check', text: 'Shown after shipping is chosen. Sign in, create account, or continue as guest.', wf: 's1-8', or: ['Member', 'Guest'] },
     ],
   },
   {
@@ -267,7 +267,7 @@ export const STAGES: Stage[] = [
   {
     name: 'After purchase', goal: 'Come back and buy again',
     steps: [
-      { id: 'track', title: 'Track my order', text: 'Live status from ECPay: Ordered → Preparing → In transit → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.', wf: 's3-6', pending: 'Return fee + refund rules' },
+      { id: 'track', title: 'Track my order', text: 'Live status from ECPay: Ordered → Preparing → In transit → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.', wf: 's3-6' },
       { id: 'member', title: 'Member area', text: 'Member center, My favorite / Browsing history / Back in stock, My coupon.', wf: 's3-3' },
     ],
   },
