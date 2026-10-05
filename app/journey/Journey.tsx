@@ -66,9 +66,9 @@ const LOOPS = [
 
 // open questions for 9Lab; wf = screen it affects
 const QUESTIONS = [
-  { q: 'ECPay supports 7-ELEVEN pay at pickup (取貨付款), which is popular in Taiwan. Offer it, or keep prepaid only?', wf: 's1-6' },
+  { q: 'ECPay supports 7-ELEVEN pay at pickup (取貨付款, up to NT$20,000), which is popular in Taiwan. Offer it, or keep prepaid only?', wf: 's1-6' },
   { q: 'Also offer FamilyMart, Hi-Life and OK pickup? ECPay supports them with the same flow.', wf: 's1-6' },
-  { q: 'LINE Pay: through ECPay, or a separate LINE Pay contract?', wf: 's1-9' },
+  { q: 'ECPay does not offer LINE Pay. Sign a separate LINE Pay contract, or drop it? ECPay can add JKOPAY, TWQR or pay-later (BNPL, orders from NT$3,000) instead.', wf: 's1-9' },
   { q: 'Auto-creating a member from a guest’s mobile needs the shopper’s consent (PDPA). OK to add a consent line at checkout?', wf: 's1-8' },
   { q: 'Parcel not picked up, or ATM not paid in time: when do we cancel, and how is the refund made?', wf: 's3-6' },
   { q: 'Returns cost NT$55 per parcel at 7-ELEVEN. Who pays it, and is the refund to the card or store credit?', wf: 's3-6' },
