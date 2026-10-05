@@ -23,7 +23,9 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 | `scripts/build.py` | แพ็ก `src/*.html` กลับเข้า bundle, ใส่ระบบซูม/แพนแบบ Figma ให้ WF, และเช็กว่าไม่มีภาษาไทยเหลือ |
 | `public/*.html` | ไฟล์ที่ build ได้ (ไม่ต้องแก้ด้วยมือ) |
 | `app/` | เว็บ Next.js: หน้าแรก, `journey/`, `wireframe/`, `prototype/`, `Viewer.tsx` (แถบบน + iframe) |
-| `app/journey/Journey.tsx` | เนื้อหาของ Journey: `STAGES` (ขั้นตอน), `QUESTIONS` (คำถามถึงลูกค้า), `LOOPS` |
+| `app/journey/Journey.tsx` | เนื้อหาของ Journey: `STAGES` (ขั้นตอน), `LOOPS` |
+| `app/data.ts` | ข้อมูลที่ใช้ร่วมกัน: `BRIEF` (checklist เทียบกับ PDF), `ADDED`, `QUESTIONS` (ใช้ทั้ง Journey และ Checklist), `FEATURES`, `SERVICES` (บริการที่แนะนำพร้อมแหล่งที่มา) |
+| `app/checklist/` | หน้า Brief checklist |
 
 > ⚠️ ถ้า designer ส่ง WF หรือ Proto เวอร์ชันใหม่มา **อย่าเอาไปทับเฉยๆ** ต้องเอาส่วนที่เปลี่ยนมารวมกับ `src/*.html` ไม่งั้นงานที่เพิ่มไว้ข้างล่างจะหาย
 > ถ้าแก้เนื้อหาใน WF ให้แก้ `Journey.tsx` ตามด้วย เพราะข้อความซ้ำกัน
@@ -61,7 +63,12 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 - **1.9:** ชำระผ่าน ECPay · Apple Pay แสดงเฉพาะ Safari/iOS · ATM ไม่โอนตามเวลา → ยกเลิกอัตโนมัติ · e-invoice ออกผ่าน ECPay
 - **3.6:** เส้นสถานะ 5 ขั้น (Ordered → Preparing → Shipping → Arrived at store → Picked up) อัปเดตจาก ECPay · คืนสินค้าที่ 7-ELEVEN (B2C NT$55)
 
-### สิ่งที่แก้หลังรีวิว
+#### หน้า Brief checklist (`/checklist`)
+- ทุกข้อใน PDF (54 ข้อ) จับคู่กับหน้าจอใน WF แบ่ง 5 สถานะ: Done 40 · Adjusted 4 · Added by us 1 · Needs your input 7 · Not yet in WF 2 (กดกรองตามสถานะได้)
+- ส่วน Added by us, Questions for 9Lab (12 ข้อ), Features ของระบบ (8 กลุ่ม), Recommended services
+- Recommended services: Payment = ECPay AIO · Delivery = ECPay Logistics B2C · E-invoice = ECPay B2C · Sign in = มือถือ + SMS และ LINE Login · LINE OA + Messaging API · Store platform = รอตัดสินใจ (WooCommerce / Shopify / custom) ทุกการ์ดมีลิงก์แหล่งที่มา
+
+## สิ่งที่แก้หลังรีวิว
 - ตัดปุ่ม Chat ออก เพราะซ้ำกับ LINE OA
 - ทำ Back to top เป็นปุ่มเดี่ยว
 - Currency เปลี่ยนจากดรอปดาวน์เป็นข้อความ
@@ -78,7 +85,8 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 9. ภาษาเริ่มต้นของเว็บจริงเป็น 繁體中文 ไหม (2.1)
 10. เวอร์ชัน PC: ขอบเขตและระยะเวลา (4.5)
 11. เก็บสินค้าในตะกร้าได้นานแค่ไหน (1.5)
-12. SMS OTP / การตั้งรหัสผ่าน และจะใช้ผู้ให้บริการ SMS เจ้าไหน (3.2): Pending decision เดิมจาก designer
+12. ปุ่ม Chat ใน PDF หมายถึงฟอร์มฝากข้อความในเว็บหรือเปล่า (ตัดออกไปแล้วเพราะซ้ำกับ LINE) (4.1)
+13. SMS OTP / การตั้งรหัสผ่าน และจะใช้ผู้ให้บริการ SMS เจ้าไหน (3.2): Pending decision เดิมจาก designer
 
 ## ข้อมูลจาก ECPay API skill (https://github.com/ECPay/ecpay-api-skill)
 - **LINE Pay: ECPay ไม่มี** วิธีจ่ายที่ ECPay มี: Credit (รวมผ่อน/ตัดรายงวด), ATM (หมดอายุ 1–60 วัน ค่าเริ่มต้น 7), 超商代碼, 條碼, WebATM, Apple Pay, TWQR, BNPL (ยอด ≥ NT$3,000), WeiXin, DigitalPayment (街口 JKOPAY / iPASS) → ถ้าต้องการ LINE Pay ต้องเซ็นสัญญากับ LINE Pay แยกเอง
@@ -91,5 +99,7 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 - เว็บรีวิวยัง **ไม่มีรหัสผ่าน** ใครได้ลิงก์ก็เปิดได้ (ตั้ง noindex แล้ว) ถ้าต้องการให้เป็นส่วนตัว ใช้ Vercel password protection
 
 ## ยังไม่ได้ทำ
+- **ช่องที่อยู่ในหน้า Member center (3.3)** ที่ PDF หน้า 9 ขอไว้ ยังไม่มีใน WF
+- **รางวัลที่ได้จากออเดอร์ (แต้ม / store credit / คูปอง) ในสรุปตะกร้า (1.5)** ที่ PDF หน้า 16 ขอไว้ ยังไม่มีใน WF
 - ออกแบบหน้าจอเวอร์ชัน PC ทั้งชุด
 - หน้าเนื้อหา About us / Customer info / FAQ (ใน Proto แสดงเป็น toast "not in prototype")

@@ -12,6 +12,11 @@ export default function Home() {
           <p>The whole shopping flow on one page, from first visit to coming back. Press Play to watch the path.</p>
           <span>See the journey →</span>
         </Link>
+        <Link href="/checklist/" className="card">
+          <h2>Brief checklist</h2>
+          <p>Every request in your brief and where it stands, what we added, questions for you, and the services we recommend.</p>
+          <span>Open the checklist →</span>
+        </Link>
         <Link href="/wireframe/" className="card">
           <h2>Wireframe</h2>
           <p>All pages in flow order, with notes. Zoom with the − / + buttons, Ctrl/⌘ + scroll, or press 0 to fit.</p>

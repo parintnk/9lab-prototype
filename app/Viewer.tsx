@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 
 export const tabs = [
   { href: '/journey/', label: 'Journey' },
+  { href: '/checklist/', label: 'Checklist' },
   { href: '/wireframe/', label: 'Wireframe' },
   { href: '/prototype/', label: 'Prototype' },
 ];

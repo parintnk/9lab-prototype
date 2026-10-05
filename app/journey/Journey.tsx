@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { QUESTIONS } from '../data';
 
 type Step = { id: string; title: string; text: string; wf?: string; pending?: string; or?: string[] };
 type Stage = { name: string; goal: string; steps: Step[] };
@@ -62,21 +63,6 @@ const LOOPS = [
   { from: 'Back in stock', to: 'Product page', wf: 's3-4' },
   { from: 'My coupon', to: 'Cart', wf: 's3-5' },
   { from: 'Keep shopping', to: 'Homepage', wf: 's1-10' },
-];
-
-// open questions for 9Lab; wf = screen it affects
-const QUESTIONS = [
-  { q: 'ECPay supports 7-ELEVEN pay at pickup (取貨付款, up to NT$20,000), which is popular in Taiwan. Offer it, or keep prepaid only?', wf: 's1-6' },
-  { q: 'Also offer FamilyMart, Hi-Life and OK pickup? ECPay supports them with the same flow.', wf: 's1-6' },
-  { q: 'ECPay does not offer LINE Pay. Sign a separate LINE Pay contract, or drop it? ECPay can add JKOPAY, TWQR or pay-later (BNPL, orders from NT$3,000) instead.', wf: 's1-9' },
-  { q: 'Auto-creating a member from a guest’s mobile needs the shopper’s consent (PDPA). OK to add a consent line at checkout?', wf: 's1-8' },
-  { q: 'Parcel not picked up, or ATM not paid in time: when do we cancel, and how is the refund made?', wf: 's3-6' },
-  { q: 'Returns cost NT$55 per parcel at 7-ELEVEN. Who pays it, and is the refund to the card or store credit?', wf: 's3-6' },
-  { q: 'Sign in with SMS code only, no password? Simpler for shoppers; each SMS has a cost.', wf: 's3-2' },
-  { q: 'Let guests use Notify me (email / LINE) and save favorites without signing in?', wf: 's2-6' },
-  { q: 'Default site language: 繁體中文? (This review copy is in English.)', wf: 's2-1' },
-  { q: 'PC version: scope and timing?', wf: 's4-5' },
-  { q: 'How long should items stay in the cart?', wf: 's1-5' },
 ];
 
 const PATH = STAGES.flatMap((s) => s.steps.map((x) => x.id));
