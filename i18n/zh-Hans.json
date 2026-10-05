@@ -783,7 +783,6 @@
  "Same on PC and mobile": "电脑版与手机版相同",
  "Save changes": "储存变更",
  "Save → toast \"Saved\" · Empty * field or terms not ticked: disabled (like": "储存 → 提示讯息「已储存」· 必填栏位空白或未勾选条款：无法点按（与",
- "Saved with {{ guestPhone }} · points from this order are kept. Verify by SMS to set a password.": "已用 {{ guestPhone }} 储存 · 本笔订单的点数会保留。完成简讯验证即可设定密码。",
  "Scam alert:": "防诈骗提醒：",
  "Search": "搜寻",
  "Search again": "重新搜寻",
@@ -852,7 +851,6 @@
  "Sign up tab, then back to": "注册分页，然后返回",
  "Sign up with mobile phone or LINE": "用手机号码或 LINE 注册",
  "Signed in as Mei-Ling": "已以 Mei-Ling 身分登入",
- "Signed in with 0912 345 678 · points from this order are saved. Verify by SMS to set a password.": "已用 0912 345 678 登入 · 本笔订单的点数已保留。完成简讯验证即可设定密码。",
  "Signed out": "已登出",
  "Single": "单入",
  "Size": "容量",
@@ -1094,5 +1092,16 @@
  "Pay at pickup (cash on delivery) is also available in ECPay, but 9Lab chose prepaid only.": "绿界 ECPay 也提供取货付款，但 9Lab 选择仅限先付款。",
  "Which stores to offer: 7-ELEVEN only, or also FamilyMart and Hi-Life?": "要开放哪些超商：只有 7-ELEVEN，还是也开放全家与莱尔富？",
  "Latest order card always expanded · Status line Ordered → Preparing → Shipping → Arrived at store → Picked up (updated automatically by ECPay Logistics) · Not picked up within 5 days → parcel returns to 9Lab → refund (orders are always prepaid)": "最新一笔订单卡片固定展开 · 状态列 已订购 → 备货中 → 配送中 → 已到店 → 已取货（由绿界物流自动更新）· 5 天内未取货 → 包裹退回 9Lab → 退款（订单一律先付款）",
- "Admin can add and reorder sections. Truly free-form layouts need a page builder in the backend.": "后台可新增与调整区块顺序。若要完全自由的版面，后台需要页面编辑器（page builder）。"
+ "Admin can add and reorder sections. Truly free-form layouts need a page builder in the backend.": "后台可新增与调整区块顺序。若要完全自由的版面，后台需要页面编辑器（page builder）。",
+ "Enter the 6-digit code sent by SMS — no password to set or remember": "输入简讯收到的 6 位数验证码——不需设定或记住密码",
+ "Enter the 6-digit code sent by SMS — no password. In the prototype, tapping Continue signs you in immediately": "输入简讯收到的 6 位数验证码——不需密码。在原型中，点选「继续」即可直接登入",
+ "NEXT: SMS CODE": "下一步：简讯验证码",
+ "Continue → enter the SMS code (no password) → success: back to previous page, or": "继续 → 输入简讯验证码（不需密码）→ 成功：返回上一页，或",
+ "Verify your number by SMS to sign in next time.": "以简讯验证手机号码，下次即可直接登入。",
+ "Guests only: account was auto-created from the mobile number · Verify now → SMS code → signed in (no password)": "仅限访客：系统已用手机号码自动建立帐号 · 立即验证 → 简讯验证码 → 登入（不需密码）",
+ "Our recommendation: SMS code only, no password — simple for shoppers, nothing to remember, no reset flow. The code is asked right after entering the mobile number.": "我们的建议：只用简讯验证码、不设密码——对顾客最简单，不必记密码，也不需要忘记密码流程。输入手机号码后立即请顾客输入验证码。",
+ "Which SMS provider?": "要使用哪一家简讯服务商？",
+ "Matches the brief (mobile or LINE). We recommend SMS code only, no password: easy for shoppers, nothing to remember, no reset flow.": "符合需求（手机或 LINE）。我们建议只用简讯验证码、不设密码：顾客操作简单、不必记密码，也不需要忘记密码流程。",
+ "Saved with {{ guestPhone }} · points from this order are kept. Verify your number by SMS to sign in next time.": "已用 {{ guestPhone }} 储存 · 本次订单的点数已保留。以简讯验证手机号码，下次即可直接登入。",
+ "Signed in with 0912 345 678 · points from this order are saved. Verify your number by SMS to sign in next time.": "已用 0912 345 678 登入 · 本次订单的点数已储存。以简讯验证手机号码，下次即可直接登入。"
 }

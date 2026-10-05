@@ -53,7 +53,7 @@ export const BRIEF: Section[] = [
       { req: 'Sign up with mobile phone or LINE', p: '12', status: 'done', wf: 's3-2' },
       { req: 'Shop and pay without being a member', p: '12, 23', status: 'done', wf: 's1-8' },
       { req: 'Guests added as members automatically (by mobile number)', p: '12, 23', status: 'input', wf: 's1-8', note: 'Designed (banner on order complete). Needs the shopper’s consent under Taiwan’s PDPA.' },
-      { req: 'Where do SMS verification and password setup go?', p: '12', status: 'input', wf: 's3-2', note: 'We recommend SMS code only, no password.' },
+      { req: 'Where do SMS verification and password setup go?', p: '12', status: 'done', wf: 's3-2', note: 'Our recommendation: SMS code only, no password — simple for shoppers, nothing to remember, no reset flow. The code is asked right after entering the mobile number.' },
       { req: 'Anti-fraud information', p: '12, 22', status: 'done', wf: 's1-10', note: 'On sign in, order complete and in the footer (165 hotline).' },
     ],
   },
@@ -122,14 +122,9 @@ export const ADDED: { what: string; why: string; wf?: string }[] = [
 export const QUESTIONS = [
   { q: 'Also offer FamilyMart and Hi-Life pickup? Same flow as 7-ELEVEN through ECPay. (OK Mart only works as C2C, where the parcel is dropped at a store.)', wf: 's1-6' },
   { q: 'ECPay does not offer LINE Pay. Sign a separate LINE Pay contract, or drop it? ECPay can add JKOPAY, TWQR or pay-later (BNPL, orders from NT$3,000) instead.', wf: 's1-9' },
-  { q: 'Auto-creating a member from a guest’s mobile needs the shopper’s consent (PDPA). OK to add a consent line at checkout?', wf: 's1-8' },
   { q: 'A prepaid parcel is not picked up within 5 days and returns to 9Lab: refund the full amount, or minus the shipping fee? Refund to the card, or as store credit? (Unpaid ATM orders are simply cancelled at the deadline — nothing to refund.)', wf: 's3-6' },
   { q: 'Returns cost NT$55 per parcel at 7-ELEVEN. Who pays it, and is the refund to the card or store credit?', wf: 's3-6' },
-  { q: 'Sign in with SMS code only, no password? Simpler for shoppers; each SMS has a cost.', wf: 's3-2' },
-  { q: 'Let guests use Notify me (email / LINE) and save favorites without signing in?', wf: 's2-6' },
   { q: 'Default language of the live shop: 繁體中文, with English as the second language?', wf: 's2-1' },
-  { q: 'PC version: scope and timing?', wf: 's4-5' },
-  { q: 'How long should items stay in the cart?', wf: 's1-5' },
   { q: 'Did the chat bubble mean the on-site “customer message” form from your menu (p.6)? We removed it because it duplicated the LINE button.', wf: 's4-1' },
 ];
 
@@ -199,13 +194,13 @@ export const SERVICES: Service[] = [
   },
   {
     area: 'Sign in', pick: 'Mobile number + SMS code, and LINE Login', status: 'recommended',
-    why: 'Matches the brief (mobile or LINE). SMS code only, no password: nothing to forget and no reset flow.',
+    why: 'Matches the brief (mobile or LINE). We recommend SMS code only, no password: easy for shoppers, nothing to remember, no reset flow.',
     details: [
       'LINE Login: shoppers sign in with their LINE account in one tap.',
       'SMS code needs a Taiwan SMS provider; each message has a cost, so we limit resends.',
       'Guests can be added as members by mobile number only with their consent (PDPA).',
     ],
-    decide: 'SMS only or SMS + password? Which SMS provider?',
+    decide: 'Which SMS provider?',
     sources: [
       { label: 'LINE Login docs', url: 'https://developers.line.biz/en/docs/line-login/' },
       { label: 'Taiwan Personal Data Protection Act', url: 'https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=I0050021' },
