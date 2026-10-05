@@ -98,8 +98,8 @@ export const BRIEF: Section[] = [
       { req: 'E-invoice: member carrier, mobile barcode, company tax ID, donate (no citizen certificate)', p: '21', status: 'done', wf: 's1-9', note: 'All issued through ECPay e-invoice. Donate needs a 7-digit love code.' },
       { req: 'Purchase notice; agreements must be ticked before ordering; news opt-in', p: '22', status: 'done', wf: 's1-9' },
       { req: 'Payments: LINE Pay, credit card, Apple Pay, ATM (virtual account)', p: '23', status: 'input', wf: 's1-9', note: 'Card, Apple Pay and ATM are in ECPay. LINE Pay is not — separate contract or drop it.' },
-      { req: 'Cash on delivery not required', p: '23', status: 'input', wf: 's1-6', note: 'Done as prepaid only. ECPay also offers 7-ELEVEN pay at pickup, which is popular — confirm.' },
-      { req: 'Order complete: shipping info, 5-day pickup reminder, order info', p: '22', status: 'done', wf: 's1-10', note: 'Your reference warns that unpicked orders may be blacklisted — see question 5.' },
+      { req: 'Cash on delivery not required', p: '23', status: 'done', wf: 's1-6', note: 'Prepaid only — confirmed by 9Lab. No pay at pickup.' },
+      { req: 'Order complete: shipping info, 5-day pickup reminder, order info', p: '22', status: 'done', wf: 's1-10', note: 'Orders are prepaid, so an unpicked parcel is refunded, not blacklisted — see the refund question.' },
       { req: 'Coupon for adding the LINE account as a friend', p: '22', status: 'done', wf: 's1-10' },
       { req: 'Check order and Keep shopping buttons', p: '22', status: 'done', wf: 's1-10' },
       { req: 'Backend setting for returns and refund to store credit (future)', p: '23', status: 'input', wf: 's3-6', note: 'Return at any 7-ELEVEN is designed. Who pays the NT$55 return fee and the refund rules are open.' },
@@ -120,11 +120,10 @@ export const ADDED: { what: string; why: string; wf?: string }[] = [
 
 // open questions for 9Lab; wf = screen it affects
 export const QUESTIONS = [
-  { q: 'ECPay supports 7-ELEVEN pay at pickup (取貨付款, up to NT$20,000), which is popular in Taiwan. Offer it, or keep prepaid only?', wf: 's1-6' },
   { q: 'Also offer FamilyMart and Hi-Life pickup? Same flow as 7-ELEVEN through ECPay. (OK Mart only works as C2C, where the parcel is dropped at a store.)', wf: 's1-6' },
   { q: 'ECPay does not offer LINE Pay. Sign a separate LINE Pay contract, or drop it? ECPay can add JKOPAY, TWQR or pay-later (BNPL, orders from NT$3,000) instead.', wf: 's1-9' },
   { q: 'Auto-creating a member from a guest’s mobile needs the shopper’s consent (PDPA). OK to add a consent line at checkout?', wf: 's1-8' },
-  { q: 'Parcel not picked up, or ATM not paid in time: when do we cancel, and how is the refund made? Should shoppers who do not pick up be blocked from pay-at-pickup, as in your reference?', wf: 's3-6' },
+  { q: 'A prepaid parcel is not picked up within 5 days and returns to 9Lab: refund the full amount, or minus the shipping fee? Refund to the card, or as store credit? (Unpaid ATM orders are simply cancelled at the deadline — nothing to refund.)', wf: 's3-6' },
   { q: 'Returns cost NT$55 per parcel at 7-ELEVEN. Who pays it, and is the refund to the card or store credit?', wf: 's3-6' },
   { q: 'Sign in with SMS code only, no password? Simpler for shoppers; each SMS has a cost.', wf: 's3-2' },
   { q: 'Let guests use Notify me (email / LINE) and save favorites without signing in?', wf: 's2-6' },
@@ -179,10 +178,10 @@ export const SERVICES: Service[] = [
       'Store picked on the official e-map; ECPay sends the store back to our site.',
       'ECPay creates the shipping order and label, and pushes parcel status to our server for order tracking.',
       'Returns at 7-ELEVEN / FamilyMart / Hi-Life (B2C return, NT$55 per parcel at 7-ELEVEN).',
-      'Pay at pickup / cash on delivery is available (up to NT$20,000 per order).',
+      'Pay at pickup (cash on delivery) is also available in ECPay, but 9Lab chose prepaid only.',
       'Separate service from payments: apply to activate, priced per parcel, settled weekly (Tuesday) for standard members.',
     ],
-    decide: 'Which stores to offer, and pay at pickup yes / no?',
+    decide: 'Which stores to offer: 7-ELEVEN only, or also FamilyMart and Hi-Life?',
     sources: [
       { label: 'ECPay skill · Domestic logistics guide', url: SKILL + '06-logistics-domestic.md' },
       { label: 'ECPay', url: 'https://www.ecpay.com.tw' },
