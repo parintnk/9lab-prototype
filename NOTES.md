@@ -15,6 +15,11 @@ npm run dev          # ดูบนเครื่อง http://localhost:3000
 npm run build        # static export → โฟลเดอร์ out/ (อัปขึ้น Vercel หรือ host ไหนก็ได้)
 ```
 
+**Deploy:** Vercel project `9lab-prototype` ต่อกับ GitHub แล้ว push ขึ้น `main` = deploy อัตโนมัติ → https://9lab-prototype.vercel.app
+`vercel.json` ส่ง `/wireframe.<lang>.html` ไปที่ `/wireframe.<lang>` เพราะ Vercel ตัด `.html` ออกจาก URL ของไฟล์ static (ถ้าไม่มีจะ 404)
+```bash
+```
+
 ## หลายภาษา (EN · ไทย · 繁中 · 简中)
 - ลิงก์แยกตามภาษา: `/en/` `/th/` `/zh-hant/` `/zh-hans/` ส่วน `/` จะพาไปภาษาตามเบราว์เซอร์ และมีปุ่มสลับภาษาที่แถบบน
 - **ต้นฉบับเป็นภาษาอังกฤษเสมอ** (`src/*.html`, `app/data.ts`, ข้อความใน `t('…')`)

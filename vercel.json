@@ -1,0 +1,36 @@
+{
+  "rewrites": [
+    {
+      "source": "/wireframe.en.html",
+      "destination": "/wireframe.en"
+    },
+    {
+      "source": "/wireframe.th.html",
+      "destination": "/wireframe.th"
+    },
+    {
+      "source": "/wireframe.zh-Hant.html",
+      "destination": "/wireframe.zh-Hant"
+    },
+    {
+      "source": "/wireframe.zh-Hans.html",
+      "destination": "/wireframe.zh-Hans"
+    },
+    {
+      "source": "/prototype.en.html",
+      "destination": "/prototype.en"
+    },
+    {
+      "source": "/prototype.th.html",
+      "destination": "/prototype.th"
+    },
+    {
+      "source": "/prototype.zh-Hant.html",
+      "destination": "/prototype.zh-Hant"
+    },
+    {
+      "source": "/prototype.zh-Hans.html",
+      "destination": "/prototype.zh-Hans"
+    }
+  ]
+}
