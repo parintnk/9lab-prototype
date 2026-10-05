@@ -85,7 +85,7 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 - **取貨付款: รองรับ** (`IsCollection=Y`) ทั้งร้านสะดวกซื้อและ T-Cat ยอดสูงสุด NT$20,000
 - **คืนสินค้า:** มี API คืนผ่าน 7-ELEVEN B2C (`/express/ReturnUniMartCVS`), FamilyMart, Hi-Life และส่งคืนถึงบ้าน
 - **e-invoice:** รองรับครบทั้ง 4 แบบใน WF 1.9 (Member carrier = 綠界載具, Mobile barcode, Tax ID, Donate ต้องกรอก love code 7 หลัก)
-- **ยังไม่ได้ติดตั้ง skill** ลงเครื่อง ตอนนี้อ่านจาก repo อย่างเดียว ควรติดตั้งตอนเริ่มเขียนระบบจริง
+- **ติดตั้ง skill แล้ว** ที่ `~/.claude/skills/ecpay` (v3.4, 2026-10-05) ใช้ได้ทุกโปรเจกต์ เรียกด้วย `/ecpay` · อัปเดตด้วย `git -C ~/.claude/skills/ecpay pull`
 
 ## ต้องเช็กเอง
 - เว็บรีวิวยัง **ไม่มีรหัสผ่าน** ใครได้ลิงก์ก็เปิดได้ (ตั้ง noindex แล้ว) ถ้าต้องการให้เป็นส่วนตัว ใช้ Vercel password protection
