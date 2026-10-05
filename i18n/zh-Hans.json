@@ -36,7 +36,6 @@
  "4 results": "4 笔结果",
  "4.9 · 128 reviews": "4.9 · 128 则评论",
  "5 days": "5 天",
- "5 steps updated automatically by ECPay Logistics: Ordered → Preparing → Shipping → Arrived at store → Picked up.": "5 个阶段由绿界物流自动更新：已订购 → 备货中 → 配送中 → 已到店 → 已取货。",
  "7-ELEVEN": "7-ELEVEN",
  "7-ELEVEN ": "7-ELEVEN ",
  "7-ELEVEN Zhongxiao #135624": "7-ELEVEN 忠孝 #135624",
@@ -490,7 +489,6 @@
  "Letter = component repeated on every page (see right)": "英文字母 = 每页共用的元件（见右侧）",
  "Live order status from ECPay (5 steps)": "绿界即时订单状态（5 个阶段）",
  "Live order tracking (ECPay)": "即时订单追踪（绿界）",
- "Live status from ECPay: Ordered → Preparing → Shipping → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.": "绿界即时状态：已订购 → 备货中 → 配送中 → 已到店 → 已取货。出货前可取消，可在任一 7-ELEVEN 退货。",
  "Load more": "载入更多",
  "Load more → loads 6 more at a time on the same page": "载入更多 → 在同一页每次多载入 6 件",
  "Loads 5 more reviews": "再载入 5 则评论",
@@ -1091,7 +1089,6 @@
  "A prepaid parcel is not picked up within 5 days and returns to 9Lab: refund the full amount, or minus the shipping fee? Refund to the card, or as store credit? (Unpaid ATM orders are simply cancelled at the deadline — nothing to refund.)": "已付款的包裹 5 天内未取货并退回 9Lab 时：全额退款，还是扣除运费？退回信用卡，还是转为购物金？（ATM 订单逾期未付款会自动取消，无需退款。）",
  "Pay at pickup (cash on delivery) is also available in ECPay, but 9Lab chose prepaid only.": "绿界 ECPay 也提供取货付款，但 9Lab 选择仅限先付款。",
  "Which stores to offer: 7-ELEVEN only, or also FamilyMart and Hi-Life?": "要开放哪些超商：只有 7-ELEVEN，还是也开放全家与莱尔富？",
- "Latest order card always expanded · Status line Ordered → Preparing → Shipping → Arrived at store → Picked up (updated automatically by ECPay Logistics) · Not picked up within 5 days → parcel returns to 9Lab → refund (orders are always prepaid)": "最新一笔订单卡片固定展开 · 状态列 已订购 → 备货中 → 配送中 → 已到店 → 已取货（由绿界物流自动更新）· 5 天内未取货 → 包裹退回 9Lab → 退款（订单一律先付款）",
  "Admin can add and reorder sections. Truly free-form layouts need a page builder in the backend.": "后台可新增与调整区块顺序。若要完全自由的版面，后台需要页面编辑器（page builder）。",
  "Enter the 6-digit code sent by SMS — no password to set or remember": "输入简讯收到的 6 位数验证码——不需设定或记住密码",
  "Enter the 6-digit code sent by SMS — no password. In the prototype, tapping Continue signs you in immediately": "输入简讯收到的 6 位数验证码——不需密码。在原型中，点选「继续」即可直接登入",
@@ -1103,5 +1100,10 @@
  "Which SMS provider?": "要使用哪一家简讯服务商？",
  "Matches the brief (mobile or LINE). We recommend SMS code only, no password: easy for shoppers, nothing to remember, no reset flow.": "符合需求（手机或 LINE）。我们建议只用简讯验证码、不设密码：顾客操作简单、不必记密码，也不需要忘记密码流程。",
  "Saved with {{ guestPhone }} · points from this order are kept. Verify your number by SMS to sign in next time.": "已用 {{ guestPhone }} 储存 · 本次订单的点数已保留。以简讯验证手机号码，下次即可直接登入。",
- "Signed in with 0912 345 678 · points from this order are saved. Verify your number by SMS to sign in next time.": "已用 0912 345 678 登入 · 本次订单的点数已储存。以简讯验证手机号码，下次即可直接登入。"
+ "Signed in with 0912 345 678 · points from this order are saved. Verify your number by SMS to sign in next time.": "已用 0912 345 678 登入 · 本次订单的点数已储存。以简讯验证手机号码，下次即可直接登入。",
+ "5 steps updated automatically by ECPay Logistics: Ordered → Preparing → In transit → Arrived at store → Picked up.": "5 个阶段由绿界物流自动更新：已订购 → 备货中 → 配送中 → 已到店 → 已取货。",
+ "Live status from ECPay: Ordered → Preparing → In transit → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.": "绿界即时状态：已订购 → 备货中 → 配送中 → 已到店 → 已取货。出货前可取消，可在任一 7-ELEVEN 退货。",
+ "Latest order card always expanded · Status line Ordered → Preparing → In transit → Arrived at store → Picked up (updated automatically by ECPay Logistics) · Not picked up within 5 days → parcel returns to 9Lab → refund (orders are always prepaid)": "最新一笔订单卡片固定展开 · 状态列 已订购 → 备货中 → 配送中 → 已到店 → 已取货（由绿界物流自动更新）· 5 天内未取货 → 包裹退回 9Lab → 退款（订单一律先付款）",
+ "In transit": "配送中",
+ "IN TRANSIT": "配送中"
 }

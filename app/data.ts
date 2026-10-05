@@ -44,7 +44,7 @@ export const BRIEF: Section[] = [
       { req: 'Members menu: Track my order, Member center, My favorite, My coupon, Sign in / Sign up', p: '7', status: 'done', wf: 's3-1' },
       { req: 'Admin can add more options to the Members menu', p: '7', status: 'done', wf: 's3-1', note: 'Add, reorder or hide items.' },
       { req: 'How long can items stay in the cart?', p: '7', status: 'input', wf: 's1-5' },
-      { req: 'Track order: order date, order number, payment method, amount, products, status line', p: '8', status: 'done', wf: 's3-6', note: '5 steps updated automatically by ECPay Logistics: Ordered → Preparing → Shipping → Arrived at store → Picked up.' },
+      { req: 'Track order: order date, order number, payment method, amount, products, status line', p: '8', status: 'done', wf: 's3-6', note: '5 steps updated automatically by ECPay Logistics: Ordered → Preparing → In transit → Arrived at store → Picked up.' },
       { req: 'Cancel order (shown in your reference)', p: '8', status: 'done', wf: 's3-6', note: 'Only before the order ships.' },
       { req: 'Member center: mobile, name, birthday, gender, email, agree to terms', p: '9', status: 'done', wf: 's3-3', note: 'Last name and first name are separate, and the agreement covers Membership Terms, Privacy Policy and Terms of Use, like your reference. Mobile cannot be edited.' },
       { req: 'Member center: address (country, city, district, street)', p: '9', status: 'done', wf: 's3-3', note: 'Country (Taiwan by default) → city → district → street; used as the default for home delivery.' },
@@ -267,7 +267,7 @@ export const STAGES: Stage[] = [
   {
     name: 'After purchase', goal: 'Come back and buy again',
     steps: [
-      { id: 'track', title: 'Track my order', text: 'Live status from ECPay: Ordered → Preparing → Shipping → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.', wf: 's3-6', pending: 'Return fee + refund rules' },
+      { id: 'track', title: 'Track my order', text: 'Live status from ECPay: Ordered → Preparing → In transit → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.', wf: 's3-6', pending: 'Return fee + refund rules' },
       { id: 'member', title: 'Member area', text: 'Member center, My favorite / Browsing history / Back in stock, My coupon.', wf: 's3-3' },
     ],
   },

@@ -36,7 +36,6 @@
  "4 results": "4 รายการ",
  "4.9 · 128 reviews": "4.9 · 128 รีวิว",
  "5 days": "5 วัน",
- "5 steps updated automatically by ECPay Logistics: Ordered → Preparing → Shipping → Arrived at store → Picked up.": "5 ขั้นอัปเดตอัตโนมัติจาก ECPay Logistics: สั่งซื้อแล้ว → กำลังเตรียม → กำลังจัดส่ง → ถึงร้านแล้ว → รับสินค้าแล้ว",
  "7-ELEVEN": "7-ELEVEN",
  "7-ELEVEN ": "7-ELEVEN ",
  "7-ELEVEN Zhongxiao #135624": "7-ELEVEN Zhongxiao #135624",
@@ -490,7 +489,6 @@
  "Letter = component repeated on every page (see right)": "ตัวอักษร = Component ที่ซ้ำทุกหน้า (ดูขวา)",
  "Live order status from ECPay (5 steps)": "สถานะคำสั่งซื้อแบบเรียลไทม์จาก ECPay (5 ขั้น)",
  "Live order tracking (ECPay)": "ติดตามคำสั่งซื้อแบบเรียลไทม์ (ECPay)",
- "Live status from ECPay: Ordered → Preparing → Shipping → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.": "สถานะเรียลไทม์จาก ECPay: สั่งซื้อแล้ว → กำลังเตรียม → กำลังจัดส่ง → ถึงร้าน → รับสินค้าแล้ว ยกเลิกได้ก่อนจัดส่ง คืนสินค้าได้ที่ 7-ELEVEN ทุกสาขา",
  "Load more": "โหลดเพิ่ม",
  "Load more → loads 6 more at a time on the same page": "โหลดเพิ่ม → โหลดเพิ่มครั้งละ 6 ชิ้นในหน้าเดิม",
  "Loads 5 more reviews": "โหลดรีวิวเพิ่มอีก 5",
@@ -1091,7 +1089,6 @@
  "A prepaid parcel is not picked up within 5 days and returns to 9Lab: refund the full amount, or minus the shipping fee? Refund to the card, or as store credit? (Unpaid ATM orders are simply cancelled at the deadline — nothing to refund.)": "พัสดุที่ชำระเงินแล้วแต่ไม่มีคนมารับภายใน 5 วันและถูกส่งคืน 9Lab: คืนเงินเต็มจำนวน หรือหักค่าส่ง? คืนเข้าบัตร หรือเป็น store credit? (ออเดอร์ ATM ที่ไม่โอนตามกำหนดจะถูกยกเลิกอัตโนมัติ ไม่มีเงินต้องคืน)",
  "Pay at pickup (cash on delivery) is also available in ECPay, but 9Lab chose prepaid only.": "ECPay มีเก็บเงินปลายทาง (取貨付款) ด้วย แต่ 9Lab เลือกชำระเงินก่อนเท่านั้น",
  "Which stores to offer: 7-ELEVEN only, or also FamilyMart and Hi-Life?": "เปิดร้านไหนบ้าง: 7-ELEVEN อย่างเดียว หรือเพิ่ม FamilyMart และ Hi-Life ด้วย?",
- "Latest order card always expanded · Status line Ordered → Preparing → Shipping → Arrived at store → Picked up (updated automatically by ECPay Logistics) · Not picked up within 5 days → parcel returns to 9Lab → refund (orders are always prepaid)": "การ์ดคำสั่งซื้อล่าสุดกางไว้เสมอ · แถบสถานะ สั่งซื้อแล้ว → กำลังเตรียม → กำลังจัดส่ง → ถึงร้านแล้ว → รับสินค้าแล้ว (อัปเดตอัตโนมัติจาก ECPay Logistics) · ไม่มารับภายใน 5 วัน → พัสดุกลับไปที่ 9Lab → คืนเงิน (ทุกออเดอร์ชำระเงินก่อน)",
  "Admin can add and reorder sections. Truly free-form layouts need a page builder in the backend.": "Admin เพิ่มและเรียง Section ได้ ถ้าต้องการ layout อิสระจริงๆ ต้องมี page builder ในหลังบ้าน",
  "Enter the 6-digit code sent by SMS — no password to set or remember": "กรอกรหัส 6 หลักที่ได้ทาง SMS — ไม่ต้องตั้งหรือจำรหัสผ่าน",
  "Enter the 6-digit code sent by SMS — no password. In the prototype, tapping Continue signs you in immediately": "กรอกรหัส 6 หลักที่ได้ทาง SMS — ไม่มีรหัสผ่าน ใน Prototype กด Continue แล้วเข้าสู่ระบบทันที",
@@ -1103,5 +1100,10 @@
  "Which SMS provider?": "ใช้ผู้ให้บริการ SMS เจ้าไหน?",
  "Matches the brief (mobile or LINE). We recommend SMS code only, no password: easy for shoppers, nothing to remember, no reset flow.": "ตรงกับ brief (มือถือหรือ LINE) เราแนะนำให้ใช้รหัส SMS อย่างเดียว ไม่มีรหัสผ่าน: ง่ายสำหรับลูกค้า ไม่ต้องจำ ไม่ต้องมีขั้นตอนลืมรหัส",
  "Saved with {{ guestPhone }} · points from this order are kept. Verify your number by SMS to sign in next time.": "บันทึกด้วยเบอร์ {{ guestPhone }} · เก็บคะแนนจากคำสั่งซื้อนี้ไว้แล้ว ยืนยันเบอร์ทาง SMS เพื่อเข้าสู่ระบบครั้งต่อไป",
- "Signed in with 0912 345 678 · points from this order are saved. Verify your number by SMS to sign in next time.": "เข้าสู่ระบบด้วย 0912 345 678 · บันทึกคะแนนจากคำสั่งซื้อนี้แล้ว ยืนยันเบอร์ทาง SMS เพื่อเข้าสู่ระบบครั้งต่อไป"
+ "Signed in with 0912 345 678 · points from this order are saved. Verify your number by SMS to sign in next time.": "เข้าสู่ระบบด้วย 0912 345 678 · บันทึกคะแนนจากคำสั่งซื้อนี้แล้ว ยืนยันเบอร์ทาง SMS เพื่อเข้าสู่ระบบครั้งต่อไป",
+ "5 steps updated automatically by ECPay Logistics: Ordered → Preparing → In transit → Arrived at store → Picked up.": "5 ขั้นอัปเดตอัตโนมัติจาก ECPay Logistics: สั่งซื้อแล้ว → กำลังเตรียม → กำลังจัดส่ง → ถึงร้านแล้ว → รับสินค้าแล้ว",
+ "Live status from ECPay: Ordered → Preparing → In transit → Arrived → Picked up. Cancel before shipping, return at any 7-ELEVEN.": "สถานะเรียลไทม์จาก ECPay: สั่งซื้อแล้ว → กำลังเตรียม → กำลังจัดส่ง → ถึงร้าน → รับสินค้าแล้ว ยกเลิกได้ก่อนจัดส่ง คืนสินค้าได้ที่ 7-ELEVEN ทุกสาขา",
+ "Latest order card always expanded · Status line Ordered → Preparing → In transit → Arrived at store → Picked up (updated automatically by ECPay Logistics) · Not picked up within 5 days → parcel returns to 9Lab → refund (orders are always prepaid)": "การ์ดคำสั่งซื้อล่าสุดกางไว้เสมอ · แถบสถานะ สั่งซื้อแล้ว → กำลังเตรียม → กำลังจัดส่ง → ถึงร้านแล้ว → รับสินค้าแล้ว (อัปเดตอัตโนมัติจาก ECPay Logistics) · ไม่มารับภายใน 5 วัน → พัสดุกลับไปที่ 9Lab → คืนเงิน (ทุกออเดอร์ชำระเงินก่อน)",
+ "In transit": "กำลังจัดส่ง",
+ "IN TRANSIT": "กำลังจัดส่ง"
 }
