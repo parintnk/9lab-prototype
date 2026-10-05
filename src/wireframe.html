@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+<script src="96337481-4cea-4e58-8a37-908493d4dde1"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("0597a4a9-3bea-4077-8b50-b12c31151ed3") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("08c37ad2-b54c-4ef1-9a1b-f6e3621c8085") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("471f5d89-30e4-4ef2-ace6-f3d7fd26a669") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("5b1bf5a1-0d02-4371-89fa-85a191edb99d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("16560021-4076-4cab-a8f5-03bb915f54fd") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("0def56bd-5ea8-4021-85f8-d6b7f4cc8c54") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("b9686576-c589-4305-adf2-c90396a08821") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("029fca15-9b6c-4a3d-a619-758660cd7b83") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("dc2dddef-d4c9-4437-bd9c-b875a20335b8") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("7dc6db5e-53d9-4c19-be5c-0b1c611ad7b9") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("7e184fb0-96b1-41c2-ad40-41d6b14796a3") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("d17b1376-8ef6-47e2-a07e-be339ce5297e") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("2b3baf9c-7150-42ab-99be-1b15bbdac7e6") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("f24b17c2-c7b3-4d42-be6c-6b6bfd5fe59d") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("14efaa5e-367f-47d0-ac25-e22899e9a9e4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("51807fa7-de13-4035-ad7a-eb146dfae16d") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("7e184fb0-96b1-41c2-ad40-41d6b14796a3") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("d17b1376-8ef6-47e2-a07e-be339ce5297e") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("2b3baf9c-7150-42ab-99be-1b15bbdac7e6") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("f24b17c2-c7b3-4d42-be6c-6b6bfd5fe59d") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("14efaa5e-367f-47d0-ac25-e22899e9a9e4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("51807fa7-de13-4035-ad7a-eb146dfae16d") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("7e184fb0-96b1-41c2-ad40-41d6b14796a3") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("d17b1376-8ef6-47e2-a07e-be339ce5297e") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("2b3baf9c-7150-42ab-99be-1b15bbdac7e6") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("f24b17c2-c7b3-4d42-be6c-6b6bfd5fe59d") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("14efaa5e-367f-47d0-ac25-e22899e9a9e4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("51807fa7-de13-4035-ad7a-eb146dfae16d") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("7e184fb0-96b1-41c2-ad40-41d6b14796a3") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("d17b1376-8ef6-47e2-a07e-be339ce5297e") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("2b3baf9c-7150-42ab-99be-1b15bbdac7e6") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("f24b17c2-c7b3-4d42-be6c-6b6bfd5fe59d") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("14efaa5e-367f-47d0-ac25-e22899e9a9e4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("51807fa7-de13-4035-ad7a-eb146dfae16d") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("7e184fb0-96b1-41c2-ad40-41d6b14796a3") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("d17b1376-8ef6-47e2-a07e-be339ce5297e") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("2b3baf9c-7150-42ab-99be-1b15bbdac7e6") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("f24b17c2-c7b3-4d42-be6c-6b6bfd5fe59d") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("14efaa5e-367f-47d0-ac25-e22899e9a9e4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("51807fa7-de13-4035-ad7a-eb146dfae16d") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("f31ca5a5-c2ea-44c3-955c-393b33d79a35") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* thai */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("534bc351-9122-43b5-8000-13378a9b498b") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("eb6847c7-da0a-4609-98fc-f4dc745d3c7d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("7795c0a3-6fb3-47d0-8f4a-ff49356ea1a4") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("0823df2d-906c-424a-8358-7ad42ac6dfa3") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* thai */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("80873a8a-0442-4f80-8279-09c4d09c9cb5") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e0355175-b4ac-4cd4-8df3-88303d419cab") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("97ed7594-e146-40bc-8e23-598387fe9306") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("7870916e-3ed2-43cf-92e3-b6af5f84660d") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* thai */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("af916fc1-359a-46f8-a421-4b85dba4bceb") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("e972a80d-a746-4fcb-9508-8e82649f6430") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("7ba9e7f8-c39c-4ba0-acca-6bfb8f033fa5") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("8c0365af-aa10-4a1f-b210-c2a1523c4149") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* thai */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("6a9b395f-e2d9-4f9c-bffb-b9ade281224d") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("92bbe6c1-f3e0-4bf4-94ed-8660c4380dab") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("2d81a16f-e689-4f70-a989-303c5e24eb31") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>*{box-sizing:border-box}body{margin:0;background:#ebebeb;font-family:'IBM Plex Sans','IBM Plex Sans Thai',sans-serif;color:#111}a{color:#2F5BEA;text-decoration:underline}a:hover{color:#1d3fb0}</style>
+</helmet>
+<div style="padding:80px 80px 24px;display:flex;gap:56px;align-items:flex-start;width:max-content">
+<div style="width:520px">
+<div style="font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#666">9LAB · TAIWAN · MOBILE 390 · WIREFRAME v1</div>
+<div style="font-size:56px;font-weight:700;letter-spacing:-.02em;margin-top:12px;line-height:1.05">9Lab Mobile Store</div>
+<div style="font-size:17px;line-height:1.6;color:#444;margin-top:16px;text-wrap:pretty">Every wireframe page, ordered by flow left → right in 4 rows · The note under each page says what happens when you tap each spot, and which page comes next</div>
+</div>
+<div style="width:440px;background:#fff;border:1px solid #d4d4d4;padding:24px;display:flex;flex-direction:column;gap:14px;font-size:14px;line-height:1.5">
+<b style="font-size:16px">How to read</b>
+<div style="display:flex;gap:12px;align-items:center"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b><span>Tappable spot — number matches the note under that page</span></div>
+<div style="display:flex;gap:12px;align-items:center"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">A</b><span>Letter = component repeated on every page (see right)</span></div>
+<div style="display:flex;gap:12px;align-items:center"><span style="flex:none;width:48px;height:32px;background:#e8e8e8;font:500 8px 'IBM Plex Mono',monospace;color:#777;display:flex;align-items:center;justify-content:center">IMG</span><span>Grey box = image / video, labelled with what it is</span></div>
+<div style="display:flex;gap:12px;align-items:center"><span style="flex:none;width:48px;border-top:1px dashed #9a9a9a"></span><span>Dashed line 844 = bottom edge of the first screen</span></div>
+<div style="display:flex;gap:12px;align-items:center"><b style="flex:none;background:#111;color:#fff;padding:2px 8px;font-size:11px">Pending decision</b><span>Not designed yet, space reserved</span></div>
+</div>
+<div style="width:520px;background:#fff;border:1px solid #d4d4d4;padding:24px;display:flex;flex-direction:column;gap:10px;font-size:14px;line-height:1.5">
+<b style="font-size:16px">Components repeated on every page</b>
+<div style="display:flex;gap:10px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">A</b><span>Announcement bar ‹ › — auto-scrolls every 4 s, tap arrows to scroll manually, admin can edit the text</span></div>
+<div style="display:flex;gap:10px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">B</b><span>INSTAGRAM → opens 9Lab's IG in a new tab</span></div>
+<div style="display:flex;gap:10px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">C</b><span>☰ Menu → opens drawer <a href="#s2-1">2.1</a></span></div>
+<div style="display:flex;gap:10px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">D</b><span>Members → logged in: dropdown <a href="#s3-1">3.1</a> · Not logged in: <a href="#s3-2">3.2</a></span></div>
+<div style="display:flex;gap:10px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">E</b><span>Cart (number = item count) → <a href="#s1-5">1.5</a></span></div>
+<div style="display:flex;gap:10px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">F</b><span>Search → overlay <a href="#s2-4">2.4</a> · 9LAB logo → Home <a href="#s1-2">1.2</a></span></div>
+<div style="display:flex;gap:10px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">G</b><span>Product card (image / name) → product page <a href="#s1-3">1.3</a></span></div>
+<div style="display:flex;gap:10px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">H</b><span>♡ Heart → add / remove from My favorite (states: see <a href="#s4-4">4.4</a>)</span></div>
+<div style="display:flex;gap:10px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">I</b><span>Floating button bottom-right → expands to IG + LINE, plus a Back to top button (see <a href="#s4-1">4.1</a>)</span></div>
+<div style="display:flex;gap:10px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">J</b><span>Notify me (sold out) → back-in-stock alert sheet <a href="#s2-6">2.6</a></span></div>
+</div>
+</div>
+
+<section id="row1" style="padding:56px 80px 80px;width:max-content">
+<div style="display:flex;align-items:baseline;gap:20px;margin-bottom:36px;border-bottom:2px solid #111;padding-bottom:14px"><b style="font-size:44px">Row 1</b><span style="font-size:24px;color:#333">Purchase flow</span></div>
+<div style="display:flex;gap:64px;align-items:flex-start">
+
+<div id="s1-1" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">1.1</b><span style="font-size:15px;color:#444">Homepage · first visit (popup)</span></div>
+<div style="position:relative;width:390px;height:844px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" hint-size="100%,142px"></dc-import>
+<div style="height:440px;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">HERO BANNER · auto-slide</div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:32px 16px 16px">NEW ARRIVALS</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px"><div style="aspect-ratio:1;background:#ececec"></div><div style="aspect-ratio:1;background:#ececec"></div></div>
+<div style="position:absolute;inset:0;z-index:5;background:rgba(0,0,0,.45)"></div>
+<div style="position:absolute;left:32px;right:32px;top:250px;z-index:6;background:#fff;border-radius:24px;padding:44px 24px 24px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
+<div style="position:absolute;top:14px;right:18px;font-size:22px;line-height:1;font-weight:300">×<b style="position:absolute;top:-8px;right:-14px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="font-size:18px;font-weight:700">Join 9Lab Rewards</div>
+<div style="font-size:13px;color:#555;line-height:1.55;text-wrap:pretty">Earn points on every order and get NT$100 off your first purchase.</div>
+<div style="position:relative;font-size:12px;color:#555;margin-top:4px">Already a member? <u style="color:#111">Sign in</u><b style="position:absolute;top:-8px;right:-22px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<div style="position:relative;align-self:stretch;margin-top:10px;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em">Join now<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Popup appears automatically on first visit (not shown again for 7 days) · Admin can change the title, text and button</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>× or tap the dark background → closes popup, shows the homepage <a href="#s1-2">1.2</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Sign in → sign-in page <a href="#s3-2">3.2</a> Sign in tab</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Join now → <a href="#s3-2">3.2</a> Sign up tab</span></div>
+</div>
+</div>
+
+<div id="s1-2" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">1.2</b><span style="font-size:15px;color:#444">Homepage</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" hint-size="100%,142px"></dc-import>
+<div style="position:relative;height:480px;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">HERO BANNER<br>auto-slide · 1 / 4
+<div style="position:absolute;bottom:16px;left:0;right:0;display:flex;justify-content:center;gap:6px"><i style="width:18px;height:4px;background:#111"></i><i style="width:6px;height:4px;background:#bbb"></i><i style="width:6px;height:4px;background:#bbb"></i><i style="width:6px;height:4px;background:#bbb"></i></div>
+<b style="position:absolute;top:12px;right:12px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font:600 10px/18px 'IBM Plex Sans',sans-serif;text-align:center;letter-spacing:0">1</b></div>
+<div style="position:relative;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px">
+<div style="aspect-ratio:4/5;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">SMALL BANNER<br>Sensitive skin edit</div>
+<div style="aspect-ratio:4/5;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">SMALL BANNER<br>Gift sets</div>
+<b style="position:absolute;top:14px;right:14px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:32px 16px 16px">NEW ARRIVALS</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px"><sc-for list="{{ newIn }}" as="p" hint-placeholder-count="4"><dc-import name="WfCard" item="{{ p }}" hint-size="100%,260px"></dc-import></sc-for></div>
+<div style="position:relative;margin:24px auto 0;width:180px;height:40px;border-radius:20px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500">View all<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:40px 16px 16px">BRAND FILM</div>
+<div style="position:relative;margin:0 16px;aspect-ratio:16/9;background:#e8e8e8;display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em"><span style="width:52px;height:52px;border-radius:26px;background:#fff;color:#111;font-size:18px;display:flex;align-items:center;justify-content:center">▶</span>BRAND VIDEO · 0:45<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font:600 10px/18px 'IBM Plex Sans',sans-serif;text-align:center;letter-spacing:0">4</b></div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:40px 16px 16px">PROMOTION</div>
+<div style="aspect-ratio:390/240;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">PROMO BANNER<br>Autumn barrier care</div>
+<div style="padding:16px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><b style="font-size:16px">Buy 2, get 15% off</b><span style="font-size:13px;color:#555">All barrier-care products · until 10/31</span><span style="position:relative;font-size:13px;font-weight:500;text-decoration:underline;margin-top:4px">Shop the offer →<b style="position:absolute;top:-8px;right:-22px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;text-decoration:none">5</b></span></div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:32px 16px 16px">SHOP BY CATEGORY</div>
+<div style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:16px 10px;padding:0 16px;font-size:11px;letter-spacing:.08em;text-align:center">
+<div style="display:flex;flex-direction:column;gap:6px"><div style="aspect-ratio:1;background:#ececec;border-radius:50%"></div>CLEANSER</div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="aspect-ratio:1;background:#ececec;border-radius:50%"></div>TONER</div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="aspect-ratio:1;background:#ececec;border-radius:50%"></div>SERUM</div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="aspect-ratio:1;background:#ececec;border-radius:50%"></div>CREAM</div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="aspect-ratio:1;background:#ececec;border-radius:50%"></div>MASK</div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="aspect-ratio:1;background:#ececec;border-radius:50%"></div>SUN CARE</div>
+<b style="position:absolute;top:-8px;right:12px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0">6</b></div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:40px 16px 16px">OUR STORY</div>
+<div style="aspect-ratio:4/3;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">BRAND STORY IMAGE<br>lab / founder</div>
+<div style="padding:20px 24px 40px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center"><span style="font-size:13px;line-height:1.6;color:#444;text-wrap:pretty">Formulated in Taipei for humid-climate skin. Nine active ingredients, tested on sensitive skin, nothing you don't need.</span><span style="position:relative;font-size:13px;font-weight:500;text-decoration:underline">Read our story →<b style="position:absolute;top:-8px;right:-22px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">7</b></span></div>
+<div style="position:relative;background:#f2f2f2;padding:28px 20px;display:flex;flex-direction:column;gap:12px;font-size:12px;letter-spacing:.06em"><b style="position:absolute;top:10px;right:10px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0;text-decoration:none">9</b>
+<span>ABOUT US</span><span>CUSTOMER INFO</span><span>SHIPPING &amp; RETURNS</span><span>FAQ</span><span>PRIVACY POLICY</span>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><div style="display:flex;gap:10px"><span style="width:32px;height:32px;border:1px solid #999;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:9px">IG</span><span style="width:32px;height:32px;border:1px solid #999;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:9px">LINE</span></div><span style="position:relative;border:1px solid #999;padding:6px 10px">English ▾<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0">8</b></span></div>
+<span style="color:#555;font-size:11px;letter-spacing:0;line-height:1.5">Anti-fraud: 9Lab never asks you to change payment or use an ATM. Hotline 165.</span><span style="color:#888;font-size:11px">© 2026 9Lab Taiwan</span>
+</div>
+<div style="position:absolute;left:0;right:0;top:844px;border-top:1px dashed #9a9a9a;z-index:3"><span style="position:absolute;right:6px;top:2px;font:10px 'IBM Plex Mono',monospace;color:#888;background:#fff;padding:0 4px">844 · fold</span></div>
+<div style="position:absolute;right:14px;top:768px;z-index:4;width:52px;height:52px;border-radius:26px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:300;box-shadow:0 2px 8px rgba(0,0,0,.25)">+<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">I</b></div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Max 4 products visible per screen (2 columns × 2 rows) · Admin can reorder sections</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Big banner auto-swipes every 5 s, swipe left/right · Tap → campaign page / product list <a href="#s2-5">2.5</a> per the link set by admin</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Small banner → linked category <a href="#s2-5">2.5</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>View all → all new products <a href="#s2-5">2.5</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>▶ Plays video inline (muted by default), stays on the page</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">5</b><span>Banner / Shop the offer → products in the promotion <a href="#s2-5">2.5</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">6</b><span>Category → product list for that category <a href="#s2-5">2.5</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">7</b><span>Read our story → About us page</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">8</b><span>Language switch 繁體中文 / English (stays on the same page)</span></div><div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">9</b><span>Footer on every page: About us · Customer info · Shipping &amp; returns · FAQ · Privacy · anti-fraud notice (165) · admin can edit the links</span></div>
+</div>
+</div>
+
+<div id="s1-3" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">1.3</b><span style="font-size:15px;color:#444">Product page</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" hint-size="100%,142px"></dc-import>
+<div style="padding:16px;display:flex;flex-direction:column;gap:14px">
+<div style="position:relative;aspect-ratio:1;border:1px solid #ddd;background:#f3f3f3;display:flex;align-items:center;justify-content:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">PRODUCT IMAGE · 1 / 6
+<span style="position:absolute;top:10px;left:10px;width:30px;height:30px;border-radius:15px;border:1px solid #bbb;background:#fff;display:flex;align-items:center;justify-content:center;color:#111"><svg width="14" height="14" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.6"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4M11 8v6M8 11h6"></path></svg><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font:600 10px/18px 'IBM Plex Sans',sans-serif;text-align:center;letter-spacing:0">1</b></span></div>
+<div style="position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:6px">
+<div style="aspect-ratio:1;border:1.5px solid #111;background:#ececec"></div><div style="aspect-ratio:1;background:#ececec"></div><div style="aspect-ratio:1;background:#ececec"></div><div style="aspect-ratio:1;background:#ececec"></div><div style="aspect-ratio:1;background:#dcdcdc;display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#555">▶ VIDEO</div>
+<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<div style="display:flex;gap:12px;align-items:flex-start;margin-top:6px"><div style="flex:1;font-size:22px;font-weight:600;line-height:1.3">Ceramide Barrier Repair Cream 50ml</div><span style="position:relative;flex:none;width:40px;height:40px;border:1px solid #ccc;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:18px">♡<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></span></div>
+<div style="display:flex"><span style="position:relative;font-size:13px">★★★★★ <span style="text-decoration:underline;color:#444">4.9 · 128 reviews</span><b style="position:absolute;top:-8px;right:-22px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></span></div>
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:20px">NT$1,280</b><s style="color:#999;font-size:13px">NT$1,480</s><span style="font-size:10px;letter-spacing:.08em;border:1px solid #111;border-radius:10px;padding:2px 7px">SALE</span></div>
+<div style="font-size:11px;color:#777;margin-top:-8px">Tax included · Free shipping over NT$1,500</div>
+<div><div style="font-size:12px;color:#555;margin-bottom:8px">Size</div><div style="position:relative;display:flex;gap:8px;flex-wrap:wrap"><span style="height:38px;padding:0 18px;border-radius:19px;background:#111;color:#fff;display:flex;align-items:center;font-size:13px">30 ml</span><span style="height:38px;padding:0 18px;border-radius:19px;border:1px solid #999;display:flex;align-items:center;font-size:13px">50 ml</span><span style="height:38px;padding:0 18px;border-radius:19px;border:1px solid #999;display:flex;align-items:center;font-size:13px">Duo set 2×50 ml</span><b style="position:absolute;top:-8px;right:0;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">5</b></div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:8px">Quantity</div><div style="position:relative;width:136px;height:46px;border:1px solid #111;display:flex;align-items:center;justify-content:space-between;padding:0 16px;font-size:16px"><span>−</span><span>1</span><span>+</span><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">6</b></div></div>
+<div style="position:relative;height:50px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.06em">ADD TO CART<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">7</b></div>
+<div style="display:flex;flex-direction:column;margin-top:4px">
+<div style="position:relative;height:52px;border-bottom:1px solid #ddd;display:flex;align-items:center;justify-content:space-between;font-size:14px">Highlights<span>⌄</span><b style="position:absolute;top:8px;right:22px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">8</b></div>
+<div style="height:52px;border-bottom:1px solid #ddd;display:flex;align-items:center;justify-content:space-between;font-size:14px">Details<span>⌄</span></div>
+<div style="height:52px;border-bottom:1px solid #ddd;display:flex;align-items:center;justify-content:space-between;font-size:14px">Ingredients<span>⌄</span></div>
+</div>
+</div>
+<div style="padding:28px 16px;border-top:8px solid #f2f2f2;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;flex-direction:column;align-items:center;gap:2px"><b style="font-size:40px;line-height:1">4.9</b><span style="font-size:14px">★★★★★</span><span style="font-size:12px;color:#666">128 reviews</span></div>
+<div style="display:flex;gap:8px"><div style="position:relative;flex:1;height:40px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500">Write a review<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">9</b></div><div style="position:relative;width:40px;height:40px;border:1px solid #111;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.4"><path d="M4 7h16M4 12h16M4 17h16"></path><circle cx="9" cy="7" r="2" fill="#fff"></circle><circle cx="15" cy="12" r="2" fill="#fff"></circle><circle cx="8" cy="17" r="2" fill="#fff"></circle></svg><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">10</b></div></div>
+<div style="padding:14px 0;border-bottom:1px solid #eee;display:flex;flex-direction:column;gap:6px"><div style="display:flex;justify-content:space-between;font-size:12px"><span>★★★★★</span><span style="color:#888">2026-09-21</span></div><b style="font-size:13px">L***n ✓</b><div style="font-size:13px;line-height:1.55;color:#333">My skin gets flaky every autumn. After a week the dry patches around my nose were gone. Absorbs fast, not sticky.</div><div style="display:flex;gap:6px"><div style="width:64px;height:64px;background:#e8e8e8;display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#777">PHOTO</div><div style="width:64px;height:64px;background:#e8e8e8;display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#777">PHOTO</div></div></div>
+<div style="padding:14px 0;border-bottom:1px solid #eee;display:flex;flex-direction:column;gap:6px"><div style="display:flex;justify-content:space-between;font-size:12px"><span>★★★★★</span><span style="color:#888">2026-09-18</span></div><b style="font-size:13px">K***y ✓</b><div style="font-size:13px;line-height:1.55;color:#333">Sensitive skin here — no stinging at all. I use it morning and night under sunscreen.</div></div>
+<div style="padding:14px 0;border-bottom:1px solid #eee;display:flex;flex-direction:column;gap:6px"><div style="display:flex;justify-content:space-between;font-size:12px"><span>★★★★☆</span><span style="color:#888">2026-09-02</span></div><b style="font-size:13px">W***g ✓</b><div style="font-size:13px;line-height:1.55;color:#333">Works well but a little rich for summer. Perfect once the weather cools down.</div></div>
+<div style="position:relative;height:40px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:13px">View all 128 reviews<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">11</b></div>
+</div>
+<div style="aspect-ratio:4/5;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">FULL-WIDTH IMAGE<br>texture / before-after · admin adds more</div>
+<div style="aspect-ratio:4/5;background:#e2e2e2;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">FULL-WIDTH IMAGE<br>how to use</div>
+<div style="font-size:16px;font-weight:500;padding:32px 16px 16px">You may also like</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px 40px"><sc-for list="{{ recs }}" as="p" hint-placeholder-count="4"><dc-import name="WfCard" item="{{ p }}" hint-size="100%,260px"></dc-import></sc-for></div>
+<div style="position:absolute;left:0;right:0;top:844px;border-top:1px dashed #9a9a9a;z-index:3"><span style="position:absolute;right:6px;top:2px;font:10px 'IBM Plex Mono',monospace;color:#888;background:#fff;padding:0 4px">844 · fold</span></div>
+<div style="position:absolute;right:14px;top:768px;z-index:4;width:52px;height:52px;border-radius:26px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:300;box-shadow:0 2px 8px rgba(0,0,0,.25)">+<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">I</b></div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Expand icon / tap image → full-screen image view, swipe to change · Swipe main image left/right</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Thumbnail → changes main image · ▶ VIDEO → plays video in the main image frame</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Heart → save to My favorite <a href="#s4-4">4.4</a> (Not logged in → <a href="#s3-2">3.2</a>)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Stars / review count → scrolls down to the reviews section</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">5</b><span>Option chip → selected one is filled black, price / image update · Sold-out options are dashed, not tappable</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">6</b><span>− / + adjust quantity (min 1, max = stock)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">7</b><span>ADD TO CART → mini cart popup <a href="#s1-4">1.4</a> · Cart icon count increases</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">8</b><span>Accordion → expands content in place (states <a href="#s4-2">4.2</a>) · Admin can add rows</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">9</b><span>Write a review → review form (stars, text, attach photos), requires login and a purchase</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">10</b><span>Filter → review filter sheet: with photos / star rating / latest</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">11</b><span>Loads 5 more reviews at a time on the same page</span></div>
+<div>Full-width image and recommended products (max 4), set by admin</div>
+</div>
+</div>
+
+<div id="s1-4" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">1.4</b><span style="font-size:15px;color:#444">Mini cart popup</span></div>
+<div style="position:relative;width:390px;height:844px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" count="3" hint-size="100%,142px"></dc-import>
+<div style="margin:16px;aspect-ratio:1;background:#f0f0f0"></div>
+<div style="margin:0 16px;height:26px;width:70%;background:#eee"></div>
+<div style="position:absolute;inset:0;z-index:5;background:rgba(0,0,0,.45)"></div>
+<div style="position:absolute;left:0;right:0;bottom:0;z-index:6;background:#fff;border-radius:20px 20px 0 0;padding:14px 16px 28px;display:flex;flex-direction:column;gap:16px">
+<div style="width:40px;height:4px;background:#ccc;border-radius:2px;align-self:center"></div>
+<div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:16px">✓ Added to cart</b><span style="position:relative;font-size:22px;font-weight:300;line-height:1">×<b style="position:absolute;top:-8px;right:-14px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></span></div>
+<div style="display:flex;gap:12px"><div style="width:72px;height:72px;flex:none;background:#e8e8e8;display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#777">IMG</div><div style="flex:1;display:flex;flex-direction:column;gap:4px;font-size:13px"><span>Ceramide Barrier Repair Cream 50ml</span><span style="color:#777;font-size:12px">Size: 30 ml · Qty 1</span><b>NT$1,280</b></div></div>
+<div style="background:#f3f3f3;padding:10px 12px;display:flex;flex-direction:column;gap:6px;font-size:12px"><span>✓ Free shipping unlocked</span><i style="height:4px;background:#111"></i></div>
+<div style="display:flex;justify-content:space-between;font-size:14px"><span>Cart subtotal (3 items)</span><b>NT$3,450</b></div>
+<div style="display:flex;gap:10px"><div style="position:relative;flex:1;height:48px;border-radius:24px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500">View cart<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div><div style="position:relative;flex:1;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500">Checkout<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Sheet slides up from the bottom right after tapping ADD TO CART</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>× / tap background / swipe down → closes, stays on the product page <a href="#s1-3">1.3</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>View cart → <a href="#s1-5">1.5</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Checkout → skips cart, goes to choose delivery method <a href="#s1-6">1.6</a></span></div>
+</div>
+</div>
+
+<div id="s1-5" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">1.5</b><span style="font-size:15px;color:#444">Cart · step 1</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" notag="1" hint-size="100%,114px"></dc-import>
+<div style="display:flex;align-items:center;gap:8px;padding:14px 16px;font-size:11px;letter-spacing:.03em;border-bottom:1px solid #eee"><span style="display:flex;align-items:center;gap:6px;font-weight:600"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">1</b>Cart</span><i style="flex:1;height:1px;background:#bbb"></i><span style="display:flex;align-items:center;gap:6px;color:#999"><b style="width:20px;height:20px;border-radius:10px;border:1px solid #bbb;line-height:18px;text-align:center;font-size:10px">2</b>Shipping info</span><i style="flex:1;height:1px;background:#bbb"></i><span style="display:flex;align-items:center;gap:6px;color:#999"><b style="width:20px;height:20px;border-radius:10px;border:1px solid #bbb;line-height:18px;text-align:center;font-size:10px">3</b>Complete</span></div>
+<div style="padding:16px;display:flex;flex-direction:column;gap:16px">
+<b style="font-size:20px">Cart (3)</b>
+<div style="display:flex;gap:12px;padding-bottom:16px;border-bottom:1px solid #eee"><div style="width:84px;height:84px;flex:none;background:#e8e8e8;display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#777">IMG</div><div style="flex:1;display:flex;flex-direction:column;gap:6px"><span style="font-size:13px">Ceramide Barrier Repair Cream 50ml</span><span style="font-size:12px;color:#777">Size: 30 ml</span><div style="display:flex;justify-content:space-between;align-items:center"><div style="position:relative;width:96px;height:32px;border:1px solid #111;display:flex;align-items:center;justify-content:space-between;padding:0 10px;font-size:13px"><span>−</span><span>2</span><span>+</span><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div><b style="font-size:14px">NT$2,560</b></div><div style="display:flex;gap:18px;font-size:12px;color:#555;text-decoration:underline;margin-top:2px"><span style="position:relative">Remove<b style="position:absolute;top:-8px;right:-20px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></span><span style="position:relative">Move to favorites<b style="position:absolute;top:-8px;right:-20px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></span></div></div></div>
+<div style="display:flex;gap:12px;padding-bottom:16px;border-bottom:1px solid #eee"><div style="width:84px;height:84px;flex:none;background:#e8e8e8;display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#777">IMG</div><div style="flex:1;display:flex;flex-direction:column;gap:6px"><span style="font-size:13px">Niacinamide 10% Clarifying Serum 30ml</span><span style="font-size:12px;color:#777">Single</span><div style="display:flex;justify-content:space-between;align-items:center"><div style="width:96px;height:32px;border:1px solid #111;display:flex;align-items:center;justify-content:space-between;padding:0 10px;font-size:13px"><span>−</span><span>1</span><span>+</span></div><div style="display:flex;gap:6px;align-items:baseline"><s style="font-size:11px;color:#999">NT$1,050</s><b style="font-size:14px">NT$890</b></div></div><div style="display:flex;gap:18px;font-size:12px;color:#555;text-decoration:underline;margin-top:2px"><span>Remove</span><span>Move to favorites</span></div></div></div>
+<div style="border:1.5px dashed #8a8a8a;background:repeating-linear-gradient(135deg,#f4f4f4 0 6px,#fff 6px 12px);padding:12px;font-size:12px;line-height:1.5;color:#444"><b style="display:inline-block;background:#111;color:#fff;padding:2px 8px;font-size:11px;margin-bottom:6px">Pending decision</b><div>Cart item lifetime — how many days items are kept, and how to notify customers when they expire / prices change</div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Discount code</div><div style="position:relative;display:flex;gap:8px"><div style="flex:1;height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;font-size:13px;color:#999">Enter code</div><div style="width:84px;height:44px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px">Apply</div><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px"><b style="font-size:14px">Add-on deals</b><span style="font-size:11px;color:#777">Special price with this order</span></div>
+<div style="position:relative;display:flex;gap:10px;overflow:hidden;margin-right:-16px">
+<div style="flex:none;width:140px;display:flex;flex-direction:column;gap:5px;font-size:12px"><div style="aspect-ratio:1;background:#ececec"></div><span>Centella Sheet Mask · 1 pc</span><div style="display:flex;gap:6px;align-items:baseline"><b>NT$49</b><s style="color:#999;font-size:11px">NT$90</s></div><div style="height:32px;border:1px solid #111;border-radius:16px;display:flex;align-items:center;justify-content:center">+ Add</div></div>
+<div style="flex:none;width:140px;display:flex;flex-direction:column;gap:5px;font-size:12px"><div style="aspect-ratio:1;background:#ececec"></div><span>Travel Cleanser 30ml</span><div style="display:flex;gap:6px;align-items:baseline"><b>NT$99</b><s style="color:#999;font-size:11px">NT$180</s></div><div style="height:32px;border:1px solid #111;border-radius:16px;display:flex;align-items:center;justify-content:center">+ Add</div></div>
+<div style="flex:none;width:140px;display:flex;flex-direction:column;gap:5px;font-size:12px"><div style="aspect-ratio:1;background:#ececec"></div><span>Lip Barrier Balm</span><div style="display:flex;gap:6px;align-items:baseline"><b>NT$199</b><s style="color:#999;font-size:11px">NT$320</s></div><div style="height:32px;border:1px solid #111;border-radius:16px;display:flex;align-items:center;justify-content:center">+ Add</div></div>
+<b style="position:absolute;top:0;left:122px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">5</b></div></div>
+<div style="background:#f6f6f6;padding:16px;display:flex;flex-direction:column;gap:8px;font-size:13px"><div style="display:flex;justify-content:space-between"><span>Subtotal</span><span>NT$3,450</span></div><div style="display:flex;justify-content:space-between"><span>Discount</span><span>−NT$0</span></div><div style="display:flex;justify-content:space-between;color:#777"><span>Shipping</span><span>Next step</span></div><i style="height:1px;background:#ddd"></i><div style="display:flex;justify-content:space-between;font-size:16px;font-weight:700"><span>Total</span><span>NT$3,450</span></div></div>
+<div style="position:relative;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em">Go to payment<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">6</b></div>
+<div style="position:relative;height:48px;border-radius:24px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin-bottom:12px">Keep shopping<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">7</b></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>− / + edits quantity, total updates instantly</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Remove → removes item, with a 5 s "Undo" bar</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Move to favorites → moves to My favorite <a href="#s3-4">3.4</a> (Not logged in → <a href="#s3-2">3.2</a>)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Apply → valid: discount shown in the summary · invalid: red message under the field</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">5</b><span>Special-price add-on products, swipe left/right · + Add → adds to cart on the same page</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">6</b><span>Go to payment → choose delivery method <a href="#s1-6">1.6</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">7</b><span>Keep shopping → Home <a href="#s1-2">1.2</a></span></div>
+</div>
+</div>
+
+<div id="s1-6" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">1.6</b><span style="font-size:15px;color:#444">Shipping method · step 2</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" notag="1" count="3" hint-size="100%,114px"></dc-import>
+<div style="display:flex;align-items:center;gap:8px;padding:14px 16px;font-size:11px;letter-spacing:.03em;border-bottom:1px solid #eee"><span style="display:flex;align-items:center;gap:6px;color:#555"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">✓</b>Cart</span><i style="flex:1;height:1px;background:#111"></i><span style="display:flex;align-items:center;gap:6px;font-weight:600"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">2</b>Shipping info</span><i style="flex:1;height:1px;background:#bbb"></i><span style="display:flex;align-items:center;gap:6px;color:#999"><b style="width:20px;height:20px;border-radius:10px;border:1px solid #bbb;line-height:18px;text-align:center;font-size:10px">3</b>Complete</span></div>
+<div style="padding:20px 16px;display:flex;flex-direction:column;gap:14px">
+<b style="font-size:20px">Shipping method</b>
+<div style="position:relative;border:1.5px solid #111;padding:14px;display:flex;flex-direction:column;gap:12px"><div style="display:flex;gap:10px"><i style="width:18px;height:18px;border-radius:9px;border:5px solid #111;flex:none;margin-top:2px"></i><div style="flex:1;display:flex;flex-direction:column;gap:3px"><b style="font-size:14px">7-ELEVEN store pickup</b><span style="font-size:12px;color:#666">NT$60 · free over NT$1,500 · 2–4 days</span></div></div><div style="position:relative;background:#f3f3f3;padding:10px 12px;display:flex;justify-content:space-between;font-size:13px"><span style="color:#777">Pickup store: not selected</span><u>Choose store →</u><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="border:1px solid #ccc;padding:14px;display:flex;gap:10px"><i style="width:18px;height:18px;border-radius:9px;border:1.5px solid #999;flex:none;margin-top:2px"></i><div style="flex:1;display:flex;flex-direction:column;gap:3px"><b style="font-size:14px">Home delivery</b><span style="font-size:12px;color:#666">T-Cat or Chunghwa Post · NT$100 · free over NT$1,500 · 1–3 days</span></div></div>
+<div style="background:#f3f3f3;padding:12px;font-size:12px;line-height:1.5;display:flex;gap:8px"><span style="flex:none;width:16px;height:16px;border:1px solid #555;border-radius:8px;font-size:10px;line-height:14px;text-align:center">i</span><span>All orders are prepaid. Cash on delivery is not available.</span></div>
+<div style="position:relative;border-top:1px solid #ddd;border-bottom:1px solid #ddd;height:52px;display:flex;align-items:center;justify-content:space-between;font-size:13px"><span>Order summary · 3 items ⌄</span><b>NT$3,450</b><b style="position:absolute;top:-8px;right:60px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+<div style="position:relative;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin-top:8px">Continue<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></div>
+<div style="display:flex;justify-content:center;margin-bottom:16px"><span style="position:relative;font-size:13px;text-decoration:underline">← Back to cart<b style="position:absolute;top:-8px;right:-22px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">5</b></span></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Delivery via ECPay Logistics (綠界物流) · fee per parcel, set by admin per carrier · Always prepaid, no cash on delivery</div><div><b style="display:inline-block;background:#111;color:#fff;padding:2px 8px;font-size:11px;margin-right:6px">Pending decision</b>Also offer FamilyMart / Hi-Life / OK pickup, and 7-11 pay at pickup (取貨付款)? Both are available through ECPay</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Choose delivery method (radio) · Home delivery → expands address form (name, phone, city, district, address) instead of the store picker</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Choose store → recipient + 7-ELEVEN e-map <a href="#s1-7">1.7</a> · After choosing, returns showing the store name + Change</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Expands item list + total</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Continue → Not logged in: <a href="#s1-8">1.8</a> · Logged in: <a href="#s1-9">1.9</a> · No store chosen: disabled</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">5</b><span>← Back to cart → <a href="#s1-5">1.5</a></span></div>
+</div>
+</div>
+
+<div id="s1-7" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">1.7</b><span style="font-size:15px;color:#444">Choose 7-ELEVEN store</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<div style="height:56px;display:flex;align-items:center;gap:12px;padding:0 16px;border-bottom:1px solid #e6e6e6"><span style="position:relative;font-size:18px">←<b style="position:absolute;top:-8px;right:-14px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></span><b style="font-size:15px;flex:1;text-align:center;margin-right:24px">Pickup store</b></div>
+<div style="padding:20px 16px;display:flex;flex-direction:column;gap:14px">
+<div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">RECIPIENT</div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Recipient name</div><div style="height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;font-size:13px">Chen Mei-Ling</div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Recipient mobile</div><div style="height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;font-size:13px">0912 345 678</div><div style="font-size:11px;color:#777;margin-top:6px">Name must match the ID shown at pickup.</div></div>
+<div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600;margin-top:8px">PICKUP STORE</div>
+<div style="position:relative;height:48px;border:1.5px solid #111;display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;font-weight:500">Choose store on 7-ELEVEN map ↗<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0;text-decoration:none">2</b></div>
+<div style="position:relative;height:150px;background:#e8e8e8;display:flex;flex-direction:column;gap:6px;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">OFFICIAL 7-ELEVEN E-MAP<br>opened by ECPay · city → district → road → store</div>
+<div style="position:relative;display:flex;gap:10px;padding:12px;background:#f3f3f3;align-items:center"><div style="flex:1;display:flex;flex-direction:column;gap:2px;font-size:13px"><span style="font-size:11px;color:#777">Returned from the map</span><b>Zhongxiao Store · #135624</b><span style="font-size:12px;color:#666">No. 210, Sec. 4, Zhongxiao E. Rd.</span></div><u style="font-size:12px">Change</u><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0;text-decoration:none">3</b></div>
+<div style="position:relative;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin:8px 0 12px">Confirm store<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>← Back <a href="#s1-6">1.6</a> without saving</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Opens the official 7-ELEVEN e-map through ECPay (new page) · customer picks city → district → road → store on the map</span></div><div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Map returns the store name + ID to this page · Change → opens the map again</span></div><div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Confirm store → back to <a href="#s1-6">1.6</a> with the store name (name + phone must be filled in first)</span></div>
+</div>
+</div>
+
+<div id="s1-8" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">1.8</b><span style="font-size:15px;color:#444">Login check</span></div>
+<div style="position:relative;width:390px;height:844px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" notag="1" count="3" hint-size="100%,114px"></dc-import>
+<div style="display:flex;align-items:center;gap:8px;padding:14px 16px;font-size:11px;letter-spacing:.03em;border-bottom:1px solid #eee"><span style="display:flex;align-items:center;gap:6px;color:#555"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">✓</b>Cart</span><i style="flex:1;height:1px;background:#111"></i><span style="display:flex;align-items:center;gap:6px;font-weight:600"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">2</b>Shipping info</span><i style="flex:1;height:1px;background:#bbb"></i><span style="display:flex;align-items:center;gap:6px;color:#999"><b style="width:20px;height:20px;border-radius:10px;border:1px solid #bbb;line-height:18px;text-align:center;font-size:10px">3</b>Complete</span></div>
+<div style="padding:40px 24px;display:flex;flex-direction:column;gap:14px">
+<b style="font-size:22px;text-align:center;line-height:1.3">How would you like to check out?</b>
+<span style="font-size:13px;color:#555;text-align:center;margin-bottom:12px">Sign in to earn points and use your coupons.</span>
+<div style="position:relative;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em">Sign in<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="position:relative;height:48px;border-radius:24px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em">Create account<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<div style="display:flex;align-items:center;gap:12px;font-size:12px;color:#888;margin:6px 0"><i style="flex:1;height:1px;background:#ddd"></i>or<i style="flex:1;height:1px;background:#ddd"></i></div>
+<div style="display:flex;justify-content:center"><span style="position:relative;font-size:14px;font-weight:500;text-decoration:underline">Continue as guest →<b style="position:absolute;top:-8px;right:-22px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></span></div>
+<span style="font-size:12px;color:#777;text-align:center">Guests can track orders with order number + mobile.</span>
+<div style="background:#f3f3f3;padding:16px;display:flex;flex-direction:column;gap:8px;font-size:13px;margin-top:12px"><b style="font-size:12px;letter-spacing:.12em">MEMBER BENEFITS</b><span>✓ 1 point for every NT$100</span><span>✓ Save your 7-ELEVEN store</span><span>✓ Birthday coupon</span></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Shown only to users who are not logged in</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Sign in → <a href="#s3-2">3.2</a> then back to <a href="#s1-9">1.9</a> (cart is kept)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Create account → <a href="#s3-2">3.2</a> Sign up tab, then back to <a href="#s1-9">1.9</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Continue as guest → <a href="#s1-9">1.9</a> without signing up · The backend creates a member account from the mobile number at checkout (SMS verification), so points can be added to it later</span></div><div><b style="display:inline-block;background:#111;color:#fff;padding:2px 8px;font-size:11px;margin-right:6px">Pending decision</b>Auto-create member from guest mobile + which SMS provider</div>
+</div>
+</div>
+
+<div id="s1-9" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">1.9</b><span style="font-size:15px;color:#444">Info &amp; payment</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" notag="1" count="3" hint-size="100%,114px"></dc-import>
+<div style="display:flex;align-items:center;gap:8px;padding:14px 16px;font-size:11px;letter-spacing:.03em;border-bottom:1px solid #eee"><span style="display:flex;align-items:center;gap:6px;color:#555"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">✓</b>Cart</span><i style="flex:1;height:1px;background:#111"></i><span style="display:flex;align-items:center;gap:6px;font-weight:600"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">2</b>Shipping info</span><i style="flex:1;height:1px;background:#bbb"></i><span style="display:flex;align-items:center;gap:6px;color:#999"><b style="width:20px;height:20px;border-radius:10px;border:1px solid #bbb;line-height:18px;text-align:center;font-size:10px">3</b>Complete</span></div>
+<div style="padding:20px 16px;display:flex;flex-direction:column;gap:22px">
+<div style="display:flex;flex-direction:column;gap:8px"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">CONTACT</div><div style="height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;font-size:13px;color:#999">Email address</div><span style="font-size:11px;color:#777">Order confirmation and e-invoice are sent here.</span></div>
+<div style="display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between"><span style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">SHIP TO</span><span style="position:relative;font-size:12px;text-decoration:underline">Edit<b style="position: absolute; top: -19px; right: -12px; z-index: 4; width: 18px; height: 18px; border-radius: 9px; background: #2F5BEA; color: #fff; font-size: 10px; font-weight: 600; line-height: 18px; text-align: center; text-decoration: none">1</b></span></div><div style="background:#f3f3f3;padding:12px;font-size:13px;line-height:1.55">7-ELEVEN Zhongxiao Store #135624<br><span style="color:#666">Chen Mei-Ling · 0912 345 678</span></div></div>
+<div style="display:flex;flex-direction:column;gap:8px"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">E-INVOICE</div>
+<div style="position:relative;display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px">
+<span style="height:40px;border:1px solid #bbb;display:flex;align-items:center;justify-content:center">Member carrier</span>
+<span style="height:40px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center">Mobile barcode</span>
+<span style="height:40px;border:1px solid #bbb;display:flex;align-items:center;justify-content:center">Company Tax ID</span>
+<span style="height:40px;border:1px solid #bbb;display:flex;align-items:center;justify-content:center">Donate</span>
+<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<div style="height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;font-size:13px;color:#999">Barcode e.g. /ABC+123</div></div>
+<div style="display:flex;flex-direction:column;gap:8px"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">PAYMENT</div>
+<div style="position:relative;border:1px solid #ddd;display:flex;flex-direction:column;font-size:13px">
+<div style="display:flex;gap:10px;align-items:center;padding:12px"><i style="width:18px;height:18px;border-radius:9px;border:1.5px solid #999;flex:none"></i>LINE Pay</div>
+<div style="display:flex;flex-direction:column;gap:8px;padding:12px;border-top:1px solid #eee;background:#f6f6f6"><div style="display:flex;gap:10px;align-items:center;font-weight:600"><i style="width:18px;height:18px;border-radius:9px;border:5px solid #111;flex:none"></i>Credit card</div><div style="height:40px;border:1px solid #bdbdbd;background:#fff;padding:0 10px;display:flex;align-items:center;color:#999">Card number</div><div style="display:flex;gap:8px"><div style="flex:1;height:40px;border:1px solid #bdbdbd;background:#fff;padding:0 10px;display:flex;align-items:center;color:#999">MM / YY</div><div style="flex:1;height:40px;border:1px solid #bdbdbd;background:#fff;padding:0 10px;display:flex;align-items:center;color:#999">CVC</div></div></div>
+<div style="display:flex;gap:10px;align-items:center;padding:12px;border-top:1px solid #eee"><i style="width:18px;height:18px;border-radius:9px;border:1.5px solid #999;flex:none"></i>Apple Pay</div>
+<div style="display:flex;gap:10px;align-items:center;padding:12px;border-top:1px solid #eee"><i style="width:18px;height:18px;border-radius:9px;border:1.5px solid #999;flex:none"></i><span>ATM transfer <span style="color:#777;font-size:12px">· pay within 24 hrs</span></span></div>
+<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div></div>
+<div style="background:#f6f6f6;padding:16px;display:flex;flex-direction:column;gap:8px;font-size:13px"><div style="display:flex;justify-content:space-between"><span>Subtotal</span><span>NT$3,450</span></div><div style="display:flex;justify-content:space-between"><span>Shipping</span><span>Free</span></div><div style="display:flex;justify-content:space-between"><span>Coupon WELCOME100</span><span>−NT$100</span></div><i style="height:1px;background:#ddd"></i><div style="display:flex;justify-content:space-between;font-size:16px;font-weight:700"><span>Total</span><span>NT$3,350</span></div></div>
+<div style="position:relative;border:1px solid #ddd;padding:12px;font-size:12px;line-height:1.55;color:#333;display:flex;flex-direction:column;gap:10px"><b style="font-size:12px;letter-spacing:.12em">PURCHASE NOTICE</b><span>Please enter the recipient's real name — it must match the ID shown at pickup. Read the shopping guide and return policy before ordering.</span><div style="display:flex;gap:10px;font-size:13px"><i style="width:20px;height:20px;border:1.5px solid #111;flex:none"></i><span>Send me news and offers (optional)</span></div><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0;text-decoration:none">6</b></div><div style="position:relative;display:flex;gap:10px;font-size:13px;line-height:1.5"><i style="width:20px;height:20px;border:1.5px solid #111;flex:none"></i><span>I agree to the <u>Terms of Service</u> and <u>Privacy Policy</u>.</span><b style="position:absolute;top:-8px;left:10px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></div>
+<div style="position:relative;height:50px;border-radius:25px;background:#e3e3e3;color:#9a9a9a;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin-bottom:12px">Place order · NT$3,350<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">5</b></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Payments via ECPay · Apple Pay is shown only on Safari / iOS · ATM = ECPay virtual account, auto-cancelled if not paid in time · e-invoice issued through ECPay</div><div><b style="display:inline-block;background:#111;color:#fff;padding:2px 8px;font-size:11px;margin-right:6px">Pending decision</b>LINE Pay: through ECPay, or a separate LINE Pay contract?</div><div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Edit → back to <a href="#s1-6">1.6</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>4 invoice types, fields change based on selection: Member carrier (no input, hidden for guests) · Mobile barcode (/XXXXXXX) · Company Tax ID (8-digit number + company name) · Donate (choose organisation)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Choose payment method · Credit card: expands card fields · LINE Pay / Apple Pay: goes to the provider's page after placing the order · ATM: virtual account number shown on page <a href="#s1-10">1.10</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Tick to accept terms → button 5 becomes enabled · Terms link opens as a popup</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">5</b><span>Place order → not ticked: disabled (state <a href="#s4-3">4.3</a>) · Ticked: payment → <a href="#s1-10">1.10</a> · Payment failed: stays on this page with a message</span></div><div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">6</b><span>Purchase notice text is set by admin · News &amp; offers tick is optional and saved to the member profile <a href="#s3-3">3.3</a></span></div>
+</div>
+</div>
+
+<div id="s1-10" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">1.10</b><span style="font-size:15px;color:#444">Order complete · step 3</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" notag="1" count="0" hint-size="100%,114px"></dc-import>
+<div style="display:flex;align-items:center;gap:8px;padding:14px 16px;font-size:11px;letter-spacing:.03em;border-bottom:1px solid #eee"><span style="display:flex;align-items:center;gap:6px;color:#555"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">✓</b>Cart</span><i style="flex:1;height:1px;background:#111"></i><span style="display:flex;align-items:center;gap:6px;color:#555"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">✓</b>Shipping info</span><i style="flex:1;height:1px;background:#111"></i><span style="display:flex;align-items:center;gap:6px;font-weight:600"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">3</b>Complete</span></div>
+<div style="padding:28px 16px;display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center"><span style="width:56px;height:56px;border-radius:28px;border:1.5px solid #111;display:flex;align-items:center;justify-content:center;font-size:24px">✓</span><b style="font-size:20px">Thank you for your order</b><span style="font-size:13px;color:#555">Order #9L26100401 · sent to mei@example.com</span></div>
+<div style="border:1.5px solid #111;padding:12px;font-size:13px;line-height:1.5;display:flex;gap:8px"><b style="flex:none">!</b><span>Please pick up within <b>5 days</b> of the arrival SMS. Unclaimed parcels are returned and the order is cancelled.</span></div>
+<div style="display:flex;flex-direction:column;gap:8px;font-size:13px"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">SHIPPING</div><div style="display:flex;justify-content:space-between"><span style="color:#777">Method</span><span>7-ELEVEN pickup</span></div><div style="display:flex;justify-content:space-between"><span style="color:#777">Store</span><span>Zhongxiao #135624</span></div><div style="display:flex;justify-content:space-between"><span style="color:#777">Recipient</span><span>Chen Mei-Ling · 0912 345 678</span></div></div>
+<div style="display:flex;flex-direction:column;gap:8px;font-size:13px;border-top:1px solid #eee;padding-top:16px"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">ORDER</div><div style="display:flex;justify-content:space-between"><span style="color:#777">Date</span><span>2026-10-04 14:32</span></div><div style="display:flex;justify-content:space-between"><span style="color:#777">Payment</span><span>Credit card •••• 4242</span></div><div style="display:flex;justify-content:space-between"><span style="color:#777">Items</span><span>Ceramide Cream ×2, Niacinamide Serum ×1</span></div><div style="display:flex;justify-content:space-between;font-weight:700"><span>Total</span><span>NT$3,350</span></div></div>
+<div style="background:#f3f3f3;padding:16px;display:flex;gap:12px;align-items:center"><span style="flex:none;width:44px;height:44px;border:1px solid #999;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600">LINE</span><div style="flex:1;display:flex;flex-direction:column;gap:2px;font-size:13px"><b>Add 9Lab on LINE</b><span style="font-size:12px;color:#555">Get a NT$100 coupon for your next order</span></div><span style="position:relative;height:34px;padding:0 14px;border-radius:17px;background:#111;color:#fff;display:flex;align-items:center;font-size:12px">Add friend<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></span></div>
+<div style="position:relative;background:#f3f3f3;padding:14px;font-size:13px;line-height:1.5;display:flex;flex-direction:column;gap:4px"><b>We created your 9Lab account</b><span style="font-size:12px;color:#555">Signed in with 0912 345 678 · points from this order are saved. Verify by SMS to set a password.</span><u style="font-size:12px">Verify now →</u><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0;text-decoration:none">4</b></div><div style="border:1px dashed #888;padding:12px;font-size:12px;line-height:1.55;color:#333"><b>Scam alert:</b> 9Lab will never call or message you to change payment settings or use an ATM. If in doubt, call the 165 anti-fraud hotline.</div>
+<div style="position:relative;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em">Check order<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<div style="position:relative;height:48px;border-radius:24px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin-bottom:12px">Keep shopping<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Cart is cleared · Confirmation email + SMS sent · If ATM was chosen, shows the virtual account number and deadline instead of card info</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Add friend → opens the LINE app on 9Lab's OA add-friend page · Coupon goes into My coupon <a href="#s3-5">3.5</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Check order → Track my order <a href="#s3-6">3.6</a> (guest: enter order number + phone)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Keep shopping → Home <a href="#s1-2">1.2</a></span></div><div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Guests only: account was auto-created from the mobile number · Verify now → SMS code → set password <a href="#s3-2">3.2</a></span></div><div><b style="display:inline-block;background:#111;color:#fff;padding:2px 8px;font-size:11px;margin-right:6px">Pending decision</b>Same as 1.8 — needs SMS provider decision</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="row2" style="padding:56px 80px 80px;width:max-content">
+<div style="display:flex;align-items:baseline;gap:20px;margin-bottom:36px;border-bottom:2px solid #111;padding-bottom:14px"><b style="font-size:44px">Row 2</b><span style="font-size:24px;color:#333">Browse &amp; search</span></div>
+<div style="display:flex;gap:64px;align-items:flex-start">
+
+<div id="s2-1" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">2.1</b><span style="font-size:15px;color:#444">Menu drawer · level 1</span></div>
+<div style="position:relative;width:390px;height:844px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" hint-size="100%,142px"></dc-import>
+<div style="height:440px;background:#e8e8e8"></div>
+<div style="position:absolute;inset:0;z-index:5;background:rgba(0,0,0,.45)"><b style="position:absolute;top:420px;right:36px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<div style="position:absolute;top:0;left:0;bottom:0;width:292px;z-index:6;background:#fff;display:flex;flex-direction:column">
+<div style="height:56px;display:flex;align-items:center;padding:0 18px;border-bottom:1px solid #eee"><span style="position:relative;font-size:24px;font-weight:300;line-height:1">×<b style="position:absolute;top:-6px;right:-16px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></span></div>
+<div style="display:flex;flex-direction:column;padding-top:12px;font-size:14px;letter-spacing:.06em">
+<div style="position:relative;height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:#efefef">SHOP<span>→</span><b style="position:absolute;top:4px;left:64px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0">3</b></div>
+<div style="position:relative;height:52px;display:flex;align-items:center;padding:0 20px">NEW ARRIVALS<b style="position:absolute;top:4px;left:140px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0">4</b></div>
+<div style="height:52px;display:flex;align-items:center;padding:0 20px">BEST SELLER</div>
+<div style="height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px">ABOUT US<span>→</span></div>
+<div style="height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px">CUSTOMER INFO<span>→</span></div>
+</div>
+<div style="margin-top:auto;padding:20px;border-top:1px solid #eee;display:flex;flex-direction:column;gap:16px">
+<div style="position:relative;display:flex;gap:10px;align-items:center;font-size:13px"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.4"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"></path></svg>Sign in / Join<b style="position:absolute;top:-6px;left:118px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">5</b></div>
+<div style="position:relative;display:flex;border:1px solid #111;border-radius:20px;overflow:visible;font-size:12px"><span style="flex:1;text-align:center;padding:9px">繁體中文</span><span style="flex:1;text-align:center;padding:9px;background:#111;color:#fff;border-radius:0 20px 20px 0">English</span><b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">6</b></div><div style="position:relative;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#555;padding:0 2px"><span>Currency</span><span>TWD (NT$)</span><b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0;text-decoration:none">7</b></div>
+</div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Drawer is ¾ of the screen wide (292px), slides from the left, homepage visible behind · Admin can add unlimited categories / sub-categories</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>× → closes drawer</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Tap the dark area → closes drawer</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Items with → : tapped row gets a grey bar, then the next level replaces the whole list <a href="#s2-2">2.2</a> (ABOUT US / CUSTOMER INFO work the same way)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Items without → : go to the product list <a href="#s2-5">2.5</a> directly</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">5</b><span>Sign in / Join → <a href="#s3-2">3.2</a> (logged in shows "Hi, name" → <a href="#s3-3">3.3</a>)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">6</b><span>Language switch 繁體中文 / English → reloads the same page in that language</span></div><div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">7</b><span>Currency shown as text: TWD (NT$) only at launch · becomes a selector if admin adds a second currency</span></div>
+</div>
+</div>
+
+<div id="s2-2" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">2.2</b><span style="font-size:15px;color:#444">Menu drawer · level 2 (SHOP)</span></div>
+<div style="position:relative;width:390px;height:844px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" hint-size="100%,142px"></dc-import>
+<div style="height:440px;background:#e8e8e8"></div>
+<div style="position:absolute;inset:0;z-index:5;background:rgba(0,0,0,.45)"></div>
+<div style="position:absolute;top:0;left:0;bottom:0;width:292px;z-index:6;background:#fff;display:flex;flex-direction:column">
+<div style="height:56px;display:flex;align-items:center;padding:0 18px;border-bottom:1px solid #eee;font-size:24px;font-weight:300">×</div>
+<div style="position:relative;height:44px;display:flex;align-items:center;gap:10px;padding:0 20px;background:#efefef;font-size:12px;letter-spacing:.06em;margin-top:12px">← SHOP<b style="position:absolute;top:13px;left:92px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0">1</b></div>
+<div style="display:flex;flex-direction:column;font-size:14px;letter-spacing:.06em">
+<div style="position:relative;height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:#f6f6f6">SKIN TYPE<span>→</span><b style="position:absolute;top:4px;left:108px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0">2</b></div>
+<div style="height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px">PRODUCT TYPE<span>→</span></div>
+<div style="position:relative;height:52px;display:flex;align-items:center;padding:0 20px">SETS &amp; BUNDLES<b style="position:absolute;top:4px;left:156px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0">3</b></div>
+<div style="height:52px;display:flex;align-items:center;padding:0 20px">ALL PRODUCTS</div>
+</div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>← SHOP (light grey bar) → back up one level <a href="#s2-1">2.1</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>SKIN TYPE → level 3 <a href="#s2-3">2.3</a> · PRODUCT TYPE → level 3: All, Cleanser, Toner, Serum, Cream, Mask, Sun care, Eye &amp; lip</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Category with no sub-levels → product list <a href="#s2-5">2.5</a></span></div>
+</div>
+</div>
+
+<div id="s2-3" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">2.3</b><span style="font-size:15px;color:#444">Menu drawer · level 3 (Skin type)</span></div>
+<div style="position:relative;width:390px;height:844px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" hint-size="100%,142px"></dc-import>
+<div style="height:440px;background:#e8e8e8"></div>
+<div style="position:absolute;inset:0;z-index:5;background:rgba(0,0,0,.45)"></div>
+<div style="position:absolute;top:0;left:0;bottom:0;width:292px;z-index:6;background:#fff;display:flex;flex-direction:column">
+<div style="height:56px;display:flex;align-items:center;padding:0 18px;border-bottom:1px solid #eee;font-size:24px;font-weight:300">×</div>
+<div style="position:relative;height:44px;display:flex;align-items:center;gap:10px;padding:0 20px;background:#efefef;font-size:12px;letter-spacing:.06em;margin-top:12px">← SKIN TYPE<b style="position:absolute;top:13px;left:124px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0">1</b></div>
+<div style="display:flex;flex-direction:column;font-size:14px;letter-spacing:.06em">
+<div style="height:52px;display:flex;align-items:center;padding:0 20px">ALL SKIN TYPES</div>
+<div style="height:52px;display:flex;align-items:center;padding:0 20px">DRY</div>
+<div style="position:relative;height:52px;display:flex;align-items:center;padding:0 20px;background:#f6f6f6">OILY<b style="position:absolute;top:4px;left:70px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0">2</b></div>
+<div style="height:52px;display:flex;align-items:center;padding:0 20px">COMBINATION</div>
+<div style="height:52px;display:flex;align-items:center;padding:0 20px">SENSITIVE</div>
+<div style="height:52px;display:flex;align-items:center;padding:0 20px">ACNE-PRONE</div>
+</div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>← SKIN TYPE → back <a href="#s2-2">2.2</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Choose category → closes drawer, goes to product list "OILY SKIN" <a href="#s2-5">2.5</a> · Current category has a light grey bar</span></div>
+</div>
+</div>
+
+<div id="s2-4" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">2.4</b><span style="font-size:15px;color:#444">Search overlay</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<div style="height:64px;display:flex;align-items:center;gap:12px;padding:0 16px;border-bottom:1px solid #eee"><div style="flex:1;height:42px;border:1px solid #111;border-radius:21px;padding:0 14px;display:flex;align-items:center;gap:8px;font-size:13px;color:#999"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.6"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>Search products, ingredients…</div><span style="position:relative;font-size:13px;text-decoration:underline">Cancel<b style="position:absolute;top:-10px;right:-10px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;text-decoration:none">1</b></span></div>
+<div style="padding:20px 16px;display:flex;flex-direction:column;gap:12px">
+<div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">POPULAR SEARCHES</div>
+<div style="position:relative;display:flex;flex-wrap:wrap;gap:8px;font-size:12px"><span style="padding:7px 14px;border:1px solid #bbb;border-radius:16px">Ceramide</span><span style="padding:7px 14px;border:1px solid #bbb;border-radius:16px">Niacinamide</span><span style="padding:7px 14px;border:1px solid #bbb;border-radius:16px">Sunscreen</span><span style="padding:7px 14px;border:1px solid #bbb;border-radius:16px">Sheet mask</span><span style="padding:7px 14px;border:1px solid #bbb;border-radius:16px">Retinal</span><span style="padding:7px 14px;border:1px solid #bbb;border-radius:16px">Sensitive skin</span><b style="position:absolute;top:-8px;right:0;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<div style="display:flex;justify-content:space-between;margin-top:12px"><span style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">RECENT</span><span style="font-size:12px;text-decoration:underline;color:#555">Clear</span></div>
+<div style="display:flex;justify-content:space-between;font-size:13px"><span>toner</span><span style="color:#999">×</span></div>
+<div style="display:flex;justify-content:space-between;font-size:13px"><span>vitamin c</span><span style="color:#999">×</span></div>
+</div>
+<div style="background:#efefef;padding:8px 16px;font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">STATE · TYPING "cera"</div>
+<div style="padding:16px;display:flex;flex-direction:column;gap:12px">
+<div style="height:42px;border:1px solid #111;border-radius:21px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;font-size:13px"><span>cera|</span><span style="color:#999">×</span></div>
+<div style="position:relative;display:flex;flex-direction:column;gap:12px;font-size:13px"><span>↖ <b>cera</b>mide cream</span><span>↖ <b>cera</b>mide toner</span><span>↖ <b>cera</b>mide lip mask</span><b style="position:absolute;top:-6px;right:0;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+<div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600;margin-top:8px">PRODUCTS</div>
+<div style="position:relative;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:center"><div style="width:56px;height:56px;background:#ececec;flex:none"></div><div style="display:flex;flex-direction:column;gap:2px;font-size:13px"><span>Ceramide Barrier Repair Cream 50ml</span><b>NT$1,280</b></div></div>
+<div style="display:flex;gap:12px;align-items:center"><div style="width:56px;height:56px;background:#ececec;flex:none"></div><div style="display:flex;flex-direction:column;gap:2px;font-size:13px"><span>Ceramide Overnight Lip Mask</span><b>NT$390</b></div></div>
+<b style="position:absolute;top:-8px;right:0;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></div>
+<div style="position:relative;height:44px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:13px;margin:8px 0 16px">See all results for "cera" →<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">5</b></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Full-screen overlay on top of everything · Keyboard opens immediately · Top = not typing yet, bottom = typing</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Cancel → closes overlay, back to previous page</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Popular searches (set by admin) → search results <a href="#s2-6">2.6</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Suggestions appear after typing 2 characters → search results <a href="#s2-6">2.6</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Matching product → product page <a href="#s1-3">1.3</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">5</b><span>See all / Enter → <a href="#s2-6">2.6</a> · No results → <a href="#s2-7">2.7</a></span></div>
+</div>
+</div>
+
+<div id="s2-5" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">2.5</b><span style="font-size:15px;color:#444">Product list (category)</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" hint-size="100%,142px"></dc-import>
+<div style="padding:12px 16px 0;font-size:11px;color:#888">Home / Shop / Skin type</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px;padding:16px 16px 20px"><b style="font-size:20px;letter-spacing:.14em">OILY SKIN</b><span style="font-size:12px;color:#777">24 products</span></div>
+<div style="display:flex;border-top:1px solid #ddd;border-bottom:1px solid #ddd;height:48px;font-size:13px"><div style="position:relative;flex:1;display:flex;align-items:center;justify-content:center;gap:6px;border-right:1px solid #ddd"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.4"><path d="M4 7h16M4 12h16M4 17h16"></path><circle cx="9" cy="7" r="2" fill="#fff"></circle><circle cx="15" cy="12" r="2" fill="#fff"></circle><circle cx="8" cy="17" r="2" fill="#fff"></circle></svg>Filter (2)<b style="position:absolute;top:4px;right:30px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div><div style="position:relative;flex:1;display:flex;align-items:center;justify-content:center">Sort: Best selling ⌄<b style="position:absolute;top:4px;right:8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div></div>
+<div style="position:relative;display:flex;gap:8px;align-items:center;padding:12px 16px 20px;font-size:12px"><span style="padding:6px 12px;background:#efefef;border-radius:14px">Serum ×</span><span style="padding:6px 12px;background:#efefef;border-radius:14px">Under NT$1,000 ×</span><u style="color:#555">Clear all</u><b style="position:absolute;top:4px;right:16px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px"><sc-for list="{{ oily }}" as="p" hint-placeholder-count="6"><dc-import name="WfCard" item="{{ p }}" hint-size="100%,260px"></dc-import></sc-for></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:28px 16px 40px"><span style="font-size:12px;color:#777">Showing 6 of 24</span><div style="position:relative;width:200px;height:42px;border:1px solid #111;border-radius:21px;display:flex;align-items:center;justify-content:center;font-size:13px">Load more<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></div></div>
+<div style="position:absolute;left:0;right:0;top:844px;border-top:1px dashed #9a9a9a;z-index:3"><span style="position:absolute;right:6px;top:2px;font:10px 'IBM Plex Mono',monospace;color:#888;background:#fff;padding:0 4px">844 · fold</span></div>
+<div style="position:absolute;right:14px;top:768px;z-index:4;width:52px;height:52px;border-radius:26px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:300;box-shadow:0 2px 8px rgba(0,0,0,.25)">+<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">I</b></div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Same layout as search results, only the header differs (see <a href="#s2-6">2.6</a>) · Filter / Sort bar sticks to the top on scroll</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Filter → bottom sheet: skin type, product type, price range, in stock only · Show 12 results button</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Sort → Best selling / Newest / Price low–high / Price high–low / Top rated</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>× removes that filter · Clear all removes everything</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Load more → loads 6 more at a time on the same page</span></div>
+<div>Sold out: faded image, SOLD OUT label, Notify me button (J) instead of price/add to cart</div>
+</div>
+</div>
+
+<div id="s2-6" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">2.6</b><span style="font-size:15px;color:#444">Search results · sold-out + Notify me</span></div>
+<div style="position:relative;width:390px;height:1100px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" hint-size="100%,142px"></dc-import>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px;padding:24px 16px 20px"><b style="font-size:18px">Results for "ceramide"</b><span style="font-size:12px;color:#777">4 results</span></div>
+<div style="display:flex;border-top:1px solid #ddd;border-bottom:1px solid #ddd;height:48px;font-size:13px;margin-bottom:20px"><div style="flex:1;display:flex;align-items:center;justify-content:center;border-right:1px solid #ddd">Filter</div><div style="flex:1;display:flex;align-items:center;justify-content:center">Sort: Relevance ⌄</div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px"><sc-for list="{{ cera }}" as="p" hint-placeholder-count="4"><dc-import name="WfCard" item="{{ p }}" hint-size="100%,260px"></dc-import></sc-for></div>
+<div style="position:absolute;inset:0;z-index:5;background:rgba(0,0,0,.45)"></div>
+<div style="position:absolute;left:0;right:0;bottom:0;z-index:6;background:#fff;border-radius:20px 20px 0 0;padding:14px 16px 28px;display:flex;flex-direction:column;gap:14px">
+<div style="width:40px;height:4px;background:#ccc;border-radius:2px;align-self:center"></div>
+<div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:16px">Notify me when it's back</b><span style="font-size:22px;font-weight:300">×</span></div>
+<div style="display:flex;gap:12px;align-items:center"><div style="width:56px;height:56px;background:#ececec;flex:none"></div><div style="display:flex;flex-direction:column;gap:2px;font-size:13px"><span>Ceramide Barrier Toner 200ml</span><span style="font-size:12px;color:#777">Sold out</span></div></div>
+<div style="position:relative;display:flex;gap:8px;font-size:13px"><span style="flex:1;height:40px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center">LINE</span><span style="flex:1;height:40px;border:1px solid #bbb;display:flex;align-items:center;justify-content:center">Email</span><b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="position:relative;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500">Notify me<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<span style="font-size:11px;color:#777;text-align:center">Also saved to My favorite › Back in stock</span>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Search results header = search term + result count (category pages use the category name) · Tap Notify me (J) on a sold-out card → this sheet</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Choose alert channel LINE / Email (Email expands an input field)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Notify me → closes sheet + toast "We'll let you know" · Added to Back in stock <a href="#s3-4">3.4</a> · Not logged in → <a href="#s3-2">3.2</a></span></div>
+</div>
+</div>
+
+<div id="s2-7" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">2.7</b><span style="font-size:15px;color:#444">Search · no results</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" hint-size="100%,142px"></dc-import>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px;padding:24px 16px 8px"><b style="font-size:18px">Results for "vitamin k"</b><span style="font-size:12px;color:#777">0 results</span></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 24px;text-align:center"><span style="width:64px;height:64px;border-radius:32px;background:#efefef;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="#888" stroke-width="1.4"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></span><b style="font-size:16px">No products match "vitamin k"</b><span style="font-size:13px;color:#555;line-height:1.5">Check the spelling or try a broader word like "vitamin".</span></div>
+<div style="padding:0 16px;display:flex;flex-direction:column;gap:14px">
+<div style="position:relative;height:42px;border:1px solid #111;border-radius:21px;padding:0 14px;display:flex;align-items:center;gap:8px;font-size:13px;color:#999"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.6"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>Search again<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600;margin-top:6px">POPULAR SEARCHES</div>
+<div style="position:relative;display:flex;flex-wrap:wrap;gap:8px;font-size:12px"><span style="padding:7px 14px;border:1px solid #bbb;border-radius:16px">Vitamin C</span><span style="padding:7px 14px;border:1px solid #bbb;border-radius:16px">Ceramide</span><span style="padding:7px 14px;border:1px solid #bbb;border-radius:16px">Sunscreen</span><span style="padding:7px 14px;border:1px solid #bbb;border-radius:16px">Sheet mask</span><b style="position:absolute;top:-8px;right:0;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+</div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:36px 16px 16px">YOU MAY ALSO LIKE</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px 40px"><sc-for list="{{ recs }}" as="p" hint-placeholder-count="4"><dc-import name="WfCard" item="{{ p }}" hint-size="100%,260px"></dc-import></sc-for></div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Search again → opens overlay <a href="#s2-4">2.4</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Popular searches → search results <a href="#s2-6">2.6</a></span></div>
+<div>Recommended products = 4 best sellers (G → <a href="#s1-3">1.3</a>)</div>
+</div>
+</div>
+
+</div>
+</section>
+<section id="row3" style="padding:56px 80px 80px;width:max-content">
+<div style="display:flex;align-items:baseline;gap:20px;margin-bottom:36px;border-bottom:2px solid #111;padding-bottom:14px"><b style="font-size:44px">Row 3</b><span style="font-size:24px;color:#333">Member</span></div>
+<div style="display:flex;gap:64px;align-items:flex-start">
+
+<div id="s3-1" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">3.1</b><span style="font-size:15px;color:#444">Member dropdown (signed in)</span></div>
+<div style="position:relative;width:390px;height:844px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" hint-size="100%,142px"></dc-import>
+<div style="height:440px;background:#e8e8e8"></div>
+<div style="position:absolute;inset:0;z-index:5;background:rgba(0,0,0,.08)"></div>
+<div style="position:absolute;top:112px;right:12px;width:232px;z-index:6;background:#fff;border:1px solid #ccc;box-shadow:0 6px 20px rgba(0,0,0,.12);display:flex;flex-direction:column">
+<div style="padding:14px 16px;border-bottom:1px solid #eee;display:flex;flex-direction:column;gap:2px"><b style="font-size:14px">Hi, Mei-Ling</b><span style="font-size:12px;color:#777">Gold member · 320 points</span></div>
+<div style="position:relative;display:flex;flex-direction:column;font-size:13px"><span style="height:46px;display:flex;align-items:center;padding:0 16px">Member center</span><span style="height:46px;display:flex;align-items:center;padding:0 16px">My favorite</span><span style="height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 16px">My coupon<span style="font-size:11px;background:#111;color:#fff;border-radius:9px;padding:1px 7px">3</span></span><span style="height:46px;display:flex;align-items:center;padding:0 16px">Track my order</span><b style="position:absolute;top:14px;right:-6px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<span style="position:relative;height:46px;display:flex;align-items:center;padding:0 16px;font-size:13px;border-top:1px solid #eee;color:#555">Sign out<b style="position:absolute;top:14px;right:10px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></span>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Tap the member icon (D) when logged in → dropdown with 5 items (admin can add / reorder / hide items) · Not logged in → goes to <a href="#s3-2">3.2</a> directly · Tap outside the box to close</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Member center → <a href="#s3-3">3.3</a> · My favorite → <a href="#s3-4">3.4</a> · My coupon → <a href="#s3-5">3.5</a> · Track my order → <a href="#s3-6">3.6</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Sign out → logs out, back to Home <a href="#s1-2">1.2</a> + toast</span></div>
+</div>
+</div>
+
+<div id="s3-2" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">3.2</b><span style="font-size:15px;color:#444">Sign in / Sign up</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" notag="1" hint-size="100%,114px"></dc-import>
+<div style="padding:24px 20px;display:flex;flex-direction:column;gap:16px">
+<div style="position:relative;display:flex;border-bottom:1px solid #ddd;font-size:14px"><span style="flex:1;text-align:center;padding:12px;border-bottom:2px solid #111;font-weight:600">Sign in</span><span style="flex:1;text-align:center;padding:12px;color:#888">Sign up</span><b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<b style="font-size:22px;margin-top:8px">Welcome back</b>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Mobile number</div><div style="position:relative;height:46px;border:1px solid #bdbdbd;display:flex;align-items:center;font-size:13px"><span style="padding:0 12px;border-right:1px solid #ddd;height:100%;display:flex;align-items:center">+886 ⌄</span><span style="padding:0 12px;color:#999">912 345 678</span><b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div></div>
+<div style="position:relative;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em">Continue<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+<div style="border:1.5px dashed #8a8a8a;background:repeating-linear-gradient(135deg,#f4f4f4 0 6px,#fff 6px 12px);padding:12px;font-size:12px;line-height:1.5;color:#444"><b style="display:inline-block;background:#111;color:#fff;padding:2px 8px;font-size:11px;margin-bottom:6px">Pending decision</b><div>SMS OTP and password setup steps (after tapping Continue)</div></div>
+<div style="display:flex;align-items:center;gap:12px;font-size:12px;color:#888"><i style="flex:1;height:1px;background:#ddd"></i>or<i style="flex:1;height:1px;background:#ddd"></i></div>
+<div style="position:relative;height:48px;border-radius:24px;border:1px solid #111;display:flex;align-items:center;justify-content:center;gap:10px;font-size:14px;font-weight:500"><span style="width:22px;height:22px;border:1px solid #111;border-radius:6px;font-size:7px;font-weight:700;display:flex;align-items:center;justify-content:center">LINE</span>Continue with LINE<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></div>
+<div style="display:flex;justify-content:center"><span style="position:relative;font-size:13px;text-decoration:underline">Check out as guest<b style="position:absolute;top:-8px;right:-22px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;text-decoration:none">5</b></span></div>
+<div style="border:1px dashed #888;padding:12px;font-size:12px;line-height:1.55;color:#333"><b>Scam alert:</b> 9Lab will never ask for your OTP code or ask you to use an ATM. Call 165 if in doubt.</div>
+<span style="font-size:11px;color:#777;text-align:center;line-height:1.5;margin-bottom:8px">By continuing you agree to our Terms of Service and Privacy Policy.</span>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Switch tabs Sign in / Sign up · Sign up uses the same form, titled "Create your account"</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Enter mobile number (default +886) · Invalid format: message under the field</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Continue → OTP / password step (pending decision) → success: back to previous page, or <a href="#s1-9">1.9</a> if coming from checkout · New sign-up → <a href="#s3-3">3.3</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Continue with LINE → LINE Login → returns the same as item 3</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">5</b><span>Check out as guest → <a href="#s1-9">1.9</a> (shown only when the cart has items)</span></div>
+</div>
+</div>
+
+<div id="s3-3" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">3.3</b><span style="font-size:15px;color:#444">Member center · profile</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" notag="1" hint-size="100%,114px"></dc-import>
+<div style="padding:20px 16px 0;display:flex;flex-direction:column;gap:2px"><b style="font-size:20px">Hi, Mei-Ling</b><span style="font-size:12px;color:#777">Gold member · 320 points</span></div>
+<div style="position:relative;display:flex;gap:22px;padding:16px 16px 0;border-bottom:1px solid #ddd;font-size:13px;white-space:nowrap"><span style="padding-bottom:10px;border-bottom:2px solid #111;font-weight:600">Profile</span><span style="color:#888">My favorite</span><span style="color:#888">My coupon</span><span style="color:#888">Orders</span><b style="position:absolute;top:8px;right:16px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="padding:20px 16px;display:flex;flex-direction:column;gap:14px">
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Name *</div><div style="height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;font-size:13px">Chen Mei-Ling</div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Mobile</div><div style="height:44px;background:#f3f3f3;border:1px solid #ddd;padding:0 12px;display:flex;align-items:center;justify-content:space-between;font-size:13px;color:#666"><span>+886 912 345 678</span><span style="font-size:11px">✓ Verified</span></div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Email *</div><div style="height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;font-size:13px">mei@example.com</div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Birthday <span style="color:#999">· for your birthday coupon</span></div><div style="display:flex;gap:8px;font-size:13px"><div style="flex:1.4;height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;justify-content:space-between">1994<span>⌄</span></div><div style="flex:1;height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;justify-content:space-between">05<span>⌄</span></div><div style="flex:1;height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;justify-content:space-between">18<span>⌄</span></div></div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Gender</div><div style="display:flex;gap:8px;font-size:12px"><span style="padding:8px 14px;background:#111;color:#fff;border-radius:16px">Female</span><span style="padding:8px 14px;border:1px solid #bbb;border-radius:16px">Male</span><span style="padding:8px 14px;border:1px solid #bbb;border-radius:16px">Prefer not to say</span></div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Default pickup store</div><div style="position:relative;background:#f3f3f3;padding:12px;display:flex;justify-content:space-between;font-size:13px"><span>7-ELEVEN Zhongxiao #135624</span><u>Change</u><b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div></div>
+<div style="position:relative;display:flex;flex-direction:column;gap:12px;font-size:13px;line-height:1.5;margin-top:4px"><div style="display:flex;gap:10px"><i style="width:20px;height:20px;background:#111;color:#fff;flex:none;font-style:normal;font-size:12px;line-height:20px;text-align:center">✓</i><span>I agree to the <u>Terms of Service</u> and <u>Privacy Policy</u>. *</span></div><div style="display:flex;gap:10px"><i style="width:20px;height:20px;border:1.5px solid #111;flex:none"></i><span>Send me offers via LINE and email.</span></div><b style="position:absolute;top:-8px;right:0;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+<div style="position:relative;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin-top:6px">Save changes<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></div>
+<span style="font-size:13px;text-decoration:underline;color:#555;text-align:center;margin-bottom:8px">Sign out</span>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Horizontally scrolling tabs → <a href="#s3-4">3.4</a> · <a href="#s3-5">3.5</a> · <a href="#s3-6">3.6</a></span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Change → choose store <a href="#s1-7">1.7</a> then back · Used as the default at checkout</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Accept terms (required) · Receive news (optional)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Save → toast "Saved" · Empty * field or terms not ticked: disabled (like <a href="#s4-3">4.3</a>)</span></div>
+<div>Mobile number cannot be edited (used for identity verification)</div>
+</div>
+</div>
+
+<div id="s3-4" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">3.4</b><span style="font-size:15px;color:#444">My favorite</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" notag="1" hint-size="100%,114px"></dc-import>
+<b style="display:block;font-size:20px;padding:20px 16px 4px">My favorite</b>
+<div style="position:relative;display:flex;border-bottom:1px solid #ddd;font-size:13px;margin-bottom:12px"><span style="flex:1;text-align:center;padding:12px 4px;border-bottom:2px solid #111;font-weight:600">My favorite (4)</span><span style="flex:1;text-align:center;padding:12px 4px;color:#888">Browsing history</span><span style="flex:1;text-align:center;padding:12px 4px;color:#888">Back in stock</span><b style="position:absolute;top:-4px;right:8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="display:flex;justify-content:space-between;padding:0 16px 16px;font-size:12px;color:#777"><span>4 items</span><span style="position:relative;text-decoration:underline;color:#111">Add all to cart<b style="position:absolute;top:-8px;right:-22px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;text-decoration:none">2</b></span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px 32px"><sc-for list="{{ favs }}" as="p" hint-placeholder-count="4"><dc-import name="WfCard" item="{{ p }}" hint-size="100%,260px"></dc-import></sc-for></div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>3 tabs sharing the same card grid: My favorite = hearted products · Browsing history = last 20 viewed (with Clear button) · Back in stock = products with Notify me, labelled "Back!" when restocked</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Add all to cart → adds every in-stock item to cart (skips sold out) → <a href="#s1-4">1.4</a></span></div>
+<div>♥ (H) tap again → removes from list + Undo · Card (G) → <a href="#s1-3">1.3</a> · Empty: "No favorites yet" + Shop now button</div>
+</div>
+</div>
+
+<div id="s3-5" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">3.5</b><span style="font-size:15px;color:#444">My coupon</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" notag="1" hint-size="100%,114px"></dc-import>
+<b style="display:block;font-size:20px;padding:20px 16px 12px">My coupon</b>
+<div style="position:relative;display:flex;gap:8px;padding:0 16px 16px"><div style="flex:1;height:44px;border:1px solid #bdbdbd;padding:0 12px;display:flex;align-items:center;font-size:13px;color:#999">Enter coupon code</div><div style="width:84px;height:44px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px">Redeem</div><b style="position:absolute;top:-8px;right:8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="position:relative;display:flex;border-bottom:1px solid #ddd;font-size:13px"><span style="flex:1;text-align:center;padding:12px 4px;border-bottom:2px solid #111;font-weight:600">Unclaimed (2)</span><span style="flex:1;text-align:center;padding:12px 4px;color:#888">Claimed (3)</span><span style="flex:1;text-align:center;padding:12px 4px;color:#888">History</span><b style="position:absolute;top:-4px;right:8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<div style="position:relative;display:flex;gap:8px;padding:14px 16px;font-size:12px"><span style="padding:6px 12px;background:#111;color:#fff;border-radius:14px">All</span><span style="padding:6px 12px;border:1px solid #bbb;border-radius:14px">Discount</span><span style="padding:6px 12px;border:1px solid #bbb;border-radius:14px">Free shipping</span><span style="padding:6px 12px;border:1px solid #bbb;border-radius:14px">Gift</span><b style="position:absolute;top:6px;right:16px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+<div style="padding:0 16px 20px;display:flex;flex-direction:column;gap:12px">
+<div style="position:relative;display:flex;border:1px solid #bbb"><div style="width:96px;flex:none;border-right:1.5px dashed #bbb;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 0"><b style="font-size:22px">NT$100</b><span style="font-size:10px;letter-spacing:.12em">OFF</span></div><div style="flex:1;padding:12px;display:flex;flex-direction:column;gap:3px;font-size:12px"><b style="font-size:13px">Welcome gift</b><span style="color:#666">Min. spend NT$1,000</span><span style="color:#666">Claim by 2026-12-31</span></div><div style="display:flex;align-items:center;padding-right:12px"><span style="height:32px;padding:0 14px;border-radius:16px;background:#111;color:#fff;display:flex;align-items:center;font-size:12px">Claim</span></div><b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></div>
+<div style="display:flex;border:1px solid #bbb"><div style="width:96px;flex:none;border-right:1.5px dashed #bbb;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 0"><b style="font-size:16px">FREE</b><span style="font-size:10px;letter-spacing:.12em">SHIPPING</span></div><div style="flex:1;padding:12px;display:flex;flex-direction:column;gap:3px;font-size:12px"><b style="font-size:13px">October free shipping</b><span style="color:#666">Any order · 7-ELEVEN only</span><span style="color:#666">Claim by 2026-10-31</span></div><div style="display:flex;align-items:center;padding-right:12px"><span style="height:32px;padding:0 14px;border-radius:16px;background:#111;color:#fff;display:flex;align-items:center;font-size:12px">Claim</span></div></div>
+</div>
+<div style="background:#efefef;padding:8px 16px;font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">CARD IN OTHER TABS</div>
+<div style="padding:16px 16px 24px;display:flex;flex-direction:column;gap:12px">
+<div style="font-size:11px;color:#777">Claimed</div>
+<div style="display:flex;border:1px solid #111"><div style="width:96px;flex:none;border-right:1.5px dashed #bbb;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 0"><b style="font-size:22px">15%</b><span style="font-size:10px;letter-spacing:.12em">OFF</span></div><div style="flex:1;padding:12px;display:flex;flex-direction:column;gap:3px;font-size:12px"><b style="font-size:13px">Birthday month</b><span style="color:#666">Max. NT$300 off</span><span style="font-weight:600">Expires in 12 days · 2026-10-16</span></div><div style="display:flex;align-items:center;padding-right:12px"><span style="height:32px;padding:0 12px;border-radius:16px;border:1px solid #111;display:flex;align-items:center;font-size:12px">Use now</span></div></div>
+<div style="font-size:11px;color:#777">History</div>
+<div style="position:relative;display:flex;border:1px solid #ccc;opacity:.55"><div style="width:96px;flex:none;border-right:1.5px dashed #bbb;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 0"><b style="font-size:22px">NT$50</b><span style="font-size:10px;letter-spacing:.12em">OFF</span></div><div style="flex:1;padding:12px;display:flex;flex-direction:column;gap:3px;font-size:12px"><b style="font-size:13px">LINE friend coupon</b><span style="color:#666">Used 2026-09-02 · #9L26090211</span></div><span style="position:absolute;right:12px;top:50%;transform:translateY(-50%) rotate(-8deg);border:1.5px solid #111;padding:2px 8px;font-size:11px;font-weight:700;letter-spacing:.1em">USED</span></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Enter code → Redeem → coupon goes to the Claimed tab · Wrong / expired code: message under the field</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Unclaimed = can be claimed · Claimed = ready to use, shows expiry date (expiring soon in bold) · History = used / expired (faded + stamp)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Filter by type: All / Discount / Free shipping / Gift</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Claim → button changes to "Claimed ✓", moves to the Claimed tab · Use now → eligible products page <a href="#s2-5">2.5</a> (if the cart has items → <a href="#s1-5">1.5</a> code applied automatically)</span></div>
+</div>
+</div>
+
+<div id="s3-6" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">3.6</b><span style="font-size:15px;color:#444">Track my order</span></div>
+<div style="position:relative;width:390px;background:#fff;border:1px solid #c4c4c4;overflow:hidden">
+<dc-import name="WfHeader" notag="1" hint-size="100%,114px"></dc-import>
+<b style="display:block;font-size:20px;padding:20px 16px 12px">Track my order</b>
+<div style="margin:0 16px;border:1px solid #bbb;display:flex;flex-direction:column">
+<div style="position:relative;padding:14px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee"><div style="display:flex;flex-direction:column;gap:2px"><b style="font-size:14px">#9L26100401</b><span style="font-size:12px;color:#777">2026-10-04</span></div><span style="font-size:11px;letter-spacing:.08em;border:1px solid #111;border-radius:10px;padding:2px 8px">SHIPPING</span><b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="padding:14px;display:flex;flex-direction:column;gap:6px;font-size:13px;border-bottom:1px solid #eee"><div style="display:flex;justify-content:space-between"><span style="color:#777">Payment</span><span>Credit card •••• 4242</span></div><div style="display:flex;justify-content:space-between"><span style="color:#777">Total</span><b>NT$3,350</b></div></div><div style="position:relative;display:flex;justify-content:flex-end;padding:0 14px 12px;font-size:12px;border-bottom:1px solid #eee"><u>Cancel order</u><b style="position:absolute;top:-4px;right:92px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0;text-decoration:none">4</b></div>
+<div style="position:relative;padding:20px 8px 16px;border-bottom:1px solid #eee">
+<i style="position:absolute;top:27px;left:10%;right:10%;height:2px;background:#ccc"></i><i style="position:absolute;top:27px;left:10%;width:40%;height:2px;background:#111"></i>
+<div style="position:relative;display:grid;grid-template-columns:repeat(5,1fr);text-align:center;font-size:11px;line-height:1.35">
+<div style="display:flex;flex-direction:column;align-items:center;gap:6px"><i style="width:16px;height:16px;border-radius:8px;background:#111"></i><span>Ordered<br><span style="color:#888">10/04</span></span></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:6px"><i style="width:16px;height:16px;border-radius:8px;background:#111"></i><span>Preparing<br><span style="color:#888">10/05</span></span></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:6px"><i style="width:16px;height:16px;border-radius:8px;background:#fff;border:5px solid #111"></i><span style="font-weight:700">Shipping<br><span style="color:#888;font-weight:400">10/06</span></span></div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:6px"><i style="width:16px;height:16px;border-radius:8px;background:#fff;border:1.5px solid #bbb"></i><span style="color:#888">Arrived at<br>store</span></div><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><i style="width:16px;height:16px;border-radius:8px;background:#fff;border:1.5px solid #bbb"></i><span style="color:#888">Picked<br>up</span></div>
+</div></div>
+<div style="padding:14px;font-size:13px;line-height:1.5;border-bottom:1px solid #eee"><span style="color:#777;font-size:12px">Pickup store</span><br>7-ELEVEN Zhongxiao #135624<br><span style="font-size:12px;color:#555">Pick up within 5 days after arrival SMS.</span></div>
+<div style="padding:14px;display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:12px;align-items:center;font-size:13px"><div style="width:52px;height:52px;background:#ececec;flex:none"></div><span style="flex:1">Ceramide Barrier Repair Cream · 30 ml × 2</span><b>NT$2,560</b></div>
+<div style="display:flex;gap:12px;align-items:center;font-size:13px"><div style="width:52px;height:52px;background:#ececec;flex:none"></div><span style="flex:1">Niacinamide 10% Serum × 1</span><b>NT$890</b></div>
+</div>
+</div>
+<div style="padding:16px;display:flex;flex-direction:column;gap:12px">
+<div style="position:relative;height:46px;border-radius:23px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500">Ask about this order on LINE<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div><div style="position:relative;height:46px;border-radius:23px;border:1px dashed #888;color:#555;display:flex;align-items:center;justify-content:center;font-size:13px">Return at 7-ELEVEN<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0;text-decoration:none">5</b></div>
+<div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600;margin-top:12px">PAST ORDERS</div>
+<div style="position:relative;display:flex;flex-direction:column;font-size:13px"><div style="display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #eee"><span>2026-08-12 · #9L26081207</span><span style="color:#777">Completed ›</span></div><div style="display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #eee"><span>2026-06-30 · #9L26063015</span><span style="color:#777">Completed ›</span></div><b style="position:absolute;top:-6px;right:-6px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Guest: access this page with order number + mobile number</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Latest order card always expanded · Status line Ordered → Preparing → Shipping → Arrived at store → Picked up (updated automatically by ECPay Logistics) · Not picked up in 7 days → parcel returns to 9Lab → refund</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>→ opens LINE OA chat with the order number</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>Older order → expands details like the card above</span></div><div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>Cancel order → confirm popup → status "Cancelled" · only before the order ships (Ordered / Preparing)</span></div><div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">5</b><span>Return at 7-ELEVEN → choose items + reason → get a return code, drop the parcel at any 7-ELEVEN (ECPay B2C return, NT$55 per parcel) → refund to original payment or store credit</span></div><div><b style="display:inline-block;background:#111;color:#fff;padding:2px 8px;font-size:11px;margin-right:6px">Pending decision</b>Who pays the NT$55 return fee · refund rules for returns and unpicked parcels</div>
+</div>
+</div>
+
+</div>
+</section>
+<section id="row4" style="padding:56px 80px 120px;width:max-content">
+<div style="display:flex;align-items:baseline;gap:20px;margin-bottom:36px;border-bottom:2px solid #111;padding-bottom:14px"><b style="font-size:44px">Row 4</b><span style="font-size:24px;color:#333">Components with multiple states · States</span></div>
+<div style="display:flex;gap:64px;align-items:flex-start">
+
+<div id="s4-1" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">4.1</b><span style="font-size:15px;color:#444">Floating button</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">A · COLLAPSED</span><div style="position:relative;height:360px;background:#fff;border:1px solid #c4c4c4;overflow:hidden"><div style="margin:16px;height:120px;background:#f0f0f0"></div><div style="position:absolute;right:20px;bottom:80px;width:40px;height:40px;border-radius:20px;border:1px solid #111;background:#fff;display:flex;align-items:center;justify-content:center;font-size:16px">↑<b style="position:absolute;top:-8px;right:-8px;z-index:4;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;letter-spacing:0;text-decoration:none">5</b></div><div style="position:absolute;right:14px;bottom:14px;width:52px;height:52px;border-radius:26px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:300;box-shadow:0 2px 8px rgba(0,0,0,.25)">+<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div></div></div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">B · EXPANDED</span><div style="position:relative;height:360px;background:#fff;border:1px solid #c4c4c4;overflow:hidden"><div style="margin:16px;height:120px;background:#f0f0f0"></div>
+<div style="position:absolute;right:14px;bottom:14px;display:flex;flex-direction:column;align-items:center;gap:10px">
+<div style="position:relative;display:flex;align-items:center;gap:8px"><span style="font-size:11px;background:#fff;border:1px solid #ddd;padding:3px 8px">LINE</span><span style="width:44px;height:44px;border-radius:22px;border:1px solid #111;background:#fff;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700">LINE</span><b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+<div style="position:relative;display:flex;align-items:center;gap:8px"><span style="font-size:11px;background:#fff;border:1px solid #ddd;padding:3px 8px">Instagram</span><span style="width:44px;height:44px;border-radius:22px;border:1px solid #111;background:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700">IG</span><b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">3</b></div>
+<div style="position:relative;align-self:flex-end;width:52px;height:52px;border-radius:26px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:300">×<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">4</b></div>
+</div></div></div>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Floats bottom-right on mobile and PC, on every page except checkout steps (<a href="#s1-6">1.6</a>–<a href="#s1-9">1.9</a>)</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>+ → expands to B (icons pop up one by one)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>LINE → opens 9Lab's LINE OA chat</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>IG → opens 9Lab's Instagram</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">4</b><span>× or tap elsewhere / scroll → collapses back to A</span></div><div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">5</b><span>Back to top ↑ → own button above +, appears after scrolling down about 1 screen · smooth scroll to the top</span></div>
+</div>
+</div>
+
+<div id="s4-2" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">4.2</b><span style="font-size:15px;color:#444">Product accordion</span></div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">A · CLOSED</span><div style="background:#fff;border:1px solid #c4c4c4;padding:0 16px">
+<div style="position:relative;height:52px;border-bottom:1px solid #ddd;display:flex;align-items:center;justify-content:space-between;font-size:14px">Highlights<span>⌄</span><b style="position:absolute;top:8px;right:22px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="height:52px;border-bottom:1px solid #ddd;display:flex;align-items:center;justify-content:space-between;font-size:14px">Details<span>⌄</span></div>
+<div style="height:52px;display:flex;align-items:center;justify-content:space-between;font-size:14px">Ingredients<span>⌄</span></div>
+</div></div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">B · OPEN</span><div style="background:#fff;border:1px solid #c4c4c4;padding:0 16px">
+<div style="border-bottom:1px solid #ddd;display:flex;flex-direction:column"><div style="position:relative;height:52px;display:flex;align-items:center;justify-content:space-between;font-size:14px;font-weight:600">Highlights<span style="font-weight:400">⌃</span><b style="position:absolute;top:8px;right:22px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div><div style="padding:0 0 16px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.55;color:#333"><span>• 5 ceramides + cholesterol to rebuild the moisture barrier</span><span>• Fragrance-free, tested on sensitive skin</span><span>• Light cream texture, absorbs in about 30 seconds</span></div></div>
+<div style="height:52px;border-bottom:1px solid #ddd;display:flex;align-items:center;justify-content:space-between;font-size:14px">Details<span>⌄</span></div>
+<div style="height:52px;display:flex;align-items:center;justify-content:space-between;font-size:14px">Ingredients<span>⌄</span></div>
+</div></div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Tap a row → content expands in place, arrow rotates up (B)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Tap again → collapses (A) · Multiple rows can be open at once</span></div>
+<div>Admin can add / reorder rows per product</div>
+</div>
+</div>
+
+<div id="s4-3" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">4.3</b><span style="font-size:15px;color:#444">Place order button</span></div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">A · TERMS NOT ACCEPTED (DISABLED)</span><div style="background:#fff;border:1px solid #c4c4c4;padding:20px 16px;display:flex;flex-direction:column;gap:16px">
+<div style="position:relative;display:flex;gap:10px;font-size:13px;line-height:1.5"><i style="width:20px;height:20px;border:1.5px solid #111;flex:none"></i><span>I agree to the <u>Terms of Service</u> and <u>Privacy Policy</u>.</span><b style="position:absolute;top:-8px;left:10px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></div>
+<div style="height:50px;border-radius:25px;background:#e3e3e3;color:#9a9a9a;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em">Place order · NT$3,350</div>
+</div></div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">B · TERMS ACCEPTED (ENABLED)</span><div style="background:#fff;border:1px solid #c4c4c4;padding:20px 16px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;gap:10px;font-size:13px;line-height:1.5"><i style="width:20px;height:20px;background:#111;color:#fff;flex:none;font-style:normal;font-size:12px;line-height:20px;text-align:center">✓</i><span>I agree to the <u>Terms of Service</u> and <u>Privacy Policy</u>.</span></div>
+<div style="position:relative;height:50px;border-radius:25px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em">Place order · NT$3,350<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></div>
+</div></div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>Tick → button changes to B · Untick → back to A · Tap button A → scrolls to the checkbox + warning message</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>Place order → payment → <a href="#s1-10">1.10</a> · While processing the button shows a spinner and can't be tapped again</span></div>
+</div>
+</div>
+
+<div id="s4-4" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">4.4</b><span style="font-size:15px;color:#444">Heart (favorite)</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">A · NOT SAVED</span><div style="background:#fff;border:1px solid #c4c4c4;padding:14px"><div style="position:relative;aspect-ratio:1;background:#ececec"><span style="position:absolute;right:8px;top:8px;width:34px;height:34px;border-radius:17px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:18px">♡<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">1</b></span></div></div></div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">B · SAVED</span><div style="background:#fff;border:1px solid #c4c4c4;padding:14px"><div style="position:relative;aspect-ratio:1;background:#ececec"><span style="position:absolute;right:8px;top:8px;width:34px;height:34px;border-radius:17px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px">♥<b style="position:absolute;top:-8px;right:-8px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center">2</b></span></div></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:500 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;color:#555">TOAST AFTER SAVE</span><div style="background:#111;color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;font-size:13px"><span>♥ Saved to My favorite</span><span style="position:relative;text-decoration:underline">View<b style="position:absolute;top:-10px;right:-22px;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;text-decoration:none">3</b></span></div></div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div>Used on both product cards (H) and the product page</div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">1</b><span>♡ → changes to B + toast · Not logged in → <a href="#s3-2">3.2</a> then saved after login</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">2</b><span>♥ → removes, back to A (no toast)</span></div>
+<div style="display:flex;gap:8px"><b style="flex:none;width:18px;height:18px;border-radius:9px;background:#2F5BEA;color:#fff;font-size:10px;font-weight:600;line-height:18px;text-align:center;margin-top:2px">3</b><span>View → My favorite <a href="#s3-4">3.4</a> · Toast disappears after 3 s</span></div>
+</div>
+</div>
+
+<div id="s4-5" style="width:390px;flex:none;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:26px">4.5</b><span style="font-size:15px;color:#444">Desktop (PC) layout</span></div>
+<div style="position:relative;height:240px;background:#fff;border:1px solid #c4c4c4;padding:14px;display:flex;flex-direction:column;gap:10px">
+<div style="height:22px;background:#e4e4e4"></div><div style="display:flex;gap:10px;flex:1"><div style="flex:2;background:#e8e8e8;display:flex;align-items:center;justify-content:center;font:500 10px 'IBM Plex Mono',monospace;color:#777">HERO · 1440px</div><div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:8px"><i style="background:#efefef"></i><i style="background:#efefef"></i><i style="background:#efefef"></i><i style="background:#efefef"></i></div></div>
+<span style="position:absolute;right:20px;bottom:20px;width:40px;height:40px;border-radius:20px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px">+</span>
+</div>
+<div style="background:#fff;border:1px solid #d4d4d4;padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:13px;line-height:1.55;color:#333">
+<div><b style="display:inline-block;background:#111;color:#fff;padding:2px 8px;font-size:11px;margin-right:6px">Pending decision</b>Not designed yet, space reserved</div>
+<div>The brief asks for the site on both PC and mobile. Mobile is designed first; the PC version reuses the same pages and flow with wider grids (4 products per row) and the same floating button <a href="#s4-1">4.1</a>.</div>
+</div>
+</div>
+
+</div>
+</section></x-dc>
+<script type="text/x-dc" data-dc-script="">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      newIn: [
+        { title: "Ceramide Barrier Repair Cream 50ml", price: "1,280", rv: 128, badge: "NEW", mk: true },
+        { title: "Niacinamide 10% Clarifying Serum 30ml", price: "890", was: "1,050", rv: 96, badge: "SALE" },
+        { title: "Hyaluronic Triple Hydrating Toner 200ml", price: "780", rv: 211 },
+        { title: "Centella Calming Sheet Mask · 5 pcs", price: "450", rv: 342, badge: "NEW", fav: true }
+      ],
+      recs: [
+        { title: "Amino Acid Gentle Foam Cleanser 150ml", price: "620", rv: 187 },
+        { title: "Mineral Daily Sunscreen SPF50+ PA++++", price: "980", was: "1,180", rv: 154, badge: "SALE" },
+        { title: "Retinal 0.1% Overnight Renewal Serum", price: "1,480", rv: 73 },
+        { title: "Vitamin C 15% Brightening Ampoule", price: "1,150", rv: 119 }
+      ],
+      oily: [
+        { title: "Niacinamide 10% Clarifying Serum 30ml", price: "890", was: "1,050", rv: 96, badge: "SALE", mk: true },
+        { title: "BHA 2% Pore Refining Toner 150ml", price: "720", rv: 64, out: true },
+        { title: "Oil-Control Gel Cream 50ml", price: "980", rv: 58, badge: "NEW" },
+        { title: "Kaolin Clay Purifying Mask 100g", price: "650", rv: 102 },
+        { title: "Amino Acid Gentle Foam Cleanser 150ml", price: "620", rv: 187 },
+        { title: "Mineral Daily Sunscreen SPF50+ PA++++", price: "980", was: "1,180", rv: 154, badge: "SALE" }
+      ],
+      cera: [
+        { title: "Ceramide Barrier Repair Cream 50ml", price: "1,280", rv: 128 },
+        { title: "Ceramide Barrier Toner 200ml", price: "820", rv: 47, out: true },
+        { title: "Ceramide Overnight Lip Mask", price: "390", rv: 88 },
+        { title: "Ceramide Body Lotion 250ml", price: "690", rv: 35 }
+      ],
+      favs: [
+        { title: "Ceramide Barrier Repair Cream 50ml", price: "1,280", rv: 128, fav: true, mk: true },
+        { title: "Vitamin C 15% Brightening Ampoule", price: "1,150", rv: 119, fav: true },
+        { title: "BHA 2% Pore Refining Toner 150ml", price: "720", rv: 64, fav: true, out: true },
+        { title: "Centella Calming Sheet Mask · 5 pcs", price: "450", rv: 342, fav: true, badge: "NEW" }
+      ]
+    };
+  }
+}
+</script>
+
+
+</body></html>

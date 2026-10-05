@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<script src="065259e1-2bf4-44ae-accb-bc035e729131"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("24a6fe56-b40a-416c-9852-b7fd7d81e6a7") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("40a780b0-2af0-49fe-9ff8-cff724ca9748") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("0e42b603-06b2-4fa9-b331-64297ac4c2ee") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b2dd6e32-6a2b-4823-adc9-7f3e4da90605") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fb6df9a4-072c-4399-91ee-1804d06bded1") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("49c97ea6-c76a-443e-90a6-5a6296c04e19") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("efd47812-8ddb-40e0-9acd-c789a84612e5") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("7a8c39f7-9c18-4484-9b9f-4d6c6866e519") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("44ada263-2489-46cc-932c-df14428d722b") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("6502c723-73ed-44e6-93bb-1ca0856b30b1") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("a3329545-2fdb-436c-bb6f-aff582c5a1d2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("5b34ea73-8f62-41e5-8965-67d60bd927ae") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("7e43ba89-110e-4f50-a886-f7cb94bfd108") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("5cda0633-d8f7-46fa-8fe5-a038524e905f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("0f058ac8-6f28-4de2-b1fd-ea384339e4c4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("191332f5-d478-49a0-8d4d-9ee7d0672c58") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("a3329545-2fdb-436c-bb6f-aff582c5a1d2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("5b34ea73-8f62-41e5-8965-67d60bd927ae") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("7e43ba89-110e-4f50-a886-f7cb94bfd108") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("5cda0633-d8f7-46fa-8fe5-a038524e905f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("0f058ac8-6f28-4de2-b1fd-ea384339e4c4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("191332f5-d478-49a0-8d4d-9ee7d0672c58") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("a3329545-2fdb-436c-bb6f-aff582c5a1d2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("5b34ea73-8f62-41e5-8965-67d60bd927ae") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("7e43ba89-110e-4f50-a886-f7cb94bfd108") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("5cda0633-d8f7-46fa-8fe5-a038524e905f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("0f058ac8-6f28-4de2-b1fd-ea384339e4c4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("191332f5-d478-49a0-8d4d-9ee7d0672c58") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("a3329545-2fdb-436c-bb6f-aff582c5a1d2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("5b34ea73-8f62-41e5-8965-67d60bd927ae") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("7e43ba89-110e-4f50-a886-f7cb94bfd108") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("5cda0633-d8f7-46fa-8fe5-a038524e905f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("0f058ac8-6f28-4de2-b1fd-ea384339e4c4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("191332f5-d478-49a0-8d4d-9ee7d0672c58") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("a3329545-2fdb-436c-bb6f-aff582c5a1d2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("5b34ea73-8f62-41e5-8965-67d60bd927ae") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("7e43ba89-110e-4f50-a886-f7cb94bfd108") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("5cda0633-d8f7-46fa-8fe5-a038524e905f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("0f058ac8-6f28-4de2-b1fd-ea384339e4c4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("191332f5-d478-49a0-8d4d-9ee7d0672c58") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("1fff7370-9c63-406c-b377-a3452a0380f5") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* thai */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("6914c224-6b04-46f8-ac76-e131a7a485b3") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("80e9b09f-ba95-4dab-86f2-cf7e5c2333c4") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("4ccbc56a-b5db-4bd7-aa77-f66f766311a6") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("1a9f2a28-1dca-438e-85b1-10346cbdbab0") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* thai */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("5566a4d7-3509-4b7c-9848-4f3836365446") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("410a2ae3-79d1-40a8-8261-cf6b97d4a8c1") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("36c472c5-ea7b-4391-b617-018119e7663f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("2dea3a0e-3e59-44c1-bba4-25b4d66f215b") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* thai */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("9ab6cbc8-e183-4d45-bd2a-4b1417d2242b") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("988731e2-c4ad-4f32-8590-a4f13a554db2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("b6db146d-d8b1-46e5-8769-6fc16af9baa1") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("27c568d8-67ad-4242-8c8f-d477d9396a62") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* thai */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("f6466738-4ad0-4c90-8217-cba74f7e223e") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("7e99c012-cf04-4f96-a967-9975bd865219") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Thai';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("4904c573-2638-405c-8119-74a7c1456836") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>*{box-sizing:border-box}body{margin:0;background:#e6e6e6;font-family:'IBM Plex Sans','IBM Plex Sans Thai',sans-serif;color:#111}a{color:#111;text-decoration:underline}a:hover{color:#555}input,select{font-family:inherit}input:focus,select:focus{outline:none;border-color:#111 !important}@keyframes up{from{transform:translateY(100%)}to{transform:none}}@keyframes fade{from{opacity:0}to{opacity:1}}@keyframes left{from{transform:translateX(-100%)}to{transform:none}}@keyframes pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}</style>
+</helmet>
+<div style="min-height:100vh;display:flex;gap:40px;justify-content:center;align-items:flex-start;padding:40px 24px;flex-wrap:wrap">
+
+<div style="width:250px;display:flex;flex-direction:column;gap:16px;padding-top:12px">
+<div style="font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.14em;color:#666">9LAB · CLICKABLE MOCKUP</div>
+<div style="font-size:28px;font-weight:700;line-height:1.1">9Lab Mobile Store</div>
+<div style="font-size:13px;line-height:1.6;color:#555">Tap to play inside the phone frame, or jump to any page from the list below</div>
+<div style="display:flex;flex-direction:column;gap:2px;background:#fff;border:1px solid #d4d4d4;padding:8px">
+<sc-for list="{{ jumps }}" as="j" hint-placeholder-count="15"><div sc-camel-on-click="{{ j.onClick }}" style="padding:7px 10px;font-size:13px;cursor:pointer;background:{{ j.bg }};color:{{ j.fg }};display:flex;justify-content:space-between" style-hover="background:#f0f0f0"><span>{{ j.label }}</span><span style="font:10px 'IBM Plex Mono',monospace;color:#999">{{ j.ref }}</span></div></sc-for>
+</div>
+<div style="display:flex;gap:8px"><div sc-camel-on-click="{{ reset }}" style="flex:1;height:38px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:12px;cursor:pointer;background:#fff" style-hover="background:#111;color:#fff">Reset prototype</div><div sc-camel-on-click="{{ toggleLogin }}" style="flex:1;height:38px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:12px;cursor:pointer;background:#fff" style-hover="background:#111;color:#fff">{{ loginToggleLabel }}</div></div>
+<div style="font-size:12px;line-height:1.6;color:#666">Test codes: WELCOME100 · AUTUMN15 · FREESHIP<br>Coupon code: NINE9</div>
+</div>
+
+<div style="width:410px;height:864px;border-radius:54px;background:#111;padding:10px;flex:none;box-shadow:0 20px 50px rgba(0,0,0,.18)">
+<div style="position:relative;width:390px;height:844px;border-radius:44px;overflow:hidden;background:#fff">
+<div ref="{{ scrollRef }}" sc-camel-on-scroll="{{ onScroll }}" style="position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;scrollbar-width:none">
+
+<sc-if value="{{ hasHeader }}" hint-placeholder-val="{{ true }}">
+<div style="height:32px;background:#e4e4e4;display:flex;align-items:center;padding:0 6px;font-size:11px;letter-spacing:.03em"><span sc-camel-on-click="{{ annPrev }}" style="width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:15px;cursor:pointer">‹</span><span style="flex:1;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ annText }}</span><span sc-camel-on-click="{{ annNext }}" style="width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:15px;cursor:pointer">›</span></div>
+<div sc-camel-on-click="{{ openIG }}" style="height:26px;background:#cfcfcf;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.16em;cursor:pointer">INSTAGRAM →</div>
+</sc-if>
+<sc-if value="{{ hasHeader }}" hint-placeholder-val="{{ true }}">
+<div style="position:sticky;top:0;z-index:20;height:56px;background:#fff;display:flex;align-items:center;padding:0 10px;border-bottom:1px solid #e6e6e6">
+<div style="width:112px;display:flex"><span sc-camel-on-click="{{ openMenu }}" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.4"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></span></div>
+<div sc-camel-on-click="{{ goHome }}" style="flex:1;text-align:center;font-size:24px;font-weight:800;letter-spacing:.02em;cursor:pointer">9LAB</div>
+<div style="width:112px;display:flex;justify-content:flex-end">
+<span sc-camel-on-click="{{ openMember }}" style="width:36px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.4"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"></path></svg></span>
+<span sc-camel-on-click="{{ openCart }}" style="position:relative;width:36px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.4"><path d="M5 8h14l-1 13H6L5 8z"></path><path d="M9 8V6a3 3 0 016 0v2"></path></svg><sc-if value="{{ hasCount }}" hint-placeholder-val="{{ true }}"><b style="position:absolute;bottom:6px;right:2px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:#111;color:#fff;font-size:9px;line-height:16px;text-align:center">{{ cartCount }}</b></sc-if></span>
+<span sc-camel-on-click="{{ openSearch }}" style="width:36px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer"><svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.4"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></span>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{ showTag }}" hint-placeholder-val="{{ true }}"><div style="height:28px;background:#f2f2f2;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.2em">SCIENCE IN EVERY DROP</div></sc-if>
+
+<sc-if value="{{ is.home }}" hint-placeholder-val="{{ true }}">
+<div sc-camel-on-click="{{ heroTap }}" style="position:relative;height:480px;background:{{ heroBg }};display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em;cursor:pointer;transition:background .4s">HERO BANNER · {{ heroNum }} / 4<span style="font:600 20px 'IBM Plex Sans',sans-serif;color:#333;letter-spacing:0">{{ heroTitle }}</span>
+<div style="position:absolute;bottom:16px;left:0;right:0;display:flex;justify-content:center;gap:6px"><sc-for list="{{ heroDots }}" as="d" hint-placeholder-count="4"><i sc-camel-on-click="{{ d.onClick }}" style="width:{{ d.w }};height:4px;background:{{ d.bg }};transition:width .3s;cursor:pointer"></i></sc-for></div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px">
+<div sc-camel-on-click="{{ bannerSensitive }}" style="aspect-ratio:4/5;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em;cursor:pointer">SMALL BANNER<br>Sensitive skin edit</div>
+<div sc-camel-on-click="{{ bannerSets }}" style="aspect-ratio:4/5;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em;cursor:pointer">SMALL BANNER<br>Gift sets</div>
+</div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:32px 16px 16px">NEW ARRIVALS</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px"><sc-for list="{{ newIn }}" as="c" hint-placeholder-count="4"><dc-import name="ProtoCard" item="{{ c }}" hint-size="100%,270px"></dc-import></sc-for></div>
+<div sc-camel-on-click="{{ viewAllNew }}" style="margin:24px auto 0;width:180px;height:40px;border-radius:20px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;cursor:pointer" style-hover="background:#111;color:#fff">View all</div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:40px 16px 16px">BRAND FILM</div>
+<div sc-camel-on-click="{{ toggleVideo }}" style="margin:0 16px;aspect-ratio:16/9;background:{{ videoBg }};display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em;cursor:pointer"><span style="width:52px;height:52px;border-radius:26px;background:#fff;color:#111;font-size:16px;display:flex;align-items:center;justify-content:center">{{ videoIcon }}</span>{{ videoLabel }}</div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:40px 16px 16px">PROMOTION</div>
+<div sc-camel-on-click="{{ promoTap }}" style="aspect-ratio:390/240;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em;cursor:pointer">PROMO BANNER<br>Autumn barrier care</div>
+<div style="padding:16px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><b style="font-size:16px">Buy 2, get 15% off</b><span style="font-size:13px;color:#555">All barrier-care products · until 10/31</span><span sc-camel-on-click="{{ promoTap }}" style="font-size:13px;font-weight:500;text-decoration:underline;margin-top:4px;cursor:pointer">Shop the offer →</span></div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:32px 16px 16px">SHOP BY CATEGORY</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px 10px;padding:0 16px;font-size:11px;letter-spacing:.08em;text-align:center"><sc-for list="{{ cats }}" as="c" hint-placeholder-count="6"><div sc-camel-on-click="{{ c.onClick }}" style="display:flex;flex-direction:column;gap:6px;cursor:pointer"><div style="aspect-ratio:1;background:#ececec;border-radius:50%"></div>{{ c.label }}</div></sc-for></div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:40px 16px 16px">OUR STORY</div>
+<div style="aspect-ratio:4/3;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">BRAND STORY IMAGE<br>lab / founder</div>
+<div style="padding:20px 24px 40px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center"><span style="font-size:13px;line-height:1.6;color:#444;text-wrap:pretty">Formulated in Taipei for humid-climate skin. Nine active ingredients, tested on sensitive skin, nothing you don't need.</span><span sc-camel-on-click="{{ storyTap }}" style="font-size:13px;font-weight:500;text-decoration:underline;cursor:pointer">Read our story →</span></div>
+</sc-if>
+
+<sc-if value="{{ is.product }}" hint-placeholder-val="{{ false }}">
+<div style="padding:16px;display:flex;flex-direction:column;gap:14px">
+<div style="position:relative;aspect-ratio:1;border:1px solid #ddd;background:{{ imgBg }};display:flex;align-items:center;justify-content:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">{{ imgLabel }}
+<span sc-camel-on-click="{{ openLb }}" style="position:absolute;top:10px;left:10px;width:32px;height:32px;border-radius:16px;border:1px solid #bbb;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer"><svg width="14" height="14" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.6"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4M11 8v6M8 11h6"></path></svg></span>
+<span sc-camel-on-click="{{ imgPrev }}" style="position:absolute;left:6px;top:50%;margin-top:-18px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:20px;color:#111;cursor:pointer">‹</span>
+<span sc-camel-on-click="{{ imgNext }}" style="position:absolute;right:6px;top:50%;margin-top:-18px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:20px;color:#111;cursor:pointer">›</span></div>
+<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px"><sc-for list="{{ thumbs }}" as="t" hint-placeholder-count="5"><div sc-camel-on-click="{{ t.onClick }}" style="aspect-ratio:1;background:{{ t.bg }};box-shadow:{{ t.ring }};display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#555;cursor:pointer">{{ t.label }}</div></sc-for></div>
+<div style="display:flex;gap:12px;align-items:flex-start;margin-top:6px"><div style="flex:1;font-size:22px;font-weight:600;line-height:1.3">{{ pv.name }}</div><span sc-camel-on-click="{{ toggleFavP }}" style="flex:none;width:42px;height:42px;border:1px solid #ccc;border-radius:21px;display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;background:{{ pv.heartBg }};color:{{ pv.heartFg }}">{{ pv.heart }}</span></div>
+<div style="display:flex"><span sc-camel-on-click="{{ scrollReviews }}" style="font-size:13px;cursor:pointer">★★★★★ <span style="text-decoration:underline;color:#444">{{ pv.r }} · {{ pv.rv }} reviews</span></span></div>
+<div style="display:flex;gap:10px;align-items:baseline"><b style="font-size:20px">{{ pv.priceStr }}</b><sc-if value="{{ pv.hasWas }}"><s style="color:#999;font-size:13px">{{ pv.wasStr }}</s></sc-if><sc-if value="{{ pv.hasBadge }}"><span style="font-size:10px;letter-spacing:.08em;border:1px solid #111;border-radius:10px;padding:2px 7px">{{ pv.badge }}</span></sc-if></div>
+<div style="font-size:11px;color:#777;margin-top:-8px">Tax included · Free shipping over NT$1,500</div>
+<div><div style="font-size:12px;color:#555;margin-bottom:8px">Option</div><div style="display:flex;gap:8px;flex-wrap:wrap"><sc-for list="{{ opts }}" as="o" hint-placeholder-count="3"><span sc-camel-on-click="{{ o.onClick }}" style="height:38px;padding:0 18px;border-radius:19px;background:{{ o.bg }};color:{{ o.fg }};border:1px solid {{ o.bd }};display:flex;align-items:center;font-size:13px;cursor:pointer">{{ o.label }}</span></sc-for></div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:8px">Quantity</div><div style="width:136px;height:46px;border:1px solid #111;display:flex;align-items:center;justify-content:space-between;font-size:16px"><span sc-camel-on-click="{{ qtyDec }}" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer">−</span><span>{{ qty }}</span><span sc-camel-on-click="{{ qtyInc }}" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer">+</span></div></div>
+<div sc-camel-on-click="{{ addAction }}" style="height:50px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.06em;cursor:pointer" style-hover="background:#333">{{ addLabel }}</div>
+<div style="display:flex;flex-direction:column;margin-top:4px"><sc-for list="{{ accs }}" as="a" hint-placeholder-count="3"><div style="border-bottom:1px solid #ddd"><div sc-camel-on-click="{{ a.onClick }}" style="height:52px;display:flex;align-items:center;justify-content:space-between;font-size:14px;cursor:pointer;font-weight:{{ a.fw }}">{{ a.title }}<span style="display:inline-block;transition:transform .2s;transform:{{ a.rot }};font-weight:400">⌄</span></div><sc-if value="{{ a.open }}"><div style="padding:0 0 16px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.55;color:#333;animation:fade .2s"><sc-for list="{{ a.lines }}" as="l"><span>{{ l }}</span></sc-for></div></sc-if></div></sc-for></div>
+</div>
+<div ref="{{ reviewsRef }}" style="padding:28px 16px;border-top:8px solid #f2f2f2;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;flex-direction:column;align-items:center;gap:2px"><b style="font-size:40px;line-height:1">{{ pv.r }}</b><span style="font-size:14px">★★★★★</span><span style="font-size:12px;color:#666">{{ pv.rv }} reviews</span></div>
+<div style="display:flex;gap:8px"><div sc-camel-on-click="{{ writeReview }}" style="flex:1;height:40px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;cursor:pointer" style-hover="background:#111;color:#fff">Write a review</div><div sc-camel-on-click="{{ togglePhotoOnly }}" style="height:40px;padding:0 12px;border:1px solid #111;display:flex;align-items:center;gap:6px;font-size:12px;cursor:pointer;background:{{ photoBg }};color:{{ photoFg }}"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>With photos</div></div>
+<sc-for list="{{ reviews }}" as="r" hint-placeholder-count="3"><div style="padding:14px 0;border-bottom:1px solid #eee;display:flex;flex-direction:column;gap:6px"><div style="display:flex;justify-content:space-between;font-size:12px"><span>{{ r.s }}</span><span style="color:#888">{{ r.d }}</span></div><b style="font-size:13px">{{ r.u }} ✓</b><div style="font-size:13px;line-height:1.55;color:#333">{{ r.t }}</div><sc-if value="{{ r.ph }}"><div style="display:flex;gap:6px"><div style="width:64px;height:64px;background:#e8e8e8;display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#777">PHOTO</div><div style="width:64px;height:64px;background:#e8e8e8;display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#777">PHOTO</div></div></sc-if></div></sc-for>
+<div sc-camel-on-click="{{ moreReviews }}" style="height:40px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer">View all {{ pv.rv }} reviews</div>
+</div>
+<div style="aspect-ratio:4/5;background:#e8e8e8;display:flex;align-items:center;justify-content:center;text-align:center;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em">FULL-WIDTH IMAGE<br>texture / before-after</div>
+<div style="font-size:16px;font-weight:500;padding:32px 16px 16px">You may also like</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px"><sc-for list="{{ recs }}" as="c" hint-placeholder-count="4"><dc-import name="ProtoCard" item="{{ c }}" hint-size="100%,270px"></dc-import></sc-for></div>
+<div style="height:40px"></div>
+</sc-if>
+
+<sc-if value="{{ is.cart }}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;align-items:center;gap:8px;padding:14px 16px;font-size:11px;letter-spacing:.03em;border-bottom:1px solid #eee"><span style="display:flex;align-items:center;gap:6px;font-weight:600"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">1</b>Cart</span><i style="flex:1;height:1px;background:#bbb"></i><span style="display:flex;align-items:center;gap:6px;color:#999"><b style="width:20px;height:20px;border-radius:10px;border:1px solid #bbb;line-height:18px;text-align:center;font-size:10px">2</b>Shipping info</span><i style="flex:1;height:1px;background:#bbb"></i><span style="display:flex;align-items:center;gap:6px;color:#999"><b style="width:20px;height:20px;border-radius:10px;border:1px solid #bbb;line-height:18px;text-align:center;font-size:10px">3</b>Complete</span></div>
+<sc-if value="{{ cartEmpty }}"><div style="padding:80px 24px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center"><b style="font-size:20px">Your cart is empty</b><span style="font-size:13px;color:#666">Find something for your skin.</span><div sc-camel-on-click="{{ goHome }}" style="width:200px;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer">Shop now</div></div></sc-if>
+<sc-if value="{{ cartHas }}">
+<div style="padding:16px;display:flex;flex-direction:column;gap:16px">
+<b style="font-size:20px">Cart ({{ cartCount }})</b>
+<sc-for list="{{ lines }}" as="l" hint-placeholder-count="2"><div style="display:flex;gap:12px;padding-bottom:16px;border-bottom:1px solid #eee"><div sc-camel-on-click="{{ l.open }}" style="width:84px;height:84px;flex:none;background:#e8e8e8;display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#777;cursor:pointer">IMG</div><div style="flex:1;display:flex;flex-direction:column;gap:6px"><span style="font-size:13px">{{ l.name }}</span><span style="font-size:12px;color:#777">{{ l.opt }}</span><div style="display:flex;justify-content:space-between;align-items:center"><div style="width:100px;height:32px;border:1px solid #111;display:flex;align-items:center;justify-content:space-between;font-size:13px"><span sc-camel-on-click="{{ l.dec }}" style="width:32px;height:30px;display:flex;align-items:center;justify-content:center;cursor:pointer">−</span><span>{{ l.qty }}</span><span sc-camel-on-click="{{ l.inc }}" style="width:32px;height:30px;display:flex;align-items:center;justify-content:center;cursor:pointer">+</span></div><div style="display:flex;gap:6px;align-items:baseline"><sc-if value="{{ l.hasWas }}"><s style="font-size:11px;color:#999">{{ l.wasStr }}</s></sc-if><b style="font-size:14px">{{ l.priceStr }}</b></div></div><div style="display:flex;gap:18px;font-size:12px;color:#555;text-decoration:underline;margin-top:2px"><span sc-camel-on-click="{{ l.remove }}" style="cursor:pointer">Remove</span><sc-if value="{{ l.canFav }}"><span sc-camel-on-click="{{ l.moveFav }}" style="cursor:pointer">Move to favorites</span></sc-if></div></div></div></sc-for>
+<div style="border:1.5px dashed #8a8a8a;background:repeating-linear-gradient(135deg,#f4f4f4 0 6px,#fff 6px 12px);padding:12px;font-size:12px;line-height:1.5;color:#444"><b style="display:inline-block;background:#111;color:#fff;padding:2px 8px;font-size:11px;margin-bottom:6px">Pending decision</b><div>Cart item lifetime</div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Discount code</div><div style="display:flex;gap:8px"><input value="{{ code }}" sc-camel-on-change="{{ onCode }}" sc-camel-on-key-down="{{ codeKey }}" placeholder="Enter code" style="flex:1;min-width:0;height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px;text-transform:uppercase"><div sc-camel-on-click="{{ applyCode }}" style="width:84px;height:44px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer">Apply</div></div><sc-if value="{{ hasCodeMsg }}"><div style="font-size:12px;margin-top:6px;color:{{ codeColor }}">{{ codeMsg }}</div></sc-if></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px"><b style="font-size:14px">Add-on deals</b><span style="font-size:11px;color:#777">Special price with this order</span></div>
+<div style="display:flex;gap:10px;overflow-x:auto;margin-right:-16px;padding-right:16px;scrollbar-width:none"><sc-for list="{{ addons }}" as="a" hint-placeholder-count="3"><div style="flex:none;width:140px;display:flex;flex-direction:column;gap:5px;font-size:12px"><div style="aspect-ratio:1;background:#ececec"></div><span>{{ a.name }}</span><div style="display:flex;gap:6px;align-items:baseline"><b>{{ a.priceStr }}</b><s style="color:#999;font-size:11px">{{ a.wasStr }}</s></div><div sc-camel-on-click="{{ a.onClick }}" style="height:32px;border:1px solid #111;border-radius:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;background:{{ a.bg }};color:{{ a.fg }}">{{ a.btn }}</div></div></sc-for></div></div>
+<div style="background:#f6f6f6;padding:16px;display:flex;flex-direction:column;gap:8px;font-size:13px"><div style="display:flex;justify-content:space-between"><span>Subtotal</span><span>{{ t.subStr }}</span></div><div style="display:flex;justify-content:space-between"><span>Discount</span><span>{{ t.discStr }}</span></div><div style="display:flex;justify-content:space-between;color:#777"><span>Shipping</span><span>Next step</span></div><i style="height:1px;background:#ddd"></i><div style="display:flex;justify-content:space-between;font-size:16px;font-weight:700"><span>Total</span><span>{{ t.preStr }}</span></div></div>
+<div sc-camel-on-click="{{ goShipping }}" style="height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;cursor:pointer" style-hover="background:#333">Go to payment</div>
+<div sc-camel-on-click="{{ goHome }}" style="height:48px;border-radius:24px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin-bottom:24px;cursor:pointer">Keep shopping</div>
+</div>
+</sc-if>
+</sc-if>
+
+<sc-if value="{{ is.shipping }}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;align-items:center;gap:8px;padding:14px 16px;font-size:11px;letter-spacing:.03em;border-bottom:1px solid #eee"><span style="display:flex;align-items:center;gap:6px;color:#555"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">✓</b>Cart</span><i style="flex:1;height:1px;background:#111"></i><span style="display:flex;align-items:center;gap:6px;font-weight:600"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">2</b>Shipping info</span><i style="flex:1;height:1px;background:#bbb"></i><span style="display:flex;align-items:center;gap:6px;color:#999"><b style="width:20px;height:20px;border-radius:10px;border:1px solid #bbb;line-height:18px;text-align:center;font-size:10px">3</b>Complete</span></div>
+<div style="padding:20px 16px;display:flex;flex-direction:column;gap:14px">
+<b style="font-size:20px">Shipping method</b>
+<div sc-camel-on-click="{{ pick711 }}" style="border:{{ s711.bd }};padding:14px;display:flex;flex-direction:column;gap:12px;cursor:pointer"><div style="display:flex;gap:10px"><i style="width:18px;height:18px;border-radius:9px;border:{{ s711.ring }};flex:none;margin-top:2px"></i><div style="flex:1;display:flex;flex-direction:column;gap:3px"><b style="font-size:14px">7-ELEVEN store pickup</b><span style="font-size:12px;color:#666">NT$60 · free over NT$1,500 · 2–4 days</span></div></div>
+<sc-if value="{{ s711.on }}"><div sc-camel-on-click="{{ chooseStore }}" style="background:#f3f3f3;padding:10px 12px;display:flex;justify-content:space-between;gap:8px;font-size:13px"><span style="color:{{ storeColor }}">{{ storeLabel }}</span><u style="flex:none">{{ storeCta }}</u></div></sc-if></div>
+<div sc-camel-on-click="{{ pickHome }}" style="border:{{ sHome.bd }};padding:14px;display:flex;flex-direction:column;gap:12px;cursor:pointer"><div style="display:flex;gap:10px"><i style="width:18px;height:18px;border-radius:9px;border:{{ sHome.ring }};flex:none;margin-top:2px"></i><div style="flex:1;display:flex;flex-direction:column;gap:3px"><b style="font-size:14px">Home delivery</b><span style="font-size:12px;color:#666">NT$100 · free over NT$1,500 · 1–3 days</span></div></div>
+<sc-if value="{{ sHome.on }}"><input value="{{ addr }}" sc-camel-on-change="{{ onAddr }}" sc-camel-on-click="{{ stop }}" placeholder="Full address (city, district, street, no.)" style="height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px"></sc-if></div>
+<div style="background:#f3f3f3;padding:12px;font-size:12px;line-height:1.5;display:flex;gap:8px"><span style="flex:none;width:16px;height:16px;border:1px solid #555;border-radius:8px;font-size:10px;line-height:14px;text-align:center">i</span><span>All orders are prepaid. Cash on delivery is not available.</span></div>
+<div sc-camel-on-click="{{ toggleSum }}" style="border-top:1px solid #ddd;border-bottom:1px solid #ddd;height:52px;display:flex;align-items:center;justify-content:space-between;font-size:13px;cursor:pointer"><span>Order summary · {{ cartCount }} items {{ sumArrow }}</span><b>{{ t.totalStr }}</b></div>
+<sc-if value="{{ sumOpen }}"><div style="display:flex;flex-direction:column;gap:8px;font-size:13px;margin-top:-6px"><sc-for list="{{ lines }}" as="l"><div style="display:flex;justify-content:space-between;gap:10px"><span style="color:#555">{{ l.name }} × {{ l.qty }}</span><span>{{ l.priceStr }}</span></div></sc-for><div style="display:flex;justify-content:space-between"><span style="color:#555">Shipping</span><span>{{ t.feeStr }}</span></div><div style="display:flex;justify-content:space-between"><span style="color:#555">Discount</span><span>{{ t.discStr }}</span></div></div></sc-if>
+<div sc-camel-on-click="{{ continueShip }}" style="height:48px;border-radius:24px;background:{{ shipBtnBg }};color:{{ shipBtnFg }};display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin-top:8px;cursor:pointer">Continue</div>
+<div style="display:flex;justify-content:center;margin-bottom:16px"><span sc-camel-on-click="{{ openCart }}" style="font-size:13px;text-decoration:underline;cursor:pointer">← Back to cart</span></div>
+</div>
+</sc-if>
+
+<sc-if value="{{ is.store }}" hint-placeholder-val="{{ false }}">
+<div style="position:sticky;top:0;z-index:20;background:#fff;height:56px;display:flex;align-items:center;padding:0 8px;border-bottom:1px solid #e6e6e6"><span sc-camel-on-click="{{ storeBack }}" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer">←</span><b style="font-size:15px;flex:1;text-align:center;margin-right:40px">Pickup store</b></div>
+<div style="padding:20px 16px;display:flex;flex-direction:column;gap:14px">
+<div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">RECIPIENT</div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Recipient name</div><input value="{{ recName }}" sc-camel-on-change="{{ onRecName }}" placeholder="Full name as on ID" style="width:100%;height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px"></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Recipient mobile</div><input value="{{ recPhone }}" sc-camel-on-change="{{ onRecPhone }}" placeholder="09xx xxx xxx" style="width:100%;height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px"><div style="font-size:11px;color:#777;margin-top:6px">Name must match the ID shown at pickup.</div></div>
+<div style="margin-top:8px;background:#111;color:#fff;padding:10px 12px;font-size:12px;line-height:1.45"><b>7-ELEVEN e-map (via ECPay) · simulated</b><br><span style="color:#bbb">On the live site this opens the official 7-ELEVEN map and returns the store you pick.</span></div>
+<sc-raw-select value="{{ city }}" sc-camel-on-change="{{ onCity }}" style="height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px;background:#fff"><sc-for list="{{ cities }}" as="c"><option value="{{ c }}">{{ c }}</option></sc-for></sc-raw-select>
+<sc-raw-select value="{{ district }}" sc-camel-on-change="{{ onDistrict }}" style="height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px;background:#fff"><sc-for list="{{ districts }}" as="c"><option value="{{ c }}">{{ c }}</option></sc-for></sc-raw-select>
+<sc-raw-select value="{{ road }}" sc-camel-on-change="{{ onRoad }}" style="height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px;background:#fff"><sc-for list="{{ roads }}" as="c"><option value="{{ c }}">{{ c }}</option></sc-for></sc-raw-select>
+<div style="display:flex;flex-direction:column;border:1px solid #ddd"><sc-for list="{{ stores }}" as="s" hint-placeholder-count="3"><div sc-camel-on-click="{{ s.onClick }}" style="display:flex;gap:10px;padding:12px;background:{{ s.bg }};border-bottom:1px solid #eee;cursor:pointer"><i style="width:18px;height:18px;border-radius:9px;border:{{ s.ring }};flex:none;margin-top:2px"></i><div style="display:flex;flex-direction:column;gap:2px;font-size:13px"><b>{{ s.name }} · #{{ s.id }}</b><span style="font-size:12px;color:#666">{{ s.addr }}</span></div></div></sc-for></div>
+<div style="position:relative;height:200px;background:#e8e8e8;overflow:hidden;font:500 10px/1.5 'IBM Plex Mono',monospace;color:#777;letter-spacing:.06em"><span style="position:absolute;left:12px;top:10px">MAP</span><span style="position:absolute;left:{{ pinX }};top:{{ pinY }};width:18px;height:18px;border-radius:9px;background:#111;border:3px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3);transition:left .3s,top .3s"></span><span style="position:absolute;left:12px;bottom:10px;right:12px;background:#fff;color:#111;padding:6px 8px;font:12px 'IBM Plex Sans',sans-serif;letter-spacing:0">{{ selStoreName }}</span></div>
+<div sc-camel-on-click="{{ confirmStore }}" style="height:48px;border-radius:24px;background:{{ confirmBg }};color:{{ confirmFg }};display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin:8px 0 24px;cursor:pointer">Confirm store</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ is.logincheck }}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;align-items:center;gap:8px;padding:14px 16px;font-size:11px;letter-spacing:.03em;border-bottom:1px solid #eee"><span style="display:flex;align-items:center;gap:6px;color:#555"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">✓</b>Cart</span><i style="flex:1;height:1px;background:#111"></i><span style="display:flex;align-items:center;gap:6px;font-weight:600"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">2</b>Shipping info</span><i style="flex:1;height:1px;background:#bbb"></i><span style="display:flex;align-items:center;gap:6px;color:#999"><b style="width:20px;height:20px;border-radius:10px;border:1px solid #bbb;line-height:18px;text-align:center;font-size:10px">3</b>Complete</span></div>
+<div style="padding:40px 24px;display:flex;flex-direction:column;gap:14px">
+<b style="font-size:22px;text-align:center;line-height:1.3">How would you like to check out?</b>
+<span style="font-size:13px;color:#555;text-align:center;margin-bottom:12px">Sign in to earn points and use your coupons.</span>
+<div sc-camel-on-click="{{ lcSignIn }}" style="height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;cursor:pointer" style-hover="background:#333">Sign in</div>
+<div sc-camel-on-click="{{ lcCreate }}" style="height:48px;border-radius:24px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;cursor:pointer">Create account</div>
+<div style="display:flex;align-items:center;gap:12px;font-size:12px;color:#888;margin:6px 0"><i style="flex:1;height:1px;background:#ddd"></i>or<i style="flex:1;height:1px;background:#ddd"></i></div>
+<div style="display:flex;justify-content:center"><span sc-camel-on-click="{{ guest }}" style="font-size:14px;font-weight:500;text-decoration:underline;cursor:pointer">Continue as guest →</span></div>
+<span style="font-size:12px;color:#777;text-align:center">Guests can track orders with order number + mobile.</span>
+<div style="background:#f3f3f3;padding:16px;display:flex;flex-direction:column;gap:8px;font-size:13px;margin-top:12px"><b style="font-size:12px;letter-spacing:.12em">MEMBER BENEFITS</b><span>✓ 1 point for every NT$100</span><span>✓ Save your 7-ELEVEN store</span><span>✓ Birthday coupon</span></div>
+</div>
+</sc-if>
+
+<sc-if value="{{ is.login }}" hint-placeholder-val="{{ false }}">
+<div style="padding:24px 20px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;border-bottom:1px solid #ddd;font-size:14px"><span sc-camel-on-click="{{ tabIn }}" style="flex:1;text-align:center;padding:12px;cursor:pointer;border-bottom:{{ tIn.bd }};font-weight:{{ tIn.fw }};color:{{ tIn.c }}">Sign in</span><span sc-camel-on-click="{{ tabUp }}" style="flex:1;text-align:center;padding:12px;cursor:pointer;border-bottom:{{ tUp.bd }};font-weight:{{ tUp.fw }};color:{{ tUp.c }}">Sign up</span></div>
+<b style="font-size:22px;margin-top:8px">{{ loginTitle }}</b>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Mobile number</div><div style="height:46px;border:1px solid #bdbdbd;display:flex;align-items:center;font-size:13px"><span style="padding:0 12px;border-right:1px solid #ddd;height:100%;display:flex;align-items:center">+886</span><input value="{{ phone }}" sc-camel-on-change="{{ onPhone }}" sc-camel-on-key-down="{{ phoneKey }}" placeholder="912 345 678" inputmode="tel" style="flex:1;min-width:0;height:100%;border:none;padding:0 12px;font-size:13px"></div><sc-if value="{{ hasLoginErr }}"><div style="font-size:12px;color:#b00020;margin-top:6px">{{ loginErr }}</div></sc-if></div>
+<div sc-camel-on-click="{{ continueLogin }}" style="height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;cursor:pointer" style-hover="background:#333">Continue</div>
+<div style="border:1.5px dashed #8a8a8a;background:repeating-linear-gradient(135deg,#f4f4f4 0 6px,#fff 6px 12px);padding:12px;font-size:12px;line-height:1.5;color:#444"><b style="display:inline-block;background:#111;color:#fff;padding:2px 8px;font-size:11px;margin-bottom:6px">Pending decision</b><div>SMS OTP and password setup steps — in the prototype, tapping Continue signs you in immediately</div></div>
+<div style="display:flex;align-items:center;gap:12px;font-size:12px;color:#888"><i style="flex:1;height:1px;background:#ddd"></i>or<i style="flex:1;height:1px;background:#ddd"></i></div>
+<div sc-camel-on-click="{{ lineLogin }}" style="height:48px;border-radius:24px;border:1px solid #111;display:flex;align-items:center;justify-content:center;gap:10px;font-size:14px;font-weight:500;cursor:pointer"><span style="width:22px;height:22px;border:1px solid #111;border-radius:6px;font-size:7px;font-weight:700;display:flex;align-items:center;justify-content:center">LINE</span>Continue with LINE</div>
+<sc-if value="{{ showGuest }}"><div style="display:flex;justify-content:center"><span sc-camel-on-click="{{ guest }}" style="font-size:13px;text-decoration:underline;cursor:pointer">Check out as guest</span></div></sc-if>
+<div style="border:1px dashed #888;padding:12px;font-size:12px;line-height:1.55;color:#333"><b>Scam alert:</b> 9Lab will never ask for your OTP code or ask you to use an ATM. Call 165 if in doubt.</div>
+<span style="font-size:11px;color:#777;text-align:center;line-height:1.5;margin-bottom:8px">By continuing you agree to our Terms of Service and Privacy Policy.</span>
+</div>
+</sc-if>
+
+<sc-if value="{{ is.info }}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;align-items:center;gap:8px;padding:14px 16px;font-size:11px;letter-spacing:.03em;border-bottom:1px solid #eee"><span style="display:flex;align-items:center;gap:6px;color:#555"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">✓</b>Cart</span><i style="flex:1;height:1px;background:#111"></i><span style="display:flex;align-items:center;gap:6px;font-weight:600"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">2</b>Shipping info</span><i style="flex:1;height:1px;background:#bbb"></i><span style="display:flex;align-items:center;gap:6px;color:#999"><b style="width:20px;height:20px;border-radius:10px;border:1px solid #bbb;line-height:18px;text-align:center;font-size:10px">3</b>Complete</span></div>
+<div style="padding:20px 16px;display:flex;flex-direction:column;gap:22px">
+<div style="display:flex;flex-direction:column;gap:8px"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">CONTACT</div><input value="{{ email }}" sc-camel-on-change="{{ onEmail }}" placeholder="Email address" style="height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px"><span style="font-size:11px;color:#777">Order confirmation and e-invoice are sent here.</span></div>
+<div style="display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between"><span style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">SHIP TO</span><span sc-camel-on-click="{{ goShipping }}" style="font-size:12px;text-decoration:underline;cursor:pointer">Edit</span></div><div style="background:#f3f3f3;padding:12px;font-size:13px;line-height:1.55">{{ shipTo }}<br><span style="color:#666">{{ recipientLine }}</span></div></div>
+<div style="display:flex;flex-direction:column;gap:8px"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">E-INVOICE</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px"><sc-for list="{{ invoices }}" as="v" hint-placeholder-count="4"><span sc-camel-on-click="{{ v.onClick }}" style="height:40px;border:1px solid {{ v.bd }};background:{{ v.bg }};color:{{ v.fg }};display:flex;align-items:center;justify-content:center;cursor:pointer">{{ v.label }}</span></sc-for></div>
+<sc-if value="{{ inv.member }}"><div style="font-size:12px;color:#555;background:#f3f3f3;padding:10px 12px">{{ memberCarrierText }}</div></sc-if>
+<sc-if value="{{ inv.barcode }}"><input value="{{ barcode }}" sc-camel-on-change="{{ onBarcode }}" placeholder="Mobile barcode e.g. /ABC+123" style="height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px"></sc-if>
+<sc-if value="{{ inv.tax }}"><div style="display:flex;flex-direction:column;gap:8px"><input value="{{ taxId }}" sc-camel-on-change="{{ onTaxId }}" placeholder="Tax ID (8 digits)" style="height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px"><input value="{{ company }}" sc-camel-on-change="{{ onCompany }}" placeholder="Company name" style="height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px"></div></sc-if>
+<sc-if value="{{ inv.donate }}"><sc-raw-select style="height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px;background:#fff"><option>Taiwan Fund for Children and Families</option><option>Genesis Social Welfare Foundation</option><option>Taiwan Wildlife Rescue</option></sc-raw-select></sc-if>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">PAYMENT</div>
+<div style="border:1px solid #ddd;display:flex;flex-direction:column;font-size:13px"><sc-for list="{{ pays }}" as="p" hint-placeholder-count="4"><div sc-camel-on-click="{{ p.onClick }}" style="display:flex;flex-direction:column;gap:8px;padding:12px;border-bottom:1px solid #eee;background:{{ p.bg }};cursor:pointer"><div style="display:flex;gap:10px;align-items:center;font-weight:{{ p.fw }}"><i style="width:18px;height:18px;border-radius:9px;border:{{ p.ring }};flex:none"></i>{{ p.label }}<span style="font-size:12px;color:#777;font-weight:400">{{ p.sub }}</span></div><sc-if value="{{ p.card }}"><div style="display:flex;flex-direction:column;gap:8px"><input placeholder="Card number" sc-camel-on-click="{{ stop }}" style="height:40px;border:1px solid #bdbdbd;padding:0 10px;font-size:13px"><div style="display:flex;gap:8px"><input placeholder="MM / YY" sc-camel-on-click="{{ stop }}" style="flex:1;min-width:0;height:40px;border:1px solid #bdbdbd;padding:0 10px;font-size:13px"><input placeholder="CVC" sc-camel-on-click="{{ stop }}" style="flex:1;min-width:0;height:40px;border:1px solid #bdbdbd;padding:0 10px;font-size:13px"></div></div></sc-if></div></sc-for></div></div>
+<div style="background:#f6f6f6;padding:16px;display:flex;flex-direction:column;gap:8px;font-size:13px"><div style="display:flex;justify-content:space-between"><span>Subtotal</span><span>{{ t.subStr }}</span></div><div style="display:flex;justify-content:space-between"><span>Shipping</span><span>{{ t.feeStr }}</span></div><div style="display:flex;justify-content:space-between"><span>Discount</span><span>{{ t.discStr }}</span></div><i style="height:1px;background:#ddd"></i><div style="display:flex;justify-content:space-between;font-size:16px;font-weight:700"><span>Total</span><span>{{ t.totalStr }}</span></div></div>
+<div style="border:1px solid #ddd;padding:12px;font-size:12px;line-height:1.55;color:#333;display:flex;flex-direction:column;gap:10px"><b style="font-size:12px;letter-spacing:.12em">PURCHASE NOTICE</b><span>Please enter the recipient's real name — it must match the ID shown at pickup. Read the shopping guide and return policy before ordering.</span><div sc-camel-on-click="{{ toggleNews }}" style="display:flex;gap:10px;font-size:13px;cursor:pointer"><i style="width:20px;height:20px;border:1.5px solid #111;background:{{ newsBg }};color:#fff;flex:none;font-style:normal;font-size:12px;line-height:17px;text-align:center">{{ newsMark }}</i><span>Send me news and offers (optional)</span></div></div>
+<div sc-camel-on-click="{{ toggleAgree }}" style="display:flex;gap:10px;font-size:13px;line-height:1.5;cursor:pointer;padding:8px;margin:-8px;background:{{ agreeHi }};transition:background .3s"><i style="width:20px;height:20px;border:1.5px solid #111;background:{{ agreeBg }};color:#fff;flex:none;font-style:normal;font-size:12px;line-height:17px;text-align:center">{{ agreeMark }}</i><span>I agree to the <u>Terms of Service</u> and <u>Privacy Policy</u>.</span></div>
+<div sc-camel-on-click="{{ placeOrder }}" style="height:50px;border-radius:25px;background:{{ placeBg }};color:{{ placeFg }};display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin-bottom:24px;cursor:{{ placeCursor }};transition:background .2s">Place order · {{ t.totalStr }}</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ is.complete }}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;align-items:center;gap:8px;padding:14px 16px;font-size:11px;letter-spacing:.03em;border-bottom:1px solid #eee"><span style="display:flex;align-items:center;gap:6px;color:#555"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">✓</b>Cart</span><i style="flex:1;height:1px;background:#111"></i><span style="display:flex;align-items:center;gap:6px;color:#555"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">✓</b>Shipping info</span><i style="flex:1;height:1px;background:#111"></i><span style="display:flex;align-items:center;gap:6px;font-weight:600"><b style="width:20px;height:20px;border-radius:10px;background:#111;color:#fff;line-height:20px;text-align:center;font-size:10px">3</b>Complete</span></div>
+<div style="padding:28px 16px;display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center"><span style="width:56px;height:56px;border-radius:28px;border:1.5px solid #111;display:flex;align-items:center;justify-content:center;font-size:24px;animation:pop .3s">✓</span><b style="font-size:20px">Thank you for your order</b><span style="font-size:13px;color:#555">Order #{{ ord.no }} · sent to {{ ord.email }}</span></div>
+<sc-if value="{{ ord.atm }}"><div style="background:#f3f3f3;padding:14px;display:flex;flex-direction:column;gap:4px;font-size:13px"><b>Transfer within 24 hrs</b><span>Bank 812 · Account 9010 2610 0401 88</span><span style="color:#666;font-size:12px">Amount {{ ord.totalStr }} · Deadline 2026-10-05 14:32</span></div></sc-if>
+<div style="border:1.5px solid #111;padding:12px;font-size:13px;line-height:1.5;display:flex;gap:8px"><b style="flex:none">!</b><span>Please pick up within <b>5 days</b> of the arrival SMS. Unclaimed parcels are returned and the order is cancelled.</span></div>
+<div style="display:flex;flex-direction:column;gap:8px;font-size:13px"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">SHIPPING</div><div style="display:flex;justify-content:space-between;gap:12px"><span style="color:#777">Deliver to</span><span style="text-align:right">{{ ord.store }}</span></div><div style="display:flex;justify-content:space-between;gap:12px"><span style="color:#777">Recipient</span><span style="text-align:right">{{ ord.recipient }}</span></div></div>
+<div style="display:flex;flex-direction:column;gap:8px;font-size:13px;border-top:1px solid #eee;padding-top:16px"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">ORDER</div><div style="display:flex;justify-content:space-between"><span style="color:#777">Date</span><span>{{ ord.date }}</span></div><div style="display:flex;justify-content:space-between"><span style="color:#777">Payment</span><span>{{ ord.pay }}</span></div><div style="display:flex;justify-content:space-between;gap:12px"><span style="color:#777">Items</span><span style="text-align:right">{{ ord.items }}</span></div><div style="display:flex;justify-content:space-between;font-weight:700"><span>Total</span><span>{{ ord.totalStr }}</span></div></div>
+<div style="background:#f3f3f3;padding:16px;display:flex;gap:12px;align-items:center"><span style="flex:none;width:44px;height:44px;border:1px solid #999;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600">LINE</span><div style="flex:1;display:flex;flex-direction:column;gap:2px;font-size:13px"><b>Add 9Lab on LINE</b><span style="font-size:12px;color:#555">Get a NT$100 coupon for your next order</span></div><span sc-camel-on-click="{{ addLine }}" style="height:34px;padding:0 14px;border-radius:17px;background:#111;color:#fff;display:flex;align-items:center;font-size:12px;cursor:pointer">Add friend</span></div>
+<sc-if value="{{ guestAcct }}"><div style="background:#f3f3f3;padding:14px;font-size:13px;line-height:1.5;display:flex;flex-direction:column;gap:4px;animation:fade .3s"><b>We created your 9Lab account</b><span style="font-size:12px;color:#555">Saved with {{ guestPhone }} · points from this order are kept. Verify by SMS to set a password.</span><u sc-camel-on-click="{{ verifyGuest }}" style="font-size:12px;cursor:pointer">Verify now →</u></div></sc-if>
+<div style="border:1px dashed #888;padding:12px;font-size:12px;line-height:1.55;color:#333"><b>Scam alert:</b> 9Lab will never call or message you to change payment settings or use an ATM. If in doubt, call the 165 anti-fraud hotline.</div>
+<div sc-camel-on-click="{{ goTrack }}" style="height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;cursor:pointer">Check order</div>
+<div sc-camel-on-click="{{ goHome }}" style="height:48px;border-radius:24px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin-bottom:24px;cursor:pointer">Keep shopping</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ is.list }}" hint-placeholder-val="{{ false }}">
+<div style="padding:12px 16px 0;font-size:11px;color:#888">Home / Shop / {{ listTitle }}</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px;padding:16px 16px 20px"><b style="font-size:20px;letter-spacing:.14em;text-align:center">{{ listTitle }}</b><span style="font-size:12px;color:#777">{{ listCount }} products</span></div>
+<div style="display:flex;border-top:1px solid #ddd;border-bottom:1px solid #ddd;height:48px;font-size:13px"><div sc-camel-on-click="{{ toggleFilterPanel }}" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;border-right:1px solid #ddd;cursor:pointer"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.4"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>{{ filterLabel }}</div><div style="flex:1;position:relative;display:flex;align-items:center;justify-content:center">Sort: {{ sort }} ⌄<sc-raw-select value="{{ sort }}" sc-camel-on-change="{{ onSort }}" style="position:absolute;inset:0;opacity:0;cursor:pointer"><sc-for list="{{ sortOpts }}" as="o"><option value="{{ o }}">{{ o }}</option></sc-for></sc-raw-select></div></div>
+<sc-if value="{{ filterPanel }}"><div style="padding:14px 16px;border-bottom:1px solid #eee;display:flex;flex-wrap:wrap;gap:8px;font-size:12px;animation:fade .2s"><sc-for list="{{ filters }}" as="f"><span sc-camel-on-click="{{ f.onClick }}" style="padding:7px 14px;border-radius:16px;border:1px solid #111;background:{{ f.bg }};color:{{ f.fg }};cursor:pointer">{{ f.label }}</span></sc-for></div></sc-if>
+<sc-if value="{{ hasActiveFilters }}"><div style="display:flex;gap:8px;align-items:center;padding:12px 16px 0;font-size:12px;flex-wrap:wrap"><sc-for list="{{ activeFilters }}" as="f"><span sc-camel-on-click="{{ f.onClick }}" style="padding:6px 12px;background:#efefef;border-radius:14px;cursor:pointer">{{ f.label }} ×</span></sc-for><u sc-camel-on-click="{{ clearFilters }}" style="color:#555;cursor:pointer">Clear all</u></div></sc-if>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:20px 16px 0"><sc-for list="{{ listItems }}" as="c" hint-placeholder-count="6"><dc-import name="ProtoCard" item="{{ c }}" hint-size="100%,270px"></dc-import></sc-for></div>
+<div style="padding:28px 16px 48px;text-align:center;font-size:12px;color:#777">Showing all {{ listCount }} products</div>
+</sc-if>
+
+<sc-if value="{{ is.results }}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;flex-direction:column;align-items:center;gap:4px;padding:24px 16px 20px"><b style="font-size:18px;text-align:center">Results for "{{ searchQ }}"</b><span style="font-size:12px;color:#777">{{ resCount }} results</span></div>
+<sc-if value="{{ resHas }}"><div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px 48px"><sc-for list="{{ resItems }}" as="c" hint-placeholder-count="4"><dc-import name="ProtoCard" item="{{ c }}" hint-size="100%,270px"></dc-import></sc-for></div></sc-if>
+<sc-if value="{{ resNone }}">
+<div style="display:flex;flex-direction:column;align-items:center;gap:12px;padding:12px 24px 28px;text-align:center"><span style="width:64px;height:64px;border-radius:32px;background:#efefef;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="#888" stroke-width="1.4"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></span><b style="font-size:16px">No products match "{{ searchQ }}"</b><span style="font-size:13px;color:#555;line-height:1.5">Check the spelling or try a broader word.</span></div>
+<div style="padding:0 16px;display:flex;flex-direction:column;gap:14px"><div sc-camel-on-click="{{ openSearch }}" style="height:42px;border:1px solid #111;border-radius:21px;padding:0 14px;display:flex;align-items:center;gap:8px;font-size:13px;color:#999;cursor:pointer">Search again</div><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600;margin-top:6px">POPULAR SEARCHES</div><div style="display:flex;flex-wrap:wrap;gap:8px;font-size:12px"><sc-for list="{{ popular }}" as="p"><span sc-camel-on-click="{{ p.onClick }}" style="padding:7px 14px;border:1px solid #bbb;border-radius:16px;cursor:pointer">{{ p.label }}</span></sc-for></div></div>
+<div style="text-align:center;font-size:15px;font-weight:600;letter-spacing:.16em;padding:36px 16px 16px">YOU MAY ALSO LIKE</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px 48px"><sc-for list="{{ recs }}" as="c" hint-placeholder-count="4"><dc-import name="ProtoCard" item="{{ c }}" hint-size="100%,270px"></dc-import></sc-for></div>
+</sc-if>
+</sc-if>
+
+<sc-if value="{{ is.member }}" hint-placeholder-val="{{ false }}">
+<div style="padding:20px 16px 0;display:flex;flex-direction:column;gap:2px"><b style="font-size:20px">Hi, Mei-Ling</b><span style="font-size:12px;color:#777">Gold member · 320 points</span></div>
+<div style="display:flex;gap:22px;padding:16px 16px 0;border-bottom:1px solid #ddd;font-size:13px;white-space:nowrap"><span style="padding-bottom:10px;border-bottom:2px solid #111;font-weight:600">Profile</span><span sc-camel-on-click="{{ goFav }}" style="color:#888;cursor:pointer">My favorite</span><span sc-camel-on-click="{{ goCoupons }}" style="color:#888;cursor:pointer">My coupon</span><span sc-camel-on-click="{{ goTrack }}" style="color:#888;cursor:pointer">Orders</span></div>
+<div style="padding:20px 16px;display:flex;flex-direction:column;gap:14px">
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Name *</div><input value="{{ profName }}" sc-camel-on-change="{{ onProfName }}" style="width:100%;height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px"></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Mobile</div><div style="height:44px;background:#f3f3f3;border:1px solid #ddd;padding:0 12px;display:flex;align-items:center;justify-content:space-between;font-size:13px;color:#666"><span>+886 912 345 678</span><span style="font-size:11px">✓ Verified</span></div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Email *</div><input value="{{ profEmail }}" sc-camel-on-change="{{ onProfEmail }}" style="width:100%;height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px"></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Birthday <span style="color:#999">· for your birthday coupon</span></div><div style="display:flex;gap:8px;font-size:13px"><sc-raw-select style="flex:1.4;height:44px;border:1px solid #bdbdbd;padding:0 10px;background:#fff"><option>1994</option><option>1995</option></sc-raw-select><sc-raw-select style="flex:1;height:44px;border:1px solid #bdbdbd;padding:0 10px;background:#fff"><option>05</option><option>06</option></sc-raw-select><sc-raw-select style="flex:1;height:44px;border:1px solid #bdbdbd;padding:0 10px;background:#fff"><option>18</option><option>19</option></sc-raw-select></div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Gender</div><div style="display:flex;gap:8px;font-size:12px"><sc-for list="{{ genders }}" as="g"><span sc-camel-on-click="{{ g.onClick }}" style="padding:8px 14px;border-radius:16px;border:1px solid {{ g.bd }};background:{{ g.bg }};color:{{ g.fg }};cursor:pointer">{{ g.label }}</span></sc-for></div></div>
+<div><div style="font-size:12px;color:#555;margin-bottom:6px">Default pickup store</div><div style="background:#f3f3f3;padding:12px;display:flex;justify-content:space-between;gap:8px;font-size:13px"><span>{{ defaultStore }}</span><u sc-camel-on-click="{{ changeDefaultStore }}" style="cursor:pointer;flex:none">Change</u></div></div>
+<div style="display:flex;flex-direction:column;gap:12px;font-size:13px;line-height:1.5;margin-top:4px"><div sc-camel-on-click="{{ toggleTerms }}" style="display:flex;gap:10px;cursor:pointer"><i style="width:20px;height:20px;border:1.5px solid #111;background:{{ termsBg }};color:#fff;flex:none;font-style:normal;font-size:12px;line-height:17px;text-align:center">{{ termsMark }}</i><span>I agree to the <u>Terms of Service</u> and <u>Privacy Policy</u>. *</span></div><div sc-camel-on-click="{{ toggleNews }}" style="display:flex;gap:10px;cursor:pointer"><i style="width:20px;height:20px;border:1.5px solid #111;background:{{ newsBg }};color:#fff;flex:none;font-style:normal;font-size:12px;line-height:17px;text-align:center">{{ newsMark }}</i><span>Send me offers via LINE and email.</span></div></div>
+<div sc-camel-on-click="{{ saveProfile }}" style="height:48px;border-radius:24px;background:{{ saveBg }};color:{{ saveFg }};display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;margin-top:6px;cursor:pointer">Save changes</div>
+<span sc-camel-on-click="{{ signOut }}" style="font-size:13px;text-decoration:underline;color:#555;text-align:center;margin-bottom:16px;cursor:pointer">Sign out</span>
+</div>
+</sc-if>
+
+<sc-if value="{{ is.favorites }}" hint-placeholder-val="{{ false }}">
+<b style="display:block;font-size:20px;padding:20px 16px 4px">My favorite</b>
+<div style="display:flex;border-bottom:1px solid #ddd;font-size:13px;margin-bottom:12px"><sc-for list="{{ favTabs }}" as="f" hint-placeholder-count="3"><span sc-camel-on-click="{{ f.onClick }}" style="flex:1;text-align:center;padding:12px 4px;cursor:pointer;border-bottom:{{ f.bd }};font-weight:{{ f.fw }};color:{{ f.c }}">{{ f.label }}</span></sc-for></div>
+<sc-if value="{{ favHas }}"><div style="display:flex;justify-content:space-between;padding:0 16px 16px;font-size:12px;color:#777"><span>{{ favCount }} items</span><sc-if value="{{ favShowAddAll }}"><span sc-camel-on-click="{{ addAllToCart }}" style="text-decoration:underline;color:#111;cursor:pointer">Add all to cart</span></sc-if></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding:0 16px 40px"><sc-for list="{{ favItems }}" as="c" hint-placeholder-count="4"><dc-import name="ProtoCard" item="{{ c }}" hint-size="100%,270px"></dc-import></sc-for></div></sc-if>
+<sc-if value="{{ favEmpty }}"><div style="padding:60px 24px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center"><span style="font-size:28px">♡</span><b style="font-size:16px">{{ favEmptyText }}</b><div sc-camel-on-click="{{ goHome }}" style="width:180px;height:44px;border-radius:22px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer">Shop now</div></div></sc-if>
+</sc-if>
+
+<sc-if value="{{ is.coupons }}" hint-placeholder-val="{{ false }}">
+<b style="display:block;font-size:20px;padding:20px 16px 12px">My coupon</b>
+<div style="padding:0 16px 16px"><div style="display:flex;gap:8px"><input value="{{ couponCode }}" sc-camel-on-change="{{ onCouponCode }}" placeholder="Enter coupon code" style="flex:1;min-width:0;height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px;text-transform:uppercase"><div sc-camel-on-click="{{ redeem }}" style="width:84px;height:44px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer">Redeem</div></div><sc-if value="{{ hasCouponErr }}"><div style="font-size:12px;color:#b00020;margin-top:6px">{{ couponErr }}</div></sc-if></div>
+<div style="display:flex;border-bottom:1px solid #ddd;font-size:13px"><sc-for list="{{ couponTabs }}" as="f" hint-placeholder-count="3"><span sc-camel-on-click="{{ f.onClick }}" style="flex:1;text-align:center;padding:12px 4px;cursor:pointer;border-bottom:{{ f.bd }};font-weight:{{ f.fw }};color:{{ f.c }}">{{ f.label }}</span></sc-for></div>
+<div style="display:flex;gap:8px;padding:14px 16px;font-size:12px;overflow-x:auto;scrollbar-width:none"><sc-for list="{{ cFilters }}" as="f" hint-placeholder-count="4"><span sc-camel-on-click="{{ f.onClick }}" style="flex:none;padding:6px 12px;border-radius:14px;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.fg }};cursor:pointer">{{ f.label }}</span></sc-for></div>
+<div style="padding:0 16px 32px;display:flex;flex-direction:column;gap:12px">
+<sc-for list="{{ couponItems }}" as="c" hint-placeholder-count="2"><div style="position:relative;display:flex;border:1px solid {{ c.bd }};opacity:{{ c.op }}"><div style="width:96px;flex:none;border-right:1.5px dashed #bbb;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 0"><b style="font-size:20px">{{ c.big }}</b><span style="font-size:10px;letter-spacing:.12em">{{ c.small }}</span></div><div style="flex:1;padding:12px;display:flex;flex-direction:column;gap:3px;font-size:12px"><b style="font-size:13px">{{ c.title }}</b><span style="color:#666">{{ c.l1 }}</span><span style="color:#666;font-weight:{{ c.l2w }}">{{ c.l2 }}</span></div><sc-if value="{{ c.hasBtn }}"><div style="display:flex;align-items:center;padding-right:12px"><span sc-camel-on-click="{{ c.onClick }}" style="height:32px;padding:0 14px;border-radius:16px;border:1px solid #111;background:{{ c.btnBg }};color:{{ c.btnFg }};display:flex;align-items:center;font-size:12px;cursor:pointer;white-space:nowrap">{{ c.btn }}</span></div></sc-if><sc-if value="{{ c.hasStamp }}"><span style="position:absolute;right:12px;top:50%;transform:translateY(-50%) rotate(-8deg);border:1.5px solid #111;padding:2px 8px;font-size:11px;font-weight:700;letter-spacing:.1em">{{ c.stamp }}</span></sc-if></div></sc-for>
+<sc-if value="{{ couponEmpty }}"><div style="padding:40px 0;text-align:center;font-size:13px;color:#777">No coupons here.</div></sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ is.track }}" hint-placeholder-val="{{ false }}">
+<b style="display:block;font-size:20px;padding:20px 16px 12px">Track my order</b>
+<div style="padding:0 16px 16px;display:flex;flex-direction:column;gap:12px">
+<sc-for list="{{ orderCards }}" as="o" hint-placeholder-count="2"><div style="border:1px solid {{ o.bd }};display:flex;flex-direction:column">
+<div sc-camel-on-click="{{ o.toggle }}" style="padding:14px;display:flex;justify-content:space-between;align-items:center;cursor:pointer"><div style="display:flex;flex-direction:column;gap:2px"><b style="font-size:14px">#{{ o.no }}</b><span style="font-size:12px;color:#777">{{ o.date }}</span></div><div style="display:flex;align-items:center;gap:10px"><span style="font-size:10px;letter-spacing:.08em;border:1px solid #111;border-radius:10px;padding:2px 8px">{{ o.status }}</span><span style="display:inline-block;transform:{{ o.rot }};transition:transform .2s">⌄</span></div></div>
+<sc-if value="{{ o.open }}"><div style="display:flex;flex-direction:column;border-top:1px solid #eee;animation:fade .2s">
+<div style="padding:14px;display:flex;flex-direction:column;gap:6px;font-size:13px;border-bottom:1px solid #eee"><div style="display:flex;justify-content:space-between"><span style="color:#777">Payment</span><span>{{ o.pay }}</span></div><div style="display:flex;justify-content:space-between"><span style="color:#777">Total</span><b>{{ o.totalStr }}</b></div></div>
+<sc-if value="{{ o.canCancel }}"><div style="display:flex;justify-content:flex-end;padding:10px 14px;font-size:12px;border-bottom:1px solid #eee"><u sc-camel-on-click="{{ o.cancel }}" style="cursor:pointer">Cancel order</u></div></sc-if><sc-if value="{{ o.canReturn }}"><div style="display:flex;justify-content:flex-end;padding:10px 14px;font-size:12px;border-bottom:1px solid #eee"><u sc-camel-on-click="{{ o.requestReturn }}" style="cursor:pointer">Return at 7-ELEVEN</u></div></sc-if>
+<div style="position:relative;padding:20px 8px 16px;border-bottom:1px solid #eee"><i style="position:absolute;top:27px;left:10%;right:10%;height:2px;background:#ccc"></i><i style="position:absolute;top:27px;left:10%;width:{{ o.fill }};height:2px;background:#111"></i><div style="position:relative;display:grid;grid-template-columns:repeat(5,1fr);text-align:center;font-size:11px;line-height:1.35"><sc-for list="{{ o.steps }}" as="s"><div style="display:flex;flex-direction:column;align-items:center;gap:6px"><i style="width:16px;height:16px;border-radius:8px;background:{{ s.bg }};border:{{ s.bd }}"></i><span style="font-weight:{{ s.fw }};color:{{ s.c }}">{{ s.label }}</span></div></sc-for></div></div>
+<div style="padding:14px;font-size:13px;line-height:1.5;border-bottom:1px solid #eee"><span style="color:#777;font-size:12px">Deliver to</span><br>{{ o.store }}</div>
+<div style="padding:14px;font-size:13px;line-height:1.5"><span style="color:#777;font-size:12px">Items</span><br>{{ o.items }}</div>
+</div></sc-if>
+</div></sc-for>
+<div sc-camel-on-click="{{ openLine }}" style="height:46px;border-radius:23px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:500;margin-top:8px;cursor:pointer">Ask about an order on LINE</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ hasFooter }}" hint-placeholder-val="{{ true }}">
+<div style="background:#f2f2f2;padding:28px 20px 100px;display:flex;flex-direction:column;gap:12px;font-size:12px;letter-spacing:.06em">
+<span sc-camel-on-click="{{ storyTap }}" style="cursor:pointer">ABOUT US</span><span sc-camel-on-click="{{ infoPage }}" style="cursor:pointer">CUSTOMER INFO</span><span sc-camel-on-click="{{ infoPage }}" style="cursor:pointer">SHIPPING &amp; RETURNS</span><span sc-camel-on-click="{{ infoPage }}" style="cursor:pointer">FAQ</span>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><div style="display:flex;gap:10px"><span sc-camel-on-click="{{ openInsta }}" style="width:34px;height:34px;border:1px solid #999;border-radius:17px;display:flex;align-items:center;justify-content:center;font-size:9px;cursor:pointer">IG</span><span sc-camel-on-click="{{ openLine }}" style="width:34px;height:34px;border:1px solid #999;border-radius:17px;display:flex;align-items:center;justify-content:center;font-size:9px;cursor:pointer">LINE</span></div><div style="display:flex;border:1px solid #999;font-size:11px"><span sc-camel-on-click="{{ setZh }}" style="padding:6px 10px;cursor:pointer;background:{{ zhBg }};color:{{ zhFg }}">繁體中文</span><span sc-camel-on-click="{{ setEn }}" style="padding:6px 10px;cursor:pointer;background:{{ enBg }};color:{{ enFg }}">English</span></div></div>
+<span style="color:#888;font-size:11px">© 2026 9Lab Taiwan</span>
+</div>
+</sc-if>
+</div>
+
+<sc-if value="{{ fabVisible }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;right:16px;bottom:24px;z-index:30;display:flex;flex-direction:column;align-items:flex-end;gap:10px">
+<sc-if value="{{ fab }}"><div sc-camel-on-click="{{ openLine }}" style="display:flex;align-items:center;gap:8px;cursor:pointer;animation:pop .2s"><span style="font-size:11px;background:#fff;border:1px solid #ddd;padding:3px 8px">LINE</span><span style="width:44px;height:44px;border-radius:22px;border:1px solid #111;background:#fff;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700">LINE</span></div><div sc-camel-on-click="{{ openInsta }}" style="display:flex;align-items:center;gap:8px;cursor:pointer;animation:pop .25s"><span style="font-size:11px;background:#fff;border:1px solid #ddd;padding:3px 8px">Instagram</span><span style="width:44px;height:44px;border-radius:22px;border:1px solid #111;background:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700">IG</span></div></sc-if>
+<sc-if value="{{ showTop }}"><div sc-camel-on-click="{{ toTop }}" aria-label="Back to top" style="width:40px;height:40px;margin-right:6px;border-radius:20px;border:1px solid #111;background:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;cursor:pointer;animation:pop .2s;box-shadow:0 2px 6px rgba(0,0,0,.15)">↑</div></sc-if>
+<div sc-camel-on-click="{{ toggleFab }}" style="width:52px;height:52px;border-radius:26px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:300;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:pointer"><span style="display:inline-block;transition:transform .2s;transform:{{ fabRot }}">+</span></div>
+</div>
+</sc-if>
+
+<sc-if value="{{ popup }}" hint-placeholder-val="{{ false }}">
+<div sc-camel-on-click="{{ closePopup }}" style="position:absolute;inset:0;z-index:50;background:rgba(0,0,0,.45);animation:fade .2s"></div>
+<div style="position:absolute;left:32px;right:32px;top:250px;z-index:51;background:#fff;border-radius:24px;padding:44px 24px 24px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:pop .25s">
+<span sc-camel-on-click="{{ closePopup }}" style="position:absolute;top:8px;right:10px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:300;cursor:pointer">×</span>
+<div style="font-size:18px;font-weight:700">Join 9Lab Rewards</div>
+<div style="font-size:13px;color:#555;line-height:1.55;text-wrap:pretty">Earn points on every order and get NT$100 off your first purchase.</div>
+<div style="font-size:12px;color:#555;margin-top:4px">Already a member? <u sc-camel-on-click="{{ popupSignIn }}" style="color:#111;cursor:pointer">Sign in</u></div>
+<div sc-camel-on-click="{{ popupJoin }}" style="align-self:stretch;margin-top:10px;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;letter-spacing:.04em;cursor:pointer">Join now</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ drawer }}" hint-placeholder-val="{{ false }}">
+<div sc-camel-on-click="{{ closeDrawer }}" style="position:absolute;inset:0;z-index:50;background:rgba(0,0,0,.45);animation:fade .2s"></div>
+<div style="position:absolute;top:0;left:0;bottom:0;width:292px;z-index:51;background:#fff;display:flex;flex-direction:column;animation:left .25s ease-out">
+<div style="height:56px;flex:none;display:flex;align-items:center;padding:0 8px;border-bottom:1px solid #eee"><span sc-camel-on-click="{{ closeDrawer }}" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:300;cursor:pointer">×</span></div>
+<div style="flex:1;overflow-y:auto;padding-top:12px">
+<sc-if value="{{ dHasBack }}"><div sc-camel-on-click="{{ drawerBack }}" style="height:44px;display:flex;align-items:center;gap:10px;padding:0 20px;background:#efefef;font-size:12px;letter-spacing:.06em;cursor:pointer">← {{ dBackLabel }}</div></sc-if>
+<sc-for list="{{ dItems }}" as="d" hint-placeholder-count="5"><div sc-camel-on-click="{{ d.onClick }}" style="height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;font-size:14px;letter-spacing:.06em;cursor:pointer;background:{{ d.bg }};animation:fade .2s" style-hover="background:#f6f6f6">{{ d.label }}<span>{{ d.arrow }}</span></div></sc-for>
+</div>
+<sc-if value="{{ dRoot }}"><div style="padding:20px;border-top:1px solid #eee;display:flex;flex-direction:column;gap:16px">
+<div sc-camel-on-click="{{ drawerSign }}" style="display:flex;gap:10px;align-items:center;font-size:13px;cursor:pointer"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.4"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"></path></svg>{{ drawerSignLabel }}</div>
+<div style="display:flex;border:1px solid #111;border-radius:20px;overflow:hidden;font-size:12px"><span sc-camel-on-click="{{ setZh }}" style="flex:1;text-align:center;padding:9px;cursor:pointer;background:{{ zhBg }};color:{{ zhFg }}">繁體中文</span><span sc-camel-on-click="{{ setEn }}" style="flex:1;text-align:center;padding:9px;cursor:pointer;background:{{ enBg }};color:{{ enFg }}">English</span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#555;padding:0 2px"><span>Currency</span><span>TWD (NT$)</span></div>
+</div></sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ memberMenu }}" hint-placeholder-val="{{ false }}">
+<div sc-camel-on-click="{{ closeMember }}" style="position:absolute;inset:0;z-index:50"></div>
+<div style="position:absolute;top:116px;right:12px;width:232px;z-index:51;background:#fff;border:1px solid #ccc;box-shadow:0 6px 20px rgba(0,0,0,.12);display:flex;flex-direction:column;animation:pop .15s">
+<div style="padding:14px 16px;border-bottom:1px solid #eee;display:flex;flex-direction:column;gap:2px"><b style="font-size:14px">Hi, Mei-Ling</b><span style="font-size:12px;color:#777">Gold member · 320 points</span></div>
+<span sc-camel-on-click="{{ goMember }}" style="height:46px;display:flex;align-items:center;padding:0 16px;font-size:13px;cursor:pointer" style-hover="background:#f4f4f4">Member center</span>
+<span sc-camel-on-click="{{ goFav }}" style="height:46px;display:flex;align-items:center;padding:0 16px;font-size:13px;cursor:pointer" style-hover="background:#f4f4f4">My favorite</span>
+<span sc-camel-on-click="{{ goCoupons }}" style="height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;font-size:13px;cursor:pointer" style-hover="background:#f4f4f4">My coupon<span style="font-size:11px;background:#111;color:#fff;border-radius:9px;padding:1px 7px">{{ claimedCount }}</span></span>
+<span sc-camel-on-click="{{ goTrack }}" style="height:46px;display:flex;align-items:center;padding:0 16px;font-size:13px;cursor:pointer" style-hover="background:#f4f4f4">Track my order</span>
+<span sc-camel-on-click="{{ signOut }}" style="height:46px;display:flex;align-items:center;padding:0 16px;font-size:13px;border-top:1px solid #eee;color:#555;cursor:pointer" style-hover="background:#f4f4f4">Sign out</span>
+</div>
+</sc-if>
+
+<sc-if value="{{ search }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;inset:0;z-index:60;background:#fff;display:flex;flex-direction:column;animation:fade .15s">
+<div style="height:64px;flex:none;display:flex;align-items:center;gap:12px;padding:0 16px;border-bottom:1px solid #eee"><div style="flex:1;height:42px;border:1px solid #111;border-radius:21px;padding:0 14px;display:flex;align-items:center;gap:8px"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#111" stroke-width="1.6"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg><input ref="{{ searchRef }}" value="{{ q }}" sc-camel-on-change="{{ onQ }}" sc-camel-on-key-down="{{ qKey }}" placeholder="Search products, ingredients…" style="flex:1;min-width:0;border:none;font-size:13px;height:36px"><sc-if value="{{ typing }}"><span sc-camel-on-click="{{ clearQ }}" style="color:#999;cursor:pointer">×</span></sc-if></div><span sc-camel-on-click="{{ closeSearch }}" style="font-size:13px;text-decoration:underline;cursor:pointer">Cancel</span></div>
+<div style="flex:1;overflow-y:auto;padding:20px 16px;display:flex;flex-direction:column;gap:12px">
+<sc-if value="{{ notTyping }}">
+<div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">POPULAR SEARCHES</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;font-size:12px"><sc-for list="{{ popular }}" as="p" hint-placeholder-count="6"><span sc-camel-on-click="{{ p.onClick }}" style="padding:7px 14px;border:1px solid #bbb;border-radius:16px;cursor:pointer" style-hover="border-color:#111">{{ p.label }}</span></sc-for></div>
+<sc-if value="{{ hasRecent }}"><div style="display:flex;justify-content:space-between;margin-top:12px"><span style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600">RECENT</span><span sc-camel-on-click="{{ clearRecent }}" style="font-size:12px;text-decoration:underline;color:#555;cursor:pointer">Clear</span></div><sc-for list="{{ recent }}" as="r"><div style="display:flex;justify-content:space-between;font-size:13px;padding:4px 0"><span sc-camel-on-click="{{ r.onClick }}" style="cursor:pointer;flex:1">{{ r.label }}</span><span sc-camel-on-click="{{ r.remove }}" style="color:#999;cursor:pointer;padding:0 4px">×</span></div></sc-for></sc-if>
+</sc-if>
+<sc-if value="{{ typing }}">
+<sc-for list="{{ suggestions }}" as="s"><span sc-camel-on-click="{{ s.onClick }}" style="font-size:13px;cursor:pointer;padding:4px 0">↖ {{ s.label }}</span></sc-for>
+<sc-if value="{{ hasSugProducts }}"><div style="font-size:11px;letter-spacing:.14em;color:#666;font-weight:600;margin-top:8px">PRODUCTS</div><sc-for list="{{ sugProducts }}" as="p"><div sc-camel-on-click="{{ p.onClick }}" style="display:flex;gap:12px;align-items:center;cursor:pointer"><div style="width:56px;height:56px;background:#ececec;flex:none"></div><div style="display:flex;flex-direction:column;gap:2px;font-size:13px"><span>{{ p.name }}</span><b>{{ p.priceStr }}</b></div></div></sc-for></sc-if>
+<div sc-camel-on-click="{{ seeAll }}" style="height:44px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:13px;margin-top:8px;cursor:pointer">See all results for "{{ q }}" →</div>
+</sc-if>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ mini }}" hint-placeholder-val="{{ false }}">
+<div sc-camel-on-click="{{ closeMini }}" style="position:absolute;inset:0;z-index:50;background:rgba(0,0,0,.45);animation:fade .2s"></div>
+<div style="position:absolute;left:0;right:0;bottom:0;z-index:51;background:#fff;border-radius:20px 20px 0 0;padding:14px 16px 32px;display:flex;flex-direction:column;gap:16px;animation:up .25s ease-out">
+<div style="width:40px;height:4px;background:#ccc;border-radius:2px;align-self:center"></div>
+<div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:16px">✓ Added to cart</b><span sc-camel-on-click="{{ closeMini }}" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:300;cursor:pointer">×</span></div>
+<div style="display:flex;gap:12px"><div style="width:72px;height:72px;flex:none;background:#e8e8e8;display:flex;align-items:center;justify-content:center;font:500 9px 'IBM Plex Mono',monospace;color:#777">IMG</div><div style="flex:1;display:flex;flex-direction:column;gap:4px;font-size:13px"><span>{{ miniItem.name }}</span><span style="color:#777;font-size:12px">{{ miniItem.opt }} · Qty {{ miniItem.qty }}</span><b>{{ miniItem.priceStr }}</b></div></div>
+<div style="background:#f3f3f3;padding:10px 12px;display:flex;flex-direction:column;gap:6px;font-size:12px"><span>{{ freeShipMsg }}</span><div style="height:4px;background:#ddd"><i style="display:block;height:4px;background:#111;width:{{ freeShipPct }};transition:width .4s"></i></div></div>
+<div style="display:flex;justify-content:space-between;font-size:14px"><span>Cart subtotal ({{ cartCount }} items)</span><b>{{ t.subStr }}</b></div>
+<div style="display:flex;gap:10px"><div sc-camel-on-click="{{ openCart }}" style="flex:1;height:48px;border-radius:24px;border:1px solid #111;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;cursor:pointer">View cart</div><div sc-camel-on-click="{{ goShipping }}" style="flex:1;height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;cursor:pointer">Checkout</div></div>
+</div>
+</sc-if>
+
+<sc-if value="{{ notifyOpen }}" hint-placeholder-val="{{ false }}">
+<div sc-camel-on-click="{{ closeNotify }}" style="position:absolute;inset:0;z-index:50;background:rgba(0,0,0,.45);animation:fade .2s"></div>
+<div style="position:absolute;left:0;right:0;bottom:0;z-index:51;background:#fff;border-radius:20px 20px 0 0;padding:14px 16px 32px;display:flex;flex-direction:column;gap:14px;animation:up .25s ease-out">
+<div style="width:40px;height:4px;background:#ccc;border-radius:2px;align-self:center"></div>
+<div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:16px">Notify me when it's back</b><span sc-camel-on-click="{{ closeNotify }}" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:300;cursor:pointer">×</span></div>
+<div style="display:flex;gap:12px;align-items:center"><div style="width:56px;height:56px;background:#ececec;flex:none"></div><div style="display:flex;flex-direction:column;gap:2px;font-size:13px"><span>{{ notifyName }}</span><span style="font-size:12px;color:#777">Sold out</span></div></div>
+<div style="display:flex;gap:8px;font-size:13px"><span sc-camel-on-click="{{ chLine }}" style="flex:1;height:40px;border:1px solid #111;background:{{ nLine.bg }};color:{{ nLine.fg }};display:flex;align-items:center;justify-content:center;cursor:pointer">LINE</span><span sc-camel-on-click="{{ chEmail }}" style="flex:1;height:40px;border:1px solid #111;background:{{ nEmail.bg }};color:{{ nEmail.fg }};display:flex;align-items:center;justify-content:center;cursor:pointer">Email</span></div>
+<sc-if value="{{ nEmail.on }}"><input value="{{ notifyEmail }}" sc-camel-on-change="{{ onNotifyEmail }}" placeholder="Email address" style="height:44px;border:1px solid #bdbdbd;padding:0 12px;font-size:13px"></sc-if>
+<div sc-camel-on-click="{{ submitNotify }}" style="height:48px;border-radius:24px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;cursor:pointer">Notify me</div>
+<span style="font-size:11px;color:#777;text-align:center">Also saved to My favorite › Back in stock</span>
+</div>
+</sc-if>
+
+<sc-if value="{{ lb }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;inset:0;z-index:70;background:#111;display:flex;flex-direction:column;animation:fade .2s">
+<div style="height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;color:#fff;font-size:13px"><span style="padding-left:8px">{{ lbCount }}</span><span sc-camel-on-click="{{ closeLb }}" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:300;cursor:pointer">×</span></div>
+<div style="flex:1;display:flex;align-items:center;justify-content:space-between;padding:0 4px"><span sc-camel-on-click="{{ imgPrev }}" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;cursor:pointer">‹</span><div style="width:300px;aspect-ratio:1;background:#3a3a3a;display:flex;align-items:center;justify-content:center;font:500 10px 'IBM Plex Mono',monospace;color:#aaa;letter-spacing:.06em">{{ imgLabel }}</div><span sc-camel-on-click="{{ imgNext }}" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;cursor:pointer">›</span></div>
+<div style="height:80px"></div>
+</div>
+</sc-if>
+
+<sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;left:16px;right:16px;bottom:96px;z-index:80;background:#111;color:#fff;padding:12px 16px;font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:10px;animation:pop .2s"><span>{{ toast }}</span><sc-if value="{{ hasToastAction }}"><u sc-camel-on-click="{{ toastAction }}" style="cursor:pointer;flex:none">{{ toastActionLabel }}</u></sc-if></div>
+</sc-if>
+
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;showPopup&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Start state&quot;},&quot;startLoggedIn&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Start state&quot;}}">
+const fmt = n => 'NT$' + Number(n).toLocaleString('en-US');
+const P = {
+  cera: { n: 'Ceramide Barrier Repair Cream', price: 1280, was: 1480, rv: 128, r: '4.9', badge: 'SALE', opts: [['30 ml', 1280], ['50 ml', 1880], ['Duo set 2×50 ml', 3380]] },
+  nia: { n: 'Niacinamide 10% Clarifying Serum', price: 890, was: 1050, rv: 96, r: '4.8', badge: 'SALE', opts: [['30 ml', 890], ['Twin pack 2×30 ml', 1590]] },
+  hya: { n: 'Hyaluronic Triple Hydrating Toner', price: 780, rv: 211, r: '4.8', badge: 'NEW', opts: [['200 ml', 780], ['Refill 400 ml', 1290]] },
+  cent: { n: 'Centella Calming Sheet Mask · 5 pcs', price: 450, rv: 342, r: '4.9', badge: 'NEW', opts: [['5 pcs', 450], ['10 pcs', 820]] },
+  amino: { n: 'Amino Acid Gentle Foam Cleanser', price: 620, rv: 187, r: '4.7', opts: [['150 ml', 620]] },
+  sun: { n: 'Mineral Daily Sunscreen SPF50+', price: 980, was: 1180, rv: 154, r: '4.6', badge: 'SALE', opts: [['50 ml', 980]] },
+  ret: { n: 'Retinal 0.1% Overnight Renewal Serum', price: 1480, rv: 73, r: '4.7', opts: [['30 ml', 1480]] },
+  vitc: { n: 'Vitamin C 15% Brightening Ampoule', price: 1150, rv: 119, r: '4.8', opts: [['20 ml', 1150]] },
+  bha: { n: 'BHA 2% Pore Refining Toner', price: 720, rv: 64, r: '4.6', out: true, opts: [['150 ml', 720]] },
+  gel: { n: 'Oil-Control Gel Cream', price: 980, rv: 58, r: '4.7', badge: 'NEW', opts: [['50 ml', 980]] },
+  clay: { n: 'Kaolin Clay Purifying Mask', price: 650, rv: 102, r: '4.7', opts: [['100 g', 650]] },
+  ctoner: { n: 'Ceramide Barrier Toner', price: 820, rv: 47, r: '4.8', out: true, opts: [['200 ml', 820]] },
+  lip: { n: 'Ceramide Overnight Lip Mask', price: 390, rv: 88, r: '4.9', opts: [['15 g', 390]] }
+};
+const ALL = Object.keys(P);
+const ADDON = [{ id: 'a1', n: 'Centella Sheet Mask · 1 pc', price: 49, was: 90 }, { id: 'a2', n: 'Travel Cleanser 30ml', price: 99, was: 180 }, { id: 'a3', n: 'Lip Barrier Balm', price: 199, was: 320 }];
+const ANN = ['Free shipping on orders over NT$1,500', 'Review any product, get NT$15 off next order', 'Add us on LINE for a NT$100 coupon'];
+const HERO = ['Autumn barrier care', 'New: Oil-Control Gel Cream', 'Sensitive skin edit', 'Member double points'];
+const HERO_LIST = ['CREAM', 'NEW ARRIVALS', 'SENSITIVE', 'BEST SELLER'];
+const L = l => ({ label: l });
+const TREE = [
+  { label: 'SHOP', kids: [
+    { label: 'SKIN TYPE', kids: ['ALL SKIN TYPES', 'DRY', 'OILY', 'COMBINATION', 'SENSITIVE', 'ACNE-PRONE'].map(L) },
+    { label: 'PRODUCT TYPE', kids: ['ALL PRODUCTS', 'CLEANSER', 'TONER', 'SERUM', 'CREAM', 'MASK', 'SUN CARE'].map(L) },
+    L('SETS & BUNDLES'), L('ALL PRODUCTS')] },
+  L('NEW ARRIVALS'), L('BEST SELLER'),
+  { label: 'ABOUT US', kids: [{ label: 'OUR STORY', info: 1 }, { label: 'INGREDIENTS', info: 1 }, { label: 'THE LAB', info: 1 }] },
+  { label: 'CUSTOMER INFO', kids: [{ label: 'SHIPPING & RETURNS', info: 1 }, { label: 'FAQ', info: 1 }, { label: 'CONTACT US', info: 1 }, { label: 'TRACK MY ORDER', track: 1 }] }
+];
+const LISTS = { OILY: ['nia', 'bha', 'gel', 'clay', 'amino', 'sun'], DRY: ['cera', 'hya', 'cent', 'lip', 'ret', 'vitc'], COMBINATION: ['nia', 'hya', 'gel', 'sun'], SENSITIVE: ['cera', 'cent', 'amino', 'ctoner', 'lip'], 'ACNE-PRONE': ['nia', 'bha', 'clay', 'gel'], 'NEW ARRIVALS': ['cera', 'nia', 'hya', 'cent', 'gel'], 'BEST SELLER': ['cent', 'hya', 'cera', 'amino', 'sun', 'nia'], CLEANSER: ['amino'], TONER: ['hya', 'bha', 'ctoner'], SERUM: ['nia', 'ret', 'vitc'], CREAM: ['cera', 'gel'], MASK: ['cent', 'clay', 'lip'], 'SUN CARE': ['sun'], 'SETS & BUNDLES': ['cent', 'cera'] };
+const CATS = ['CLEANSER', 'TONER', 'SERUM', 'CREAM', 'MASK', 'SUN CARE'];
+const POPULAR = ['Ceramide', 'Niacinamide', 'Sunscreen', 'Sheet mask', 'Retinal', 'Vitamin C'];
+const DIST = { 'Taipei City': ["Da'an District", 'Xinyi District', 'Zhongshan District'], 'New Taipei City': ['Banqiao District', 'Xindian District'] };
+const roadsFor = d => d === "Da'an District" ? ['Zhongxiao E. Rd. Sec. 4', 'Dunhua S. Rd. Sec. 1', 'Heping E. Rd. Sec. 2'] : ['Zhongshan Rd. Sec. 1', 'Minsheng Rd.', 'Wenhua Rd. Sec. 2'];
+const storesFor = r => { const w = r.split(' ')[0]; return [{ name: w + ' Store', id: '135624', addr: 'No. 210, ' + r }, { name: w + ' Station Store', id: '172839', addr: 'No. 156, ' + r }, { name: w + ' Fuxing Store', id: '158204', addr: 'No. 47, ' + r }]; };
+const PINS = [['30%', '40%'], ['62%', '28%'], ['48%', '62%']];
+const STEPS = ['Ordered', 'Preparing', 'Shipping', 'Arrived at store', 'Picked up'];  // statuses pushed by ECPay Logistics
+const REVIEWS = [
+  { s: '★★★★★', d: '2026-09-21', u: 'L***n', t: 'My skin gets flaky every autumn. After a week the dry patches around my nose were gone. Absorbs fast, not sticky.', ph: true },
+  { s: '★★★★★', d: '2026-09-18', u: 'K***y', t: 'Sensitive skin here — no stinging at all. I use it morning and night under sunscreen.' },
+  { s: '★★★★☆', d: '2026-09-02', u: 'W***g', t: 'Works well but a little rich for summer. Perfect once the weather cools down.' }
+];
+const PAYS = [['line', 'LINE Pay', ''], ['card', 'Credit card', ''], ['apple', 'Apple Pay', ''], ['atm', 'ATM transfer', '· pay within 24 hrs']];
+const PAYLABEL = { line: 'LINE Pay', card: 'Credit card •••• 4242', apple: 'Apple Pay', atm: 'ATM transfer' };
+const INVOICES = [['member', 'Member carrier'], ['barcode', 'Mobile barcode'], ['tax', 'Company Tax ID'], ['donate', 'Donate']];
+const SORTS = ['Best selling', 'Newest', 'Price: low to high', 'Price: high to low', 'Top rated'];
+const JUMPS = [['Home', 'home', '1.2'], ['Product', 'product', '1.3'], ['Cart', 'cart', '1.5'], ['Shipping method', 'shipping', '1.6'], ['7-ELEVEN store', 'store', '1.7'], ['Login check', 'logincheck', '1.8'], ['Info & payment', 'info', '1.9'], ['Order complete', 'complete', '1.10'], ['Product list', 'list', '2.5'], ['Search results', 'results', '2.6'], ['Sign in / up', 'login', '3.2'], ['Member center', 'member', '3.3'], ['My favorite', 'favorites', '3.4'], ['My coupon', 'coupons', '3.5'], ['Track order', 'track', '3.6']];
+const COUPONS = [
+  { id: 'c1', st: 'unclaimed', type: 'Discount', big: 'NT$100', small: 'OFF', title: 'Welcome gift', l1: 'Min. spend NT$1,000', l2: 'Claim by 2026-12-31', code: 'WELCOME100' },
+  { id: 'c2', st: 'unclaimed', type: 'Free shipping', big: 'FREE', small: 'SHIPPING', title: 'October free shipping', l1: 'Any order · 7-ELEVEN only', l2: 'Claim by 2026-10-31', code: 'FREESHIP' },
+  { id: 'c3', st: 'claimed', type: 'Discount', big: '15%', small: 'OFF', title: 'Birthday month', l1: 'Max. NT$300 off', l2: 'Expires in 12 days · 2026-10-16', code: 'AUTUMN15', soon: true },
+  { id: 'c4', st: 'history', type: 'Discount', big: 'NT$50', small: 'OFF', title: 'LINE friend coupon', l1: 'Used 2026-09-02', l2: 'Order #9L26090211', stamp: 'USED' },
+  { id: 'c5', st: 'history', type: 'Gift', big: 'GIFT', small: 'MINI', title: 'Mini toner with any serum', l1: 'Expired 2026-08-31', l2: '', stamp: 'EXPIRED' }
+];
+const ORDERS = [
+  { no: '9L26092803', date: '2026-09-28', pay: 'LINE Pay', total: 1930, items: 'Hyaluronic Toner ×1, Vitamin C Ampoule ×1', store: '7-ELEVEN Zhongxiao Store #135624', step: 2 },
+  { no: '9L26081207', date: '2026-08-12', pay: 'Credit card', total: 1290, items: 'Centella Sheet Mask ×2, Lip Mask ×1', store: '7-ELEVEN Zhongxiao Store #135624', step: 4 }
+];
+const VALID = { WELCOME100: 1, AUTUMN15: 1, FREESHIP: 1 };
+const CHECKOUT = ['shipping', 'store', 'logincheck', 'info'];
+
+function initState(props) {
+  const li = !!props.startLoggedIn;
+  return {
+    screen: 'home', popup: props.showPopup ?? true, loggedIn: li,
+    drawer: false, dpath: [], dsel: '', search: false, q: '', searchQ: '', recent: ['toner', 'vitamin c'],
+    memberMenu: false, fab: false, showTop: false, mini: false, lastAdded: null, notify: null, notifyCh: 'line', notifyEmail: '', lb: false,
+    toast: '', toastAct: null, ann: 0, hero: 0, video: false, lang: 'EN',
+    pid: 'cera', opt: 0, qty: 1, img: 0, acc: { 0: true }, photoOnly: false,
+    cart: [{ pid: 'cera', opt: 0, qty: 1 }, { pid: 'nia', opt: 0, qty: 1 }], removed: null,
+    favs: li ? ['cent', 'vitc'] : [], viewed: ['vitc', 'sun'], backInStock: ['bha'], pendingFav: null, returnTo: null,
+    code: '', applied: null, codeMsg: '', codeErr: false,
+    ship: '711', store: null, addr: '', sumOpen: false, storeReturn: 'shipping',
+    recName: '', recPhone: '', city: 'Taipei City', district: "Da'an District", road: 'Zhongxiao E. Rd. Sec. 4', storeSel: 0,
+    loginTab: 0, phone: '', loginErr: '',
+    email: '', invoice: 'barcode', barcode: '', taxId: '', company: '', pay: 'card', agree: false, agreeWarn: false, news: false,
+    listTitle: 'OILY', listIds: LISTS.OILY, fInStock: false, fUnder: false, fSale: false, filterPanel: false, sort: 'Best selling',
+    favTab: 0, couponTab: 0, cFilter: 'All', couponCode: '', couponErr: '', coupons: COUPONS,
+    orders: ORDERS, trackOpen: 0, lastOrder: null,
+    profName: 'Chen Mei-Ling', profEmail: 'mei@example.com', gender: 'Female', terms: true, news: false, defaultStore: null
+  };
+}
+
+class Component extends DCLogic {
+  state = initState(this.props);
+  scrollRef = React.createRef();
+  reviewsRef = React.createRef();
+  searchRef = React.createRef();
+
+  componentDidMount() {
+    this._h = setInterval(() => { if (this.state.screen === 'home') this.setState(s => ({ hero: (s.hero + 1) % 4 })); }, 4000);
+    this._a = setInterval(() => this.setState(s => ({ ann: (s.ann + 1) % ANN.length })), 5000);
+  }
+  componentWillUnmount() { clearInterval(this._h); clearInterval(this._a); clearTimeout(this._t); }
+  componentDidUpdate(pp, ps) {
+    const s = this.state;
+    if ((ps.screen !== s.screen || ps.pid !== s.pid || ps.listTitle !== s.listTitle || ps.searchQ !== s.searchQ) && this.scrollRef.current) this.scrollRef.current.scrollTop = 0;
+    if (!ps.search && s.search && this.searchRef.current) setTimeout(() => this.searchRef.current && this.searchRef.current.focus(), 50);
+  }
+
+  nav(screen, extra = {}) { this.setState({ screen, drawer: false, dpath: [], search: false, memberMenu: false, mini: false, fab: false, notify: null, lb: false, popup: false, filterPanel: false, ...extra }); }
+  say(msg, act) { clearTimeout(this._t); this.setState({ toast: msg, toastAct: act || null }); this._t = setTimeout(() => this.setState({ toast: '', toastAct: null }), act ? 4000 : 2200); }
+  needLogin(extra = {}, msg) { this.nav('login', { returnTo: this.state.screen, loginTab: 0, loginErr: '', ...extra }); if (msg) this.say(msg); }
+
+  openProduct(id) { const viewed = [id, ...this.state.viewed.filter(x => x !== id)].slice(0, 20); this.nav('product', { pid: id, opt: 0, qty: 1, img: 0, acc: { 0: true }, photoOnly: false, viewed }); }
+  openList(label) { this.nav('list', { listTitle: label, listIds: LISTS[label] || ALL, fInStock: false, fUnder: false, fSale: false, sort: 'Best selling' }); }
+  toggleFav(id) {
+    const s = this.state;
+    if (!s.loggedIn) return this.needLogin({ pendingFav: id }, 'Sign in to save favorites');
+    const has = s.favs.includes(id);
+    this.setState({ favs: has ? s.favs.filter(x => x !== id) : [...s.favs, id] });
+    if (!has) this.say('♥ Saved to My favorite', { label: 'View', fn: () => this.nav('favorites', { favTab: 0 }) });
+  }
+  card(id) { const p = P[id]; return { name: p.n, priceStr: fmt(p.price), wasStr: p.was ? fmt(p.was) : '', rv: p.rv, badge: p.badge || '', out: !!p.out, fav: this.state.favs.includes(id), onOpen: () => this.openProduct(id), onFav: () => this.toggleFav(id), onNotify: () => this.setState({ notify: id }) }; }
+
+  lineInfo(l) {
+    if (l.addon) { const a = ADDON.find(x => x.id === l.addon); return { name: a.n, opt: 'Add-on deal', unit: a.price, was: a.was }; }
+    const p = P[l.pid]; const o = p.opts[l.opt]; return { name: p.n, opt: o[0], unit: o[1], was: l.opt === 0 && p.was ? p.was : null };
+  }
+  totals() {
+    const s = this.state;
+    const sub = s.cart.reduce((a, l) => a + this.lineInfo(l).unit * l.qty, 0);
+    let disc = 0;
+    if (s.applied === 'WELCOME100' && sub >= 1000) disc = 100;
+    if (s.applied === 'AUTUMN15') disc = Math.min(300, Math.round(sub * 0.15));
+    if (s.applied === 'NINE9') disc = 90;
+    const free = sub >= 1500 || s.applied === 'FREESHIP';
+    const fee = free ? 0 : (s.ship === '711' ? 60 : 100);
+    const total = Math.max(0, sub - disc + fee);
+    return { sub, disc, fee, total, subStr: fmt(sub), discStr: disc ? '−' + fmt(disc) : '−NT$0', feeStr: fee ? fmt(fee) : 'Free', totalStr: fmt(total), preStr: fmt(sub - disc) };
+  }
+  addLine(pid, opt, qty) {
+    const cart = [...this.state.cart]; const i = cart.findIndex(l => l.pid === pid && l.opt === opt && !l.addon);
+    if (i >= 0) cart[i] = { ...cart[i], qty: cart[i].qty + qty }; else cart.push({ pid, opt, qty });
+    return cart;
+  }
+  doLogin() {
+    const s = this.state;
+    const favs = s.pendingFav && !s.favs.includes(s.pendingFav) ? [...s.favs, s.pendingFav] : (s.favs.length ? s.favs : ['cent', 'vitc']);
+    const rt = s.returnTo && s.returnTo !== 'login' ? s.returnTo : 'home';
+    this.nav(rt, { loggedIn: true, favs, pendingFav: null, returnTo: null, phone: '', loginErr: '', email: s.email || 'mei@example.com' });
+    this.say(s.pendingFav ? '♥ Signed in · saved to My favorite' : 'Signed in as Mei-Ling');
+  }
+  placeOrder() {
+    const s = this.state;
+    if (!s.agree) { this.setState({ agreeWarn: true }); this.say('Please accept the Terms to place your order'); setTimeout(() => this.setState({ agreeWarn: false }), 1200); return; }
+    const t = this.totals();
+    const items = s.cart.map(l => { const i = this.lineInfo(l); return i.name.split(' ').slice(0, 2).join(' ') + ' ×' + l.qty; }).join(', ');
+    const store = s.ship === '711' && s.store ? '7-ELEVEN ' + s.store.name + ' #' + s.store.id : (s.addr || 'Home address');
+    const order = { no: '9L2610040' + (s.orders.length + 1), date: '2026-10-04 14:32', pay: PAYLABEL[s.pay], total: t.total, items, store, step: 0, email: s.email || 'mei@example.com', atm: s.pay === 'atm', recipient: (s.recName || 'Chen Mei-Ling') + ' · ' + (s.recPhone || '0912 345 678') };
+    this.nav('complete', { orders: [order, ...s.orders], lastOrder: order, cart: [], applied: null, code: '', codeMsg: '', agree: false, trackOpen: 0 });
+  }
+
+  renderVals() {
+    const s = this.state, set = o => this.setState(o), t = this.totals();
+    const is = {}; ['home', 'product', 'cart', 'shipping', 'store', 'logincheck', 'login', 'info', 'complete', 'list', 'results', 'member', 'favorites', 'coupons', 'track'].forEach(k => is[k] = s.screen === k);
+    const cartCount = s.cart.reduce((a, l) => a + l.qty, 0);
+    const p = P[s.pid];
+    const on = (bg = '#111', fg = '#fff') => ({ bg, fg, bd: '#111' });
+    const off = { bg: '#fff', fg: '#111', bd: '#999' };
+    const tabSt = a => ({ bd: a ? '2px solid #111' : '2px solid transparent', fw: a ? 600 : 400, c: a ? '#111' : '#888' });
+    const ring = a => a ? '5px solid #111' : '1.5px solid #999';
+    const go = (sc, x) => () => this.nav(sc, x);
+
+    // drawer
+    let nodes = TREE, parent = null; s.dpath.forEach(i => { parent = nodes[i]; nodes = parent.kids; });
+    const dItems = nodes.map((n, i) => ({ label: n.label, arrow: n.kids ? '→' : '', bg: s.dsel === n.label ? '#efefef' : 'transparent', onClick: () => {
+      if (n.kids) return set({ dsel: n.label, dpath: [...s.dpath, i] });
+      set({ dsel: n.label });
+      setTimeout(() => {
+        if (n.track) return s.loggedIn ? this.nav('track') : this.needLogin({ returnTo: 'track' });
+        if (n.info) { this.setState({ drawer: false, dpath: [] }); return this.say(n.label + ' — content page (not in prototype)'); }
+        const title = s.dpath.length === 2 && parent && parent.label === 'SKIN TYPE' && n.label !== 'ALL SKIN TYPES' ? n.label + ' SKIN' : n.label;
+        this.nav('list', { listTitle: title, listIds: LISTS[n.label] || ALL, fInStock: false, fUnder: false, fSale: false, sort: 'Best selling' });
+      }, 150);
+    } }));
+
+    // product
+    const optSel = p.opts[s.opt] || p.opts[0];
+    const pfav = s.favs.includes(s.pid);
+    const pv = { name: p.n, priceStr: fmt(optSel[1]), wasStr: p.was ? fmt(p.was) : '', hasWas: !!p.was && s.opt === 0, rv: p.rv, r: p.r, badge: p.badge || '', hasBadge: !!p.badge, heart: pfav ? '♥' : '♡', heartBg: pfav ? '#111' : '#fff', heartFg: pfav ? '#fff' : '#111' };
+    const imgLabel = s.img === 4 ? (s.video ? '▶ PRODUCT VIDEO · playing' : '▶ PRODUCT VIDEO · tap to play') : 'PRODUCT IMAGE · ' + (s.img + 1) + ' / 4';
+    const ACC = [
+      ['Highlights', ['• Rebuilds the moisture barrier with 5 ceramides + cholesterol', '• Fragrance-free, tested on sensitive skin', '• Lightweight texture, absorbs in about 30 seconds']],
+      ['Details', ['How to use: after toner, warm a pea-sized amount and press onto face, morning and night.', 'Made in Taiwan · Best before 24 months from production · 12 months after opening.']],
+      ['Ingredients', ['Aqua, Glycerin, Caprylic/Capric Triglyceride, Ceramide NP, Ceramide AP, Ceramide EOP, Cholesterol, Phytosphingosine, Panthenol, Sodium Hyaluronate, Squalane, Tocopherol.']]
+    ];
+
+    // cart lines
+    const lines = s.cart.map((l, i) => { const inf = this.lineInfo(l); return {
+      name: inf.name, opt: inf.opt, qty: l.qty, priceStr: fmt(inf.unit * l.qty), wasStr: inf.was ? fmt(inf.was * l.qty) : '', hasWas: !!inf.was, canFav: !l.addon,
+      open: () => l.pid && this.openProduct(l.pid),
+      dec: () => { const c = [...s.cart]; c[i] = { ...l, qty: Math.max(1, l.qty - 1) }; set({ cart: c }); },
+      inc: () => { const c = [...s.cart]; c[i] = { ...l, qty: l.qty + 1 }; set({ cart: c }); },
+      remove: () => { set({ cart: s.cart.filter((_, j) => j !== i) }); this.say('Removed ' + inf.name, { label: 'Undo', fn: () => { const c = [...this.state.cart]; c.splice(i, 0, l); this.setState({ cart: c, toast: '' }); } }); },
+      moveFav: () => { if (!s.loggedIn) return this.needLogin({ pendingFav: l.pid }, 'Sign in to save favorites'); set({ cart: s.cart.filter((_, j) => j !== i), favs: s.favs.includes(l.pid) ? s.favs : [...s.favs, l.pid] }); this.say('Moved to My favorite'); }
+    }; });
+    const addons = ADDON.map(a => { const inCart = s.cart.some(l => l.addon === a.id); return { name: a.n, priceStr: fmt(a.price), wasStr: fmt(a.was), btn: inCart ? 'Added ✓' : '+ Add', bg: inCart ? '#111' : '#fff', fg: inCart ? '#fff' : '#111', onClick: () => set({ cart: inCart ? s.cart.filter(l => l.addon !== a.id) : [...s.cart, { addon: a.id, qty: 1 }] }) }; });
+
+    // store
+    const roads = roadsFor(s.district), stores = storesFor(s.road);
+    const storeOk = s.recName.trim() && s.recPhone.replace(/\D/g, '').length >= 9;
+    const canShip = s.ship === '711' ? !!s.store : s.addr.trim().length > 3;
+
+    // list
+    let ids = s.listIds.filter(id => (!s.fInStock || !P[id].out) && (!s.fUnder || P[id].price < 1000) && (!s.fSale || P[id].was));
+    if (s.sort === 'Price: low to high') ids = [...ids].sort((a, b) => P[a].price - P[b].price);
+    if (s.sort === 'Price: high to low') ids = [...ids].sort((a, b) => P[b].price - P[a].price);
+    if (s.sort === 'Top rated') ids = [...ids].sort((a, b) => P[b].rv - P[a].rv);
+    if (s.sort === 'Newest') ids = [...ids].sort((a, b) => (P[b].badge === 'NEW') - (P[a].badge === 'NEW'));
+    const FL = [['In stock only', 'fInStock'], ['Under NT$1,000', 'fUnder'], ['On sale', 'fSale']];
+    const nActive = FL.filter(f => s[f[1]]).length;
+
+    // search
+    const ql = s.q.trim().toLowerCase();
+    const sugIds = ql.length >= 2 ? ALL.filter(id => P[id].n.toLowerCase().includes(ql)) : [];
+    const doSearch = term => { const tt = term.trim(); if (!tt) return; this.nav('results', { searchQ: tt, q: '', recent: [tt.toLowerCase(), ...s.recent.filter(r => r !== tt.toLowerCase())].slice(0, 5) }); };
+    const resIds = ALL.filter(id => P[id].n.toLowerCase().includes(s.searchQ.toLowerCase()));
+
+    // favorites
+    const favLists = [s.favs, s.viewed, s.backInStock];
+    const favIds = favLists[s.favTab];
+    const ftLabels = ['My favorite (' + s.favs.length + ')', 'Browsing history', 'Back in stock'];
+
+    // coupons
+    const tabKey = ['unclaimed', 'claimed', 'history'][s.couponTab];
+    const cItems = s.coupons.filter(c => c.st === tabKey && (s.cFilter === 'All' || c.type === s.cFilter)).map(c => ({
+      ...c, bd: c.st === 'claimed' ? '#111' : (c.st === 'history' ? '#ccc' : '#bbb'), op: c.st === 'history' ? 0.55 : 1, l2w: c.soon ? 600 : 400,
+      hasBtn: c.st !== 'history', hasStamp: c.st === 'history', btn: c.st === 'unclaimed' ? 'Claim' : 'Use now',
+      btnBg: c.st === 'unclaimed' ? '#111' : '#fff', btnFg: c.st === 'unclaimed' ? '#fff' : '#111',
+      onClick: () => {
+        if (c.st === 'unclaimed') { set({ coupons: s.coupons.map(x => x.id === c.id ? { ...x, st: 'claimed', l2: 'Expires 2026-12-31' } : x) }); this.say('Coupon claimed · see Claimed tab'); }
+        else { this.nav(s.cart.length ? 'cart' : 'list', { code: c.code, applied: c.code, codeMsg: 'Coupon ' + c.code + ' applied', codeErr: false, ...(s.cart.length ? {} : { listTitle: 'ALL PRODUCTS', listIds: ALL }) }); this.say('Coupon ' + c.code + ' applied'); }
+      }
+    }));
+    const claimedCount = s.coupons.filter(c => c.st === 'claimed').length;
+    const ctLabels = ['Unclaimed (' + s.coupons.filter(c => c.st === 'unclaimed').length + ')', 'Claimed (' + claimedCount + ')', 'History'];
+
+    // orders
+    const orderCards = s.orders.map((o, i) => ({ ...o, totalStr: fmt(o.total), status: o.cancelled ? 'CANCELLED' : STEPS[o.step].toUpperCase(),
+      canCancel: !o.cancelled && o.step < 2, canReturn: !o.cancelled && o.step === 4,
+      cancel: () => this.say('Cancel order #' + o.no + '?', { label: 'Yes, cancel', fn: () => { this.setState(st => ({ orders: st.orders.map((x, j) => j === i ? { ...x, cancelled: true } : x) })); this.say('Order cancelled · refund in 3–5 working days'); } }),
+      requestReturn: () => this.say('Return code created · drop the parcel at any 7-ELEVEN (NT$55) · refund after we receive it'), open: s.trackOpen === i, rot: s.trackOpen === i ? 'rotate(180deg)' : 'none', bd: s.trackOpen === i ? '#111' : '#ccc', toggle: () => set({ trackOpen: s.trackOpen === i ? -1 : i }), fill: (o.step / 4 * 80) + '%',
+      steps: STEPS.map((lab, k) => ({ label: lab, bg: k < o.step ? '#111' : '#fff', bd: k < o.step ? '0' : (k === o.step ? '5px solid #111' : '1.5px solid #bbb'), fw: k === o.step ? 700 : 400, c: k > o.step ? '#888' : '#111' })) }));
+    const ord = s.lastOrder || { ...ORDERS[0], email: 'mei@example.com', recipient: 'Chen Mei-Ling · 0912 345 678', atm: false };
+
+    const fabVisible = !CHECKOUT.includes(s.screen) && !s.search && !s.lb;
+    const miniL = s.lastAdded ? this.lineInfo(s.lastAdded) : null;
+    const left = Math.max(0, 1500 - t.sub);
+
+    return {
+      is, scrollRef: this.scrollRef, reviewsRef: this.reviewsRef, searchRef: this.searchRef,
+      stop: e => e.stopPropagation(),
+      jumps: JUMPS.map(([label, sc, ref]) => ({ label, ref, bg: s.screen === sc ? '#111' : 'transparent', fg: s.screen === sc ? '#fff' : '#111', onClick: () => {
+        const x = {};
+        if (sc === 'complete' && !s.lastOrder) x.lastOrder = null;
+        if (['member', 'favorites', 'coupons', 'track'].includes(sc)) { x.loggedIn = true; if (!s.favs.length) x.favs = ['cent', 'vitc']; }
+        if (sc === 'results' && !s.searchQ) x.searchQ = 'ceramide';
+        if (CHECKOUT.includes(sc) && !s.cart.length) x.cart = [{ pid: 'cera', opt: 0, qty: 1 }];
+        this.nav(sc, x);
+      } })),
+      reset: () => { clearTimeout(this._t); this.setState(initState(this.props)); },
+      toggleLogin: () => { set({ loggedIn: !s.loggedIn, favs: s.loggedIn ? [] : ['cent', 'vitc'] }); this.say(s.loggedIn ? 'Signed out' : 'Signed in as Mei-Ling'); },
+      loginToggleLabel: s.loggedIn ? 'Sign out (demo)' : 'Sign in (demo)',
+
+      hasHeader: s.screen !== 'store', showTag: ['home', 'list', 'product', 'results'].includes(s.screen),
+      hasFooter: ['home', 'product', 'list', 'results', 'favorites', 'member', 'coupons', 'track'].includes(s.screen),
+      annText: ANN[s.ann], annPrev: () => set({ ann: (s.ann + ANN.length - 1) % ANN.length }), annNext: () => set({ ann: (s.ann + 1) % ANN.length }),
+      openIG: () => this.say('Opens 9Lab Instagram in a new tab'), openInsta: () => this.say('Opens 9Lab Instagram'), openLine: () => this.say('Opens LINE chat with 9Lab'),
+      toTop: () => { set({ fab: false }); const sc = this.scrollRef.current; if (sc) sc.scrollTo({ top: 0, behavior: 'smooth' }); },
+      onScroll: e => { const v = e.currentTarget.scrollTop > 600; if (v !== this.state.showTop) set({ showTop: v }); }, showTop: s.showTop,
+      toggleNews: () => set({ news: !s.news }), newsBg: s.news ? '#111' : '#fff', newsMark: s.news ? '✓' : '',
+      guestAcct: !s.loggedIn && !!s.lastOrder, guestPhone: s.recPhone || '0912 345 678',
+      verifyGuest: () => this.say('SMS code sent to ' + (s.recPhone || '0912 345 678')),
+      cartCount, hasCount: cartCount > 0,
+      openMenu: () => set({ drawer: true, dpath: [], dsel: '', memberMenu: false, fab: false }),
+      openMember: () => s.loggedIn ? set({ memberMenu: !s.memberMenu }) : this.nav('login', { returnTo: s.screen === 'login' ? 'home' : s.screen, loginTab: 0 }),
+      openCart: go('cart'), openSearch: () => set({ search: true, q: '', memberMenu: false, drawer: false, fab: false }), goHome: go('home'),
+
+      popup: s.popup, closePopup: () => set({ popup: false }),
+      popupSignIn: () => this.nav('login', { loginTab: 0, returnTo: 'home' }), popupJoin: () => this.nav('login', { loginTab: 1, returnTo: 'home' }),
+
+      drawer: s.drawer, closeDrawer: () => set({ drawer: false, dpath: [] }), dItems, dHasBack: s.dpath.length > 0, dBackLabel: parent ? parent.label : '', dRoot: s.dpath.length === 0,
+      drawerBack: () => set({ dpath: s.dpath.slice(0, -1), dsel: '' }),
+      drawerSignLabel: s.loggedIn ? 'Hi, Mei-Ling · Member center' : 'Sign in / Join', drawerSign: () => s.loggedIn ? this.nav('member') : this.nav('login', { returnTo: s.screen, loginTab: 0 }),
+      zhBg: s.lang === 'ZH' ? '#111' : 'transparent', zhFg: s.lang === 'ZH' ? '#fff' : '#111', enBg: s.lang === 'EN' ? '#111' : 'transparent', enFg: s.lang === 'EN' ? '#fff' : '#111',
+      setZh: () => { set({ lang: 'ZH' }); this.say('切換為繁體中文 (prototype shows English copy)'); }, setEn: () => set({ lang: 'EN' }),
+
+      memberMenu: s.memberMenu, closeMember: () => set({ memberMenu: false }), claimedCount,
+      goMember: go('member'), goFav: go('favorites', { favTab: 0 }), goCoupons: go('coupons'), goTrack: () => s.loggedIn || s.lastOrder ? this.nav('track') : this.needLogin({ returnTo: 'track' }),
+      signOut: () => { this.nav('home', { loggedIn: false, favs: [] }); this.say('Signed out'); },
+
+      search: s.search, q: s.q, onQ: e => set({ q: e.target.value }), qKey: e => { if (e.key === 'Enter') doSearch(s.q); if (e.key === 'Escape') set({ search: false }); },
+      clearQ: () => set({ q: '' }), closeSearch: () => set({ search: false }),
+      typing: ql.length >= 2, notTyping: ql.length < 2,
+      popular: POPULAR.map(l => ({ label: l, onClick: () => doSearch(l) })),
+      hasRecent: s.recent.length > 0, recent: s.recent.map(r => ({ label: r, onClick: () => doSearch(r), remove: () => set({ recent: s.recent.filter(x => x !== r) }) })), clearRecent: () => set({ recent: [] }),
+      suggestions: sugIds.slice(0, 3).map(id => ({ label: P[id].n.toLowerCase(), onClick: () => doSearch(P[id].n) })),
+      hasSugProducts: sugIds.length > 0, sugProducts: sugIds.slice(0, 2).map(id => ({ name: P[id].n, priceStr: fmt(P[id].price), onClick: () => this.openProduct(id) })),
+      seeAll: () => doSearch(s.q),
+
+      fabVisible, fab: s.fab, toggleFab: () => set({ fab: !s.fab }), fabRot: s.fab ? 'rotate(45deg)' : 'none',
+      toast: s.toast, hasToast: !!s.toast, hasToastAction: !!s.toastAct, toastActionLabel: s.toastAct ? s.toastAct.label : '', toastAction: () => { const a = s.toastAct; set({ toast: '', toastAct: null }); a && a.fn(); },
+
+      // home
+      heroNum: s.hero + 1, heroTitle: HERO[s.hero], heroBg: ['#e8e8e8', '#e1e1e1', '#ebebeb', '#dedede'][s.hero],
+      heroDots: [0, 1, 2, 3].map(i => ({ w: i === s.hero ? '18px' : '6px', bg: i === s.hero ? '#111' : '#bbb', onClick: e => { e.stopPropagation(); set({ hero: i }); } })),
+      heroTap: () => this.openList(HERO_LIST[s.hero]),
+      bannerSensitive: () => this.openList('SENSITIVE'), bannerSets: () => this.openList('SETS & BUNDLES'),
+      newIn: ['cera', 'nia', 'hya', 'cent'].map(id => this.card(id)), viewAllNew: () => this.openList('NEW ARRIVALS'),
+      toggleVideo: () => set({ video: !s.video }), videoIcon: s.video ? '❚❚' : '▶', videoLabel: s.video ? 'BRAND VIDEO · playing 0:12 / 0:45' : 'BRAND VIDEO · 0:45', videoBg: s.video ? '#d6d6d6' : '#e8e8e8',
+      promoTap: () => this.openList('CREAM'), cats: CATS.map(c => ({ label: c, onClick: () => this.openList(c) })),
+      storyTap: () => this.say('About us — content page (not in prototype)'), infoPage: () => this.say('Content page (not in prototype)'),
+
+      // product
+      pv, imgLabel, imgBg: s.img === 4 ? '#e2e2e2' : '#f3f3f3', lbCount: s.img === 4 ? 'Video' : (s.img + 1) + ' / 4',
+      imgPrev: () => set({ img: (s.img + 4) % 5 }), imgNext: () => set({ img: (s.img + 1) % 5 }),
+      openLb: () => set({ lb: true }), closeLb: () => set({ lb: false }), lb: s.lb,
+      thumbs: [0, 1, 2, 3, 4].map(i => ({ label: i === 4 ? '▶ VIDEO' : '', bg: i === 4 ? '#dcdcdc' : '#ececec', ring: s.img === i ? 'inset 0 0 0 1.5px #111' : 'none', onClick: () => set({ img: i, video: i === 4 ? !s.video || s.img !== 4 : s.video }) })),
+      toggleFavP: () => this.toggleFav(s.pid),
+      scrollReviews: () => { const sc = this.scrollRef.current, r = this.reviewsRef.current; if (sc && r) sc.scrollTo({ top: r.offsetTop - 60, behavior: 'smooth' }); },
+      opts: p.opts.map((o, i) => ({ label: o[0], ...(i === s.opt ? on() : off), onClick: () => set({ opt: i }) })),
+      qty: s.qty, qtyDec: () => set({ qty: Math.max(1, s.qty - 1) }), qtyInc: () => set({ qty: Math.min(10, s.qty + 1) }),
+      addLabel: p.out ? 'SOLD OUT · NOTIFY ME' : 'ADD TO CART',
+      addAction: () => p.out ? set({ notify: s.pid }) : set({ cart: this.addLine(s.pid, s.opt, s.qty), lastAdded: { pid: s.pid, opt: s.opt, qty: s.qty }, mini: true }),
+      accs: ACC.map(([title, ls], i) => ({ title, lines: ls, open: !!s.acc[i], fw: s.acc[i] ? 600 : 400, rot: s.acc[i] ? 'rotate(180deg)' : 'none', onClick: () => set({ acc: { ...s.acc, [i]: !s.acc[i] } }) })),
+      reviews: s.photoOnly ? REVIEWS.filter(r => r.ph) : REVIEWS,
+      togglePhotoOnly: () => set({ photoOnly: !s.photoOnly }), photoBg: s.photoOnly ? '#111' : '#fff', photoFg: s.photoOnly ? '#fff' : '#111',
+      writeReview: () => s.loggedIn ? this.say('Review form opens (stars, text, photos) — purchased items only') : this.needLogin({}, 'Sign in to write a review'),
+      moreReviews: () => this.say('Loads 5 more reviews'),
+      recs: ['amino', 'sun', 'ret', 'vitc'].map(id => this.card(id)),
+
+      // mini
+      mini: s.mini, closeMini: () => set({ mini: false }),
+      miniItem: miniL ? { name: miniL.name, opt: miniL.opt, qty: s.lastAdded.qty, priceStr: fmt(miniL.unit * s.lastAdded.qty) } : { name: '', opt: '', qty: 0, priceStr: '' },
+      freeShipMsg: left ? 'Add ' + fmt(left) + ' more for free shipping' : '✓ Free shipping unlocked', freeShipPct: Math.min(100, t.sub / 15) + '%',
+
+      // cart
+      t, lines, cartEmpty: !s.cart.length, cartHas: s.cart.length > 0, addons,
+      code: s.code, onCode: e => set({ code: e.target.value, codeMsg: '' }),
+      codeKey: e => { if (e.key === 'Enter') this._apply(); }, applyCode: () => this._apply(),
+      hasCodeMsg: !!s.codeMsg, codeMsg: s.codeMsg, codeColor: s.codeErr ? '#b00020' : '#111',
+      goShipping: () => s.cart.length ? this.nav('shipping') : this.say('Your cart is empty'),
+
+      // shipping
+      s711: { on: s.ship === '711', bd: s.ship === '711' ? '1.5px solid #111' : '1px solid #ccc', ring: ring(s.ship === '711') },
+      sHome: { on: s.ship === 'home', bd: s.ship === 'home' ? '1.5px solid #111' : '1px solid #ccc', ring: ring(s.ship === 'home') },
+      pick711: () => set({ ship: '711' }), pickHome: () => set({ ship: 'home' }),
+      storeLabel: s.store ? s.store.name + ' #' + s.store.id : 'Pickup store: not selected', storeColor: s.store ? '#111' : '#777', storeCta: s.store ? 'Change' : 'Choose store →',
+      chooseStore: e => { e.stopPropagation(); this.nav('store', { storeReturn: 'shipping' }); },
+      addr: s.addr, onAddr: e => set({ addr: e.target.value }),
+      sumOpen: s.sumOpen, toggleSum: () => set({ sumOpen: !s.sumOpen }), sumArrow: s.sumOpen ? '⌃' : '⌄',
+      shipBtnBg: canShip ? '#111' : '#e3e3e3', shipBtnFg: canShip ? '#fff' : '#9a9a9a',
+      continueShip: () => { if (!canShip) return this.say(s.ship === '711' ? 'Choose a pickup store first' : 'Enter your delivery address'); s.loggedIn ? this.nav('info', { email: s.email || 'mei@example.com' }) : this.nav('logincheck'); },
+
+      // store
+      storeBack: () => this.nav(s.storeReturn),
+      recName: s.recName, onRecName: e => set({ recName: e.target.value }), recPhone: s.recPhone, onRecPhone: e => set({ recPhone: e.target.value }),
+      city: s.city, cities: Object.keys(DIST), onCity: e => { const d = DIST[e.target.value][0]; set({ city: e.target.value, district: d, road: roadsFor(d)[0], storeSel: 0 }); },
+      district: s.district, districts: DIST[s.city], onDistrict: e => set({ district: e.target.value, road: roadsFor(e.target.value)[0], storeSel: 0 }),
+      road: s.road, roads, onRoad: e => set({ road: e.target.value, storeSel: 0 }),
+      stores: stores.map((st, i) => ({ ...st, bg: i === s.storeSel ? '#f3f3f3' : '#fff', ring: ring(i === s.storeSel), onClick: () => set({ storeSel: i }) })),
+      pinX: PINS[s.storeSel][0], pinY: PINS[s.storeSel][1], selStoreName: '7-ELEVEN ' + stores[s.storeSel].name + ' · #' + stores[s.storeSel].id,
+      confirmBg: storeOk ? '#111' : '#e3e3e3', confirmFg: storeOk ? '#fff' : '#9a9a9a',
+      confirmStore: () => {
+        if (s.storeReturn === 'member') { this.nav('member', { defaultStore: stores[s.storeSel] }); return this.say('Default store saved'); }
+        if (!storeOk) return this.say('Enter recipient name and mobile first');
+        this.nav(s.storeReturn, { store: stores[s.storeSel], defaultStore: s.defaultStore || stores[s.storeSel] }); this.say('Store selected');
+      },
+
+      // login check / login
+      lcSignIn: () => this.nav('login', { loginTab: 0, returnTo: 'info' }), lcCreate: () => this.nav('login', { loginTab: 1, returnTo: 'info' }),
+      guest: () => this.nav('info', { returnTo: null }),
+      tIn: tabSt(s.loginTab === 0), tUp: tabSt(s.loginTab === 1), tabIn: () => set({ loginTab: 0 }), tabUp: () => set({ loginTab: 1 }),
+      loginTitle: s.loginTab === 0 ? 'Welcome back' : 'Create your account',
+      phone: s.phone, onPhone: e => set({ phone: e.target.value, loginErr: '' }), phoneKey: e => { if (e.key === 'Enter') this._login(); },
+      continueLogin: () => this._login(), hasLoginErr: !!s.loginErr, loginErr: s.loginErr,
+      lineLogin: () => this.doLogin(), showGuest: s.returnTo === 'info' && s.cart.length > 0,
+
+      // info
+      email: s.email, onEmail: e => set({ email: e.target.value }),
+      shipTo: s.ship === '711' ? (s.store ? '7-ELEVEN ' + s.store.name + ' #' + s.store.id : '7-ELEVEN · store not selected') : (s.addr || 'Home delivery'),
+      recipientLine: (s.recName || 'Chen Mei-Ling') + ' · ' + (s.recPhone || '0912 345 678'),
+      invoices: INVOICES.map(([k, label]) => ({ label, ...(s.invoice === k ? on() : { bg: '#fff', fg: '#111', bd: '#bbb' }), onClick: () => set({ invoice: k }) })),
+      inv: { member: s.invoice === 'member', barcode: s.invoice === 'barcode', tax: s.invoice === 'tax', donate: s.invoice === 'donate' },
+      memberCarrierText: s.loggedIn ? 'E-invoice saved to your 9Lab account.' : 'Sign in to use member carrier — or choose another type.',
+      barcode: s.barcode, onBarcode: e => set({ barcode: e.target.value }), taxId: s.taxId, onTaxId: e => set({ taxId: e.target.value }), company: s.company, onCompany: e => set({ company: e.target.value }),
+      pays: PAYS.map(([k, label, sub]) => ({ label, sub, card: s.pay === k && k === 'card', bg: s.pay === k ? '#f6f6f6' : '#fff', fw: s.pay === k ? 600 : 400, ring: ring(s.pay === k), onClick: () => set({ pay: k }) })),
+      toggleAgree: () => set({ agree: !s.agree }), agreeBg: s.agree ? '#111' : '#fff', agreeMark: s.agree ? '✓' : '', agreeHi: s.agreeWarn ? '#f0f0f0' : 'transparent',
+      placeBg: s.agree ? '#111' : '#e3e3e3', placeFg: s.agree ? '#fff' : '#9a9a9a', placeCursor: s.agree ? 'pointer' : 'not-allowed', placeOrder: () => this.placeOrder(),
+
+      // complete
+      ord: { ...ord, totalStr: fmt(ord.total) }, addLine: () => { set({ coupons: s.coupons.some(c => c.id === 'cl') ? s.coupons : [...s.coupons, { id: 'cl', st: 'claimed', type: 'Discount', big: 'NT$100', small: 'OFF', title: 'LINE friend gift', l1: 'Min. spend NT$800', l2: 'Expires 2026-11-30', code: 'WELCOME100' }] }); this.say('LINE opened · NT$100 coupon added to My coupon'); },
+
+      // list
+      listTitle: s.listTitle, listCount: ids.length, listItems: ids.map(id => this.card(id)),
+      filterPanel: s.filterPanel, toggleFilterPanel: () => set({ filterPanel: !s.filterPanel }), filterLabel: nActive ? 'Filter (' + nActive + ')' : 'Filter',
+      filters: FL.map(([label, k]) => ({ label, bg: s[k] ? '#111' : '#fff', fg: s[k] ? '#fff' : '#111', onClick: () => set({ [k]: !s[k] }) })),
+      hasActiveFilters: nActive > 0, activeFilters: FL.filter(f => s[f[1]]).map(([label, k]) => ({ label, onClick: () => set({ [k]: false }) })),
+      clearFilters: () => set({ fInStock: false, fUnder: false, fSale: false }),
+      sort: s.sort, sortOpts: SORTS, onSort: e => set({ sort: e.target.value }),
+
+      // results
+      searchQ: s.searchQ, resCount: resIds.length, resHas: resIds.length > 0, resNone: resIds.length === 0, resItems: resIds.map(id => this.card(id)),
+
+      // member
+      profName: s.profName, onProfName: e => set({ profName: e.target.value }), profEmail: s.profEmail, onProfEmail: e => set({ profEmail: e.target.value }),
+      genders: ['Female', 'Male', 'Prefer not to say'].map(g => ({ label: g, ...(s.gender === g ? on() : { bg: '#fff', fg: '#111', bd: '#bbb' }), onClick: () => set({ gender: g }) })),
+      defaultStore: s.defaultStore ? '7-ELEVEN ' + s.defaultStore.name + ' #' + s.defaultStore.id : '7-ELEVEN Zhongxiao Store #135624',
+      changeDefaultStore: () => this.nav('store', { storeReturn: 'member' }),
+      toggleTerms: () => set({ terms: !s.terms }), termsBg: s.terms ? '#111' : '#fff', termsMark: s.terms ? '✓' : '',
+      toggleNews: () => set({ news: !s.news }), newsBg: s.news ? '#111' : '#fff', newsMark: s.news ? '✓' : '',
+      saveBg: s.terms && s.profName.trim() && s.profEmail.trim() ? '#111' : '#e3e3e3', saveFg: s.terms && s.profName.trim() && s.profEmail.trim() ? '#fff' : '#9a9a9a',
+      saveProfile: () => s.terms && s.profName.trim() && s.profEmail.trim() ? this.say('Profile saved') : this.say('Fill in required fields and accept the Terms'),
+
+      // favorites
+      favTabs: ftLabels.map((label, i) => ({ label, ...tabSt(s.favTab === i), onClick: () => set({ favTab: i }) })),
+      favItems: favIds.map(id => this.card(id)), favHas: favIds.length > 0, favEmpty: !favIds.length, favCount: favIds.length,
+      favShowAddAll: s.favTab === 0, favEmptyText: ['No favorites yet', 'Nothing viewed yet', 'No back-in-stock alerts'][s.favTab],
+      addAllToCart: () => { const avail = s.favs.filter(id => !P[id].out); if (!avail.length) return this.say('All favorites are sold out'); let cart = s.cart; avail.forEach(id => { const i = cart.findIndex(l => l.pid === id && l.opt === 0); cart = i >= 0 ? cart.map((l, j) => j === i ? { ...l, qty: l.qty + 1 } : l) : [...cart, { pid: id, opt: 0, qty: 1 }]; }); set({ cart, lastAdded: { pid: avail[avail.length - 1], opt: 0, qty: 1 }, mini: true }); },
+
+      // coupons
+      couponCode: s.couponCode, onCouponCode: e => set({ couponCode: e.target.value, couponErr: '' }),
+      redeem: () => { const c = s.couponCode.trim().toUpperCase(); if (c === 'NINE9' && !s.coupons.some(x => x.id === 'n9')) { set({ coupons: [...s.coupons, { id: 'n9', st: 'claimed', type: 'Discount', big: 'NT$90', small: 'OFF', title: 'Code gift', l1: 'Any order', l2: 'Expires 2026-12-31', code: 'NINE9' }], couponCode: '', couponTab: 1 }); this.say('Coupon added to Claimed'); } else set({ couponErr: c ? 'This code is invalid or already used' : 'Enter a code' }); },
+      hasCouponErr: !!s.couponErr, couponErr: s.couponErr,
+      couponTabs: ctLabels.map((label, i) => ({ label, ...tabSt(s.couponTab === i), onClick: () => set({ couponTab: i }) })),
+      cFilters: ['All', 'Discount', 'Free shipping', 'Gift'].map(f => ({ label: f, ...(s.cFilter === f ? on() : { bg: '#fff', fg: '#111', bd: '#bbb' }), onClick: () => set({ cFilter: f }) })),
+      couponItems: cItems, couponEmpty: !cItems.length,
+
+      // track
+      orderCards,
+
+      // notify
+      notifyOpen: !!s.notify, notifyName: s.notify ? P[s.notify].n : '', closeNotify: () => set({ notify: null }),
+      nLine: { ...(s.notifyCh === 'line' ? on() : { bg: '#fff', fg: '#111' }), on: s.notifyCh === 'line' }, nEmail: { ...(s.notifyCh === 'email' ? on() : { bg: '#fff', fg: '#111' }), on: s.notifyCh === 'email' },
+      chLine: () => set({ notifyCh: 'line' }), chEmail: () => set({ notifyCh: 'email' }),
+      notifyEmail: s.notifyEmail, onNotifyEmail: e => set({ notifyEmail: e.target.value }),
+      submitNotify: () => { if (!s.loggedIn) return this.needLogin({ notify: null }, 'Sign in to get restock alerts'); set({ notify: null, backInStock: s.backInStock.includes(s.notify) ? s.backInStock : [...s.backInStock, s.notify] }); this.say("We'll let you know when it's back"); }
+    };
+  }
+
+  _apply() {
+    const c = this.state.code.trim().toUpperCase();
+    if (!c) return this.setState({ codeMsg: 'Enter a code', codeErr: true });
+    if (VALID[c] || (c === 'NINE9' && this.state.coupons.some(x => x.id === 'n9'))) this.setState({ applied: c, code: c, codeMsg: 'Code ' + c + ' applied', codeErr: false });
+    else this.setState({ applied: null, codeMsg: 'This code is invalid or expired', codeErr: true });
+  }
+  _login() {
+    if (this.state.phone.replace(/\D/g, '').length < 9) return this.setState({ loginErr: 'Enter a valid mobile number (9 digits)' });
+    this.doLogin();
+  }
+}
+</script>
+
+
+</body></html>
