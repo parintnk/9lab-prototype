@@ -77,7 +77,7 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 - ทุกข้อใน PDF (55 ข้อ) เปิด PDF เทียบกับข้อความใน WF ทีละหน้าแล้ว (2026-10-05) แบ่งสถานะ: Done 42 · Adjusted 3 · Needs your input 7 · Not yet in WF 3 (กดกรองตามสถานะได้)
 - หมายเหตุ: "Done" หมายถึงมีใน **WF** ยังไม่ได้ไล่เช็ก Prototype ทุกข้อ
 - ส่วน Added by us, Questions for 9Lab (12 ข้อ), Features ของระบบ (8 กลุ่ม), Recommended services
-- Recommended services: Payment = ECPay AIO · Delivery = ECPay Logistics B2C · E-invoice = ECPay B2C · Sign in = มือถือ + SMS และ LINE Login · LINE OA + Messaging API · Store platform = รอตัดสินใจ (WooCommerce / Shopify / custom) ทุกการ์ดมีลิงก์แหล่งที่มา
+- Recommended services: Payment = ECPay AIO · Delivery = ECPay Logistics B2C · E-invoice = ECPay B2C · Sign in = มือถือ + SMS และ LINE Login · LINE OA + Messaging API ทุกการ์ดมีลิงก์แหล่งที่มา (ตัดการ์ด Store platform ออกตามที่ผู้ใช้ขอ 2026-10-05)
 
 ### เพิ่มจุดที่ขาด (WF + Proto)
 - 1.2 ส่วน More info (Corporate purchase / Wedding gift / Stores) (PDF หน้า 2)

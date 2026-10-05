@@ -1093,5 +1093,6 @@
  "A prepaid parcel is not picked up within 5 days and returns to 9Lab: refund the full amount, or minus the shipping fee? Refund to the card, or as store credit? (Unpaid ATM orders are simply cancelled at the deadline — nothing to refund.)": "已付款的包裹 5 天内未取货并退回 9Lab 时：全额退款，还是扣除运费？退回信用卡，还是转为购物金？（ATM 订单逾期未付款会自动取消，无需退款。）",
  "Pay at pickup (cash on delivery) is also available in ECPay, but 9Lab chose prepaid only.": "绿界 ECPay 也提供取货付款，但 9Lab 选择仅限先付款。",
  "Which stores to offer: 7-ELEVEN only, or also FamilyMart and Hi-Life?": "要开放哪些超商：只有 7-ELEVEN，还是也开放全家与莱尔富？",
- "Latest order card always expanded · Status line Ordered → Preparing → Shipping → Arrived at store → Picked up (updated automatically by ECPay Logistics) · Not picked up within 5 days → parcel returns to 9Lab → refund (orders are always prepaid)": "最新一笔订单卡片固定展开 · 状态列 已订购 → 备货中 → 配送中 → 已到店 → 已取货（由绿界物流自动更新）· 5 天内未取货 → 包裹退回 9Lab → 退款（订单一律先付款）"
+ "Latest order card always expanded · Status line Ordered → Preparing → Shipping → Arrived at store → Picked up (updated automatically by ECPay Logistics) · Not picked up within 5 days → parcel returns to 9Lab → refund (orders are always prepaid)": "最新一笔订单卡片固定展开 · 状态列 已订购 → 备货中 → 配送中 → 已到店 → 已取货（由绿界物流自动更新）· 5 天内未取货 → 包裹退回 9Lab → 退款（订单一律先付款）",
+ "Admin can add and reorder sections. Truly free-form layouts need a page builder in the backend.": "后台可新增与调整区块顺序。若要完全自由的版面，后台需要页面编辑器（page builder）。"
 }

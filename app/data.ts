@@ -23,7 +23,7 @@ export const BRIEF: Section[] = [
       { req: 'Small banner content can be updated any time', p: '2', status: 'done', wf: 's1-2' },
       { req: 'Brand videos on the homepage', p: '2', status: 'done', wf: 's1-2', note: 'Plays inline, muted by default.' },
       { req: '“More info” section (corporate purchase, wedding gift, store) — red box in your reference', p: '2', status: 'done', wf: 's1-2', note: '3 image tiles linking to content pages; admin edits them and can add more.' },
-      { req: 'Multiple sections, updated from the backend, flexible size and layout', p: '2', status: 'done', wf: 's1-2', note: 'Admin can add and reorder sections. Truly free-form layouts need a page builder in the backend — see “Store platform” below.' },
+      { req: 'Multiple sections, updated from the backend, flexible size and layout', p: '2', status: 'done', wf: 's1-2', note: 'Admin can add and reorder sections. Truly free-form layouts need a page builder in the backend.' },
       { req: 'Maximum 4 products in one screen', p: '2', status: 'done', wf: 's1-2', note: '2 columns × 2 rows on mobile.' },
       { req: 'Header icons: main menu, members, cart, search; social media', p: '3', status: 'done', wf: 's1-2' },
     ],
@@ -219,17 +219,6 @@ export const SERVICES: Service[] = [
       'Messaging API lets the site send order messages to shoppers who added 9Lab.',
     ],
     sources: [{ label: 'LINE Messaging API docs', url: 'https://developers.line.biz/en/docs/messaging-api/' }],
-  },
-  {
-    area: 'Store platform', pick: 'To decide with 9Lab', status: 'decide',
-    why: 'The brief asks for a lot of backend control (pop-up, banners, flexible sections, unlimited categories, coupons). The platform decides how much is ready-made and how much is custom.',
-    details: [
-      'WooCommerce + official ECPay plugin: every ECPay payment, store and home delivery, and e-invoice are supported.',
-      'Shopify + ECPay: most payments; convenience-store code / barcode payments are not supported in the plugin.',
-      'Custom build (e.g. Next.js + headless commerce): full freedom for the layouts in the brief, more build time and cost.',
-    ],
-    decide: 'Budget, timeline and who will run the backend day to day.',
-    sources: [{ label: 'ECPay skill · Shopping cart plugins', url: SKILL + '10-cart-plugins.md' }],
   },
 ];
 
