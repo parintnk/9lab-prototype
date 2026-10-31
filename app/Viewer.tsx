@@ -6,6 +6,8 @@ import { LANGS, info, tr, type Lang } from './i18n';
 const TABS = [
   { page: 'journey/', label: 'Journey' },
   { page: 'checklist/', label: 'Checklist' },
+  { page: 'progress/', label: 'Progress' },
+  { page: 'money/', label: 'Money flow' },
   { page: 'wireframe/', label: 'Wireframe' },
   { page: 'prototype/', label: 'Prototype' },
 ];

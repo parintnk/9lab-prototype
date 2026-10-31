@@ -45,6 +45,15 @@ npm run build        # static export → โฟลเดอร์ out/ (อั�
 > ⚠️ ถ้า designer ส่ง WF หรือ Proto เวอร์ชันใหม่มา **อย่าเอาไปทับเฉยๆ** ต้องเอาส่วนที่เปลี่ยนมารวมกับ `src/*.html` ไม่งั้นงานที่เพิ่มไว้ข้างล่างจะหาย
 > ถ้าแก้เนื้อหาใน WF ให้แก้ `Journey.tsx` ตามด้วย เพราะข้อความซ้ำกัน
 
+## หน้า Progress และ Money flow (2026-10-31)
+สองแท็บใหม่ในเว็บรีวิว ทั้งสองฝ่ายอ่านได้ ครบ 4 ภาษา (EN · ไทย · 繁中 · 简中) ข้อมูลมาจากร้านจริงที่ `../website` (โค้ด, `NOTES.md`, `docs/newebpay-all`, `docs/ezpay-invoice`)
+- **Progress** (`app/[lang]/progress/`, ข้อมูล `app/progress-data.ts`): ตัวเลขนับขึ้น · การ์ด 9 ส่วน มีวงแหวน done/waiting กดดูรายการ · ปุ่ม ▶ Play tour เดินไล่ทีละส่วน · แผนผังระบบ (SVG มีจุดวิ่งตามเส้น เขียว = ใช้ได้ เหลือง = มีแค่คีย์ทดสอบ เทาประ = รอบัญชี) · ไทม์ไลน์ · รายการที่รอใคร
+- **Money flow** (`app/[lang]/money/`, ข้อมูล `app/money-data.ts`): 01 ลูกค้าจ่ายเท่าไร (ตัวอย่างคำนวณจากกฎจริง) · 02 จาก Place order ถึง Paid · 03 ใบกำกับภาษี ezPay · 04 ยกเลิก/คืนสินค้า/คืนเงิน · 05 ค่าส่ง · 06 จากลูกค้าถึงธนาคาร · 07 คำถามสำหรับนักบัญชี; ทุกขั้นมีป้าย Automatic / By hand / Built, switched off / Not built yet และปุ่ม ▶ Play ไล่ทีละขั้น
+- ไม่ใช้ไลบรารีกราฟ: SVG + CSS (`app/anim.tsx` มี `Count`, `Ring`, `useInView`) เคารพ `prefers-reduced-motion`
+- **ข้อควรระวัง:** ตัวเลขและกฎในหน้านี้เป็นภาพ ณ 2026-10-31 ถ้าร้านจริงเปลี่ยน (ค่าส่ง, เกณฑ์ส่งฟรี, การคืนเงิน ฯลฯ) ต้องแก้ `progress-data.ts` / `money-data.ts` ตาม · ค่าธรรมเนียม NewebPay และเวลาถอนเงินยังไม่ทราบ จึงเขียนว่า "to confirm" ไม่ใส่ตัวเลข · 繁中 ที่เขียนเพิ่มควรให้เจ้าของภาษาตรวจ
+- **แปลข้อความใหม่:** `node scripts/i18n-new-pages.mjs` เช็กว่า string ของสองหน้านี้มีคำแปล th / zh-Hant ครบ (เขียน `i18n/missing-new.json`) แล้วรัน `node scripts/zh-hans.mjs`
+- เตือน dev: console มี hydration warning จากสคริปต์ตั้ง `lang` ใน `app/[lang]/layout.tsx` (มีอยู่ก่อนแล้ว ทุกหน้า ไม่ใช่จากสองหน้านี้)
+
 ## สิ่งที่ทำแล้ว
 ### ตัวเว็บ
 - เว็บ Next.js (static export) รวม WF + Proto ไว้ที่เดียว มีแถบสลับ Journey / Wireframe / Prototype

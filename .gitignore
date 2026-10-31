@@ -4,5 +4,6 @@ out
 next-env.d.ts
 .claude/settings.local.json
 i18n/_work/
+i18n/missing-new.json
 .vercel
 .env*
