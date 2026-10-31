@@ -36,7 +36,7 @@ export const LAYERS: Layer[] = [
     done: ['All shop text translated', 'Simplified Chinese generated from Traditional', 'A test that fails when any text is missing a translation'],
     waiting: ['A native speaker to review the Traditional Chinese wording'] },
   { id: 'ops', name: 'Going live', text: 'The parts that make it safe to open the doors.',
-    done: ['Docker setup, HTTPS proxy and a backup script', 'Production build verified', 'E-invoice module written and tested (switched off)', 'Notes and checklist for launch'],
+    done: ['Docker setup, HTTPS proxy and a backup script', 'Production build verified', 'E-invoice module written and tested (switched off)', 'A sandbox that plays NewebPay and ezPay: sample store map, label and invoice, and a console to move parcel statuses', 'Notes and checklist for launch'],
     waiting: ['Domain and DNS', 'ezPay e-invoice account', 'Create the real admin account'] },
 ];
 

@@ -73,6 +73,7 @@
  "A person does it (in the admin or in NewebPay)": "由人员操作（在后台或蓝新金流）",
  "A prepaid parcel is not picked up within 5 days and returns to 9Lab: refund the full amount, or minus the shipping fee? Refund to the card, or as store credit? (Unpaid ATM orders are simply cancelled at the deadline — nothing to refund.)": "已付款的包裹 5 天内未取货并退回 9Lab 时：全额退款，还是扣除运费？退回信用卡，还是转为购物金？（ATM 订单逾期未付款会自动取消，无需退款。）",
  "A row showing “TWD (NT$)”, like your reference. Becomes a selector if a second currency is added.": "显示「TWD（NT$）」一列，与您提供的参考网站相同。若新增第二种币别，会变成选单。",
+ "A sandbox that plays NewebPay and ezPay: sample store map, label and invoice, and a console to move parcel statuses": "模拟蓝新金流与 ezPay 的沙盒：范例门市地图、托运单与发票，以及可推进包裹状态的控制台",
  "A team member refunds the payment in NewebPay's back office, then presses \"Refund done\".": "团队成员在蓝新金流后台退款，再按「Refund done」。",
  "A test that fails when any text is missing a translation": "只要有文字缺少翻译，测试就会失败",
  "A · CLOSED": "A · 收合",

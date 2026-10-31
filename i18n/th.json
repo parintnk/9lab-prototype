@@ -73,6 +73,7 @@
  "A person does it (in the admin or in NewebPay)": "คนเป็นผู้ทำ (ในแอดมินหรือใน NewebPay)",
  "A prepaid parcel is not picked up within 5 days and returns to 9Lab: refund the full amount, or minus the shipping fee? Refund to the card, or as store credit? (Unpaid ATM orders are simply cancelled at the deadline — nothing to refund.)": "พัสดุที่ชำระเงินแล้วแต่ไม่มีคนมารับภายใน 5 วันและถูกส่งคืน 9Lab: คืนเงินเต็มจำนวน หรือหักค่าส่ง? คืนเข้าบัตร หรือเป็น store credit? (ออเดอร์ ATM ที่ไม่โอนตามกำหนดจะถูกยกเลิกอัตโนมัติ ไม่มีเงินต้องคืน)",
  "A row showing “TWD (NT$)”, like your reference. Becomes a selector if a second currency is added.": "แถวแสดง “TWD (NT$)” ตามตัวอย่างที่คุณให้มา จะเปลี่ยนเป็นตัวเลือกถ้าเพิ่มสกุลเงินที่สอง",
+ "A sandbox that plays NewebPay and ezPay: sample store map, label and invoice, and a console to move parcel statuses": "แซนด์บ็อกซ์จำลอง NewebPay และ ezPay: แผนที่สาขา ใบปะหน้า และใบกำกับภาษีตัวอย่าง พร้อมแผงควบคุมเปลี่ยนสถานะพัสดุ",
  "A team member refunds the payment in NewebPay's back office, then presses \"Refund done\".": "คนในทีมคืนเงินในหลังบ้านของ NewebPay แล้วกด \"Refund done\"",
  "A test that fails when any text is missing a translation": "เทสต์ที่จะล้มเหลวเมื่อมีข้อความใดไม่มีคำแปล",
  "A · CLOSED": "A · ปิด",
