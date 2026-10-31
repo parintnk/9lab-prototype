@@ -73,13 +73,15 @@ export const FLOWS: FlowDef[] = [
         { title: 'Free over NT$1,500', text: 'The threshold is also editable. A bar in the cart shows how far the shopper is.', badge: 'auto' },
         { title: 'Part of the total', text: 'The fee is in the amount paid and appears as its own line on the invoice. Points are not earned on it.', badge: 'auto' },
       ] },
-      { name: 'Paid by 9Lab (logistics API, not built)', steps: [
-        { title: 'Prepaid balance', text: 'With NewebPay\'s logistics API each parcel fee is taken from a balance 9Lab tops up in advance. An empty balance blocks new shipping labels.', badge: 'todo' },
-        { title: 'Two parcel types', text: 'C2C: drop the parcel at any 7-ELEVEN, FamilyMart, Hi-Life or OK mart, no approval needed. B2C: 7-ELEVEN only, needs approval and a test, parcels go to a warehouse.', badge: 'todo' },
-        { title: 'Limit per order', text: 'Store pickup orders are capped at NT$20,000.', badge: 'todo' },
-        { title: 'Status by itself', text: 'NewebPay would push "arrived at store" and "picked up", so the team stops updating them by hand.', badge: 'todo' },
+      { name: 'Paid by 9Lab (logistics API, built and switched off)', steps: [
+        { title: 'Choose the store first', text: 'The shopper picks the 7-ELEVEN store on NewebPay\'s map before paying, so the order already knows where the parcel goes.', badge: 'off' },
+        { title: 'Shipment after payment', text: 'When the order is Paid, the shop creates the parcel at NewebPay. The team prints the label from the admin order page.', badge: 'off' },
+        { title: 'Prepaid balance', text: 'Each parcel fee is taken from a balance 9Lab tops up in advance. If it is empty the shipment is not created: the dashboard warns, and the team retries after topping up.', badge: 'hand' },
+        { title: 'Which parcel type', text: 'Set to C2C: drop the parcel at any 7-ELEVEN, no approval needed. B2C (7-ELEVEN only, needs approval and a test, parcels go to a warehouse) can be switched on later.', badge: 'off' },
+        { title: 'Limit per order', text: 'Store pickup orders are capped at NT$20,000. The checkout refuses larger ones and suggests home delivery.', badge: 'auto' },
+        { title: 'Status by itself', text: 'NewebPay tells the shop when the parcel reaches the store and when it is picked up, so the order status moves on its own. Problems (store closed, number expired, parcel returned) are flagged for the team.', badge: 'off' },
       ] },
-    ], note: 'To confirm with NewebPay: how the parcel fee is billed for the pickup option used today (chosen on the NewebPay page).' },
+    ], note: 'To switch it on: a NewebPay test merchant with logistics enabled and a prepaid balance, then the same on the live account. Format details are confirmed against the manual only until then.' },
   { id: 'bank', no: '06', title: 'From the shopper to 9Lab\'s bank', lead: 'NewebPay collects the money first and pays it out to 9Lab afterwards.',
     tracks: [
       { name: 'Money path', steps: [
