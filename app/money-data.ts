@@ -28,7 +28,7 @@ export const FLOWS: FlowDef[] = [
       { name: 'Side paths', steps: [
         { title: 'Same notice twice', text: 'NewebPay may resend a notice. The second one is recognised and ignored, so nothing is counted twice.', badge: 'auto' },
         { title: 'Paid after we cancelled', text: 'Typical for ATM transfers. The money is recorded and the order is flagged "Refund needed". No stock, no points.', badge: 'auto' },
-        { title: 'ATM never paid', text: 'NewebPay stops accepting the transfer after about 24 hours. The order stays "Awaiting payment" until someone cancels it: there is no automatic clean-up yet.', badge: 'todo' },
+        { title: 'ATM never paid', text: 'NewebPay stops accepting the transfer after about 24 hours. After 3 days the order is cancelled automatically and any coupon it held is released. If money still arrives later, the order is flagged "Refund needed".', badge: 'auto' },
         { title: 'Amount does not match', text: 'The notice is refused and the order stays unpaid, so a tampered payment can never mark an order paid.', badge: 'auto' },
       ] },
     ] },

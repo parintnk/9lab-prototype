@@ -716,6 +716,7 @@
  "NewebPay live merchant keys": "คีย์ร้านค้า NewebPay ใช้งานจริง",
  "NewebPay may resend a notice. The second one is recognised and ignored, so nothing is counted twice.": "NewebPay อาจส่งการแจ้งซ้ำ ครั้งที่สองถูกจำได้และข้ามไป จึงไม่นับซ้ำ",
  "NewebPay page": "หน้า NewebPay",
+ "NewebPay stops accepting the transfer after about 24 hours. After 3 days the order is cancelled automatically and any coupon it held is released. If money still arrives later, the order is flagged \"Refund needed\".": "NewebPay หยุดรับโอนหลังประมาณ 24 ชั่วโมง เมื่อครบ 3 วันออเดอร์จะถูกยกเลิกอัตโนมัติ และคูปองที่จองไว้จะถูกคืน ถ้าเงินยังเข้ามาทีหลัง ออเดอร์จะติดธง \"ต้องคืนเงิน\"",
  "NewebPay stops accepting the transfer after about 24 hours. The order stays \"Awaiting payment\" until someone cancels it: there is no automatic clean-up yet.": "NewebPay หยุดรับโอนหลังประมาณ 24 ชั่วโมง ออเดอร์ค้างที่ \"รอชำระเงิน\" จนกว่าจะมีคนยกเลิก: ยังไม่มีการล้างอัตโนมัติ",
  "NewebPay would push \"arrived at store\" and \"picked up\", so the team stops updating them by hand.": "NewebPay จะส่ง \"ถึงร้านแล้ว\" และ \"รับแล้ว\" มาให้ ทีมจึงไม่ต้องอัปเดตเอง",
  "Newest": "ใหม่ล่าสุด",

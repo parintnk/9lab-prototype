@@ -716,6 +716,7 @@
  "NewebPay live merchant keys": "藍新金流正式商店金鑰",
  "NewebPay may resend a notice. The second one is recognised and ignored, so nothing is counted twice.": "藍新金流可能重送通知。第二次會被辨識並忽略，因此不會重複計算。",
  "NewebPay page": "藍新金流頁面",
+ "NewebPay stops accepting the transfer after about 24 hours. After 3 days the order is cancelled automatically and any coupon it held is released. If money still arrives later, the order is flagged \"Refund needed\".": "約 24 小時後藍新金流不再接受轉帳。滿 3 天訂單會自動取消，並釋出其保留的優惠券。若之後款項仍入帳，訂單會標記「需退款」。",
  "NewebPay stops accepting the transfer after about 24 hours. The order stays \"Awaiting payment\" until someone cancels it: there is no automatic clean-up yet.": "約 24 小時後藍新金流不再接受轉帳。訂單會停在「待付款」直到有人取消：目前尚無自動清理。",
  "NewebPay would push \"arrived at store\" and \"picked up\", so the team stops updating them by hand.": "藍新金流會主動推送「已到店」與「已取貨」，團隊就不必再手動更新。",
  "Newest": "最新上架",
